@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+ <object name="site_properties" meta_type="Plone Property Sheet">
+  <property name="show_header_text" type="boolean">True</property>
+  <property name="show_header_logo" type="boolean">True</property>
+ </object>
+</object>

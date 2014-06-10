@@ -1,0 +1,19 @@
+<a id="portal-logo"
+   title="Home"
+   accesskey="1"
+   tal:attributes="href view/navigation_root_url;
+                   title view/navigation_root_title;"
+   i18n:domain="plone"
+   i18n:attributes="title">
+    <img src="logo.jpg" alt=""
+         tal:condition="context/portal_properties/site_properties/show_header_logo|python:True"
+         tal:replace="structure view/logo_tag" />
+
+
+<div id="titleHeader"
+     tal:condition="context/portal_properties/site_properties/show_header_text|python:True">
+    <div id="siteTitle" tal:content="python: view.portal_state.portal().Title()"></div>
+    <div id="siteDescription" tal:content="python: view.portal_state.portal().Description()"></div>
+</div>
+
+</a>

@@ -1,0 +1,298 @@
+
+/* Logo */
+#portal-logo img {
+    margin: 0 1.5em 0 0;
+}
+#portal-logo img,
+#titleHeader {
+    float:left;
+}
+#siteTitle {
+    font-size: 230%;
+    font-weight: bold;
+}
+
+/* topo */
+#portal-siteactions {
+    clear: right;
+    float: right;
+    padding-bottom: 0;
+    padding-top: 1em;
+}
+#portal-searchbox {
+    z-index:99;
+}
+#portal-searchbox input.searchField {
+    line-height: 1.5em;
+    border:1px solid #DDDDDD;
+    min-width: 15em;
+}
+
+
+/*** portlets ***/
+
+/* profile */
+.portletPersonProfile img {
+    max-width: 100%;
+    height: auto;
+    border: #d8d8d8 1px solid;
+    margin-bottom: 0.5em;
+}
+.portletPersonProfile li {
+    padding: 0.2em;
+}
+.portletPersonProfile a:before {
+    font-family: FontAwesome;
+    font-size: 1em;
+    margin-right: 0.3em;
+    }
+.portletPersonProfile li:first-child a:before {
+    content: "\f007";
+}
+.portletPersonProfile a:before {
+    content: "\f08b";
+}
+/* adicionar conteudo*/
+.portlet-static-adicionar-conteudo a:before {
+    font-family: FontAwesome;
+    font-size: 1em;
+    margin-right: 0.3em;
+    content: "\f055";
+}
+/* activestream */
+div.activityAvatar img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 50px;
+    max-height: 50px;
+}
+/*birthday*/
+.portletBirthdayPortlet img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 50px;
+    max-height: 50px;
+    border: #d8d8d8 1px solid !important;
+}
+.portletBirthdayPortlet .portletItem div:first-child {
+    font-weight: bold;
+}
+
+
+/* Pagina de Busca */
+
+#portal-columns #searchform h1.documentFirstHeading {
+    border-bottom: 2px solid #dddddd;
+    display: block;
+    font-size: 29px;
+    font-weight: bold;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    width: 100%;
+}
+
+#portal-columns #search-results dd {
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 14px;
+    padding: 0 0 1em 0em!important;
+    margin: 0!important;   
+}
+
+#portal-columns #search-results{
+    padding: 1em 0!important;
+}
+
+#portal-columns fieldset#search-field {
+    text-align:left;
+}
+
+.template-search #portal-columns  #content .cell {
+    width:96% !important;
+}
+
+.template-search #portal-columns  .optionsToggle {
+    background-color: transparent;
+    border: transparent;
+    }
+
+#portal-columns  #search-results {width:66.5% !important;}
+
+#portal-columns #search-results-bar {
+    border-bottom: 0 none !important;
+    border-top: 0 none !important;
+    background:#fff;
+    top: -173px;
+    font-size: 0.9em;
+    padding: 0 !important;
+    width: 317px !important;position:absolute !important;right:0;border-top:0 !important;border-bottom:0!important;}
+
+#portal-columns #search-results-bar>span:first-child {
+    background: #fff;
+    color: #000;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 15px;
+    width: 90%;
+}
+
+#portal-columns #search-filter .field {
+   padding: 1em 0 !important;
+}
+
+#portal-columns #search-filter .field div {
+    width: 100%;
+}
+
+#portal-columns #search-filter .field,
+#portal-columns #search-filter {
+    background:transparent !important;
+}
+  
+#portal-columns #search-filter .field input {
+    margin-right: 8px;
+}
+    
+#portal-columns #search-results dd {
+    color: #000000;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 15px;
+    font-weight: normal !important;
+    line-height: 23px;
+}
+    
+#portal-columns #search-results-bar dd.actionMenuContent {
+    display:block;
+}
+
+.template-search #portal-columns .discreet {
+    display:none;
+}
+
+#portal-columns #search-results .contenttype-collective-nitf-content a:visited,
+#portal-columns #search-results .contenttype-collective-nitf-content a:link,
+#portal-columns #search-results .contenttype-collective-nitf-content a {
+    border-bottom: 0;
+    color:#000 !important;
+    line-height:33px;
+    font-size:18px;
+    font-weight: normal;
+    text-transform: uppercase !important;
+    }
+
+.template-search #portal-columns  #search-results-bar dl {
+    width: 97%;
+    margin-left:20px !important;
+}
+
+.template-search #portal-columns #rss-subscription,
+.template-search #portal-columns .actionMenuHeader {
+    display:none;
+}
+
+#portal-columns #search-results-wrapper {
+    min-height:600px;
+}
+
+.template-search #portal-columns .highlightedSearchTerm {
+    background-color: transparent;
+}
+
+#portal-columns .optionsToggle {
+    background-color: transparent;
+    font-size: 100%;
+    border: medium none transparent;}
+
+#portal-columns #searchResultsSort>span:first-child,
+#portal-columns #content #search-filter legend {
+    font-size: 1.25em !important;
+    padding-right:0 !important;
+    padding-left:0 !important;
+    padding-bottom:5px !important;
+    background: transparent !important;
+    border-bottom: 1px solid #000000;
+    font-weight: normal !important;
+    width: 88%;
+    text-transform:none !important;
+}
+
+#portal-columns .highlightedSearchTerm {font-weight:normal !important;}
+
+#portal-columns #searchResultsSort>span:first-child {display:block;margin-bottom: 20px;}
+
+#portal-columns #searchResultsSort {
+   padding: 0 20px 20px 20px;
+   float:left;
+   width: 98%;
+}
+
+.template-search #portal-column-content.cell.position-0, 
+.template-search #portal-column-content.cell.position-1\3a 4 {
+    border-right: 0 !important;
+}
+
+.template-search #portal-breadcrumbs {display:none;}
+
+.template-search #breadcrumbs-1 > a, 
+.template-search #breadcrumbs-1 > span {
+    color: #000;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+    
+.template-search #content h1.documentFirstHeading {
+    font-size: 1.7em !important;
+    font-weight: normal !important;
+    margin-top: 45px!important;
+    padding-bottom: 0!important;
+     width: 66.5%;
+}
+
+.template-search #portal-columns #search-term {color:#000;font-weight:bold !important;}
+
+#content #sorting-options>span {display:none;}
+#content #sorting-options a {border-bottom:0;text-transform:capitalize;line-height:1.6em;display:block;color:#000;}
+
+
+/********* RESPONSIVE **********/
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	
+	ul#portal-siteactions {display:none !Important;}
+    
+     #portal-breadcrumbs,
+ 	.searchSection {display:none;}
+}
+
+
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	    #portal-column-one, 
+        #portal-column-two,
+        #portal-column-content {clear: both; width: 97.75%; margin-left: -98.875%;}
+
+
+   
+
+ 	 #portal-searchbox {
+        float: none;
+        clear: both;
+        font-size: 80%;
+        text-align:center;
+    }
+
+
+}
+
+/********** Config bugs *****/
+.label,.badge {
+color: #000;
+text-shadow: 0;
+background-color: transparent;
+}
+.label:empty, .badge:empty {
+display: inline;
+}
+

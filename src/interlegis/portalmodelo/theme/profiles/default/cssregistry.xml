@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<object name="portal_css" meta_type="Stylesheets Registry">
+   
+  <stylesheet
+    insert-before="*"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="on"
+    expression=""
+    id="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"/>
+    
+   <stylesheet
+    insert-before="*"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="on"
+    expression=""
+    id="++resource++portalmodelo.theme/styles/normalize.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"/>
+    
+  <stylesheet
+    insert-before="ploneCustom.css"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="on"
+    expression=""
+    id="++resource++portalmodelo.theme/styles/temabase.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"/>
+    
+   
+  <stylesheet
+    insert-before="*"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="on"
+    expression=""
+    id="++resource++portalmodelo.theme/styles/reset.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"/>
+
+
+
+
+</object>

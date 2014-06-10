@@ -1,0 +1,57 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="interlegis.portalmodelo.theme">
+
+  <include package="plone.resource" />
+
+  <!-- Temas -->
+  <plone:static
+      type="theme"
+      name="Areia"
+      directory="themes/Areia"
+      />
+
+  <plone:static
+      type="theme"
+      name="Azul"
+      directory="themes/Azul"
+      />
+
+  <plone:static
+      type="theme"
+      name="Clean"
+      directory="themes/Clean"
+      />
+
+  <plone:static
+      type="theme"
+      name="Concreto"
+      directory="themes/Concreto"
+      />
+
+  <plone:static
+      type="theme"
+      name="Gelo"
+      directory="themes/Gelo"
+      />
+
+  <plone:static
+      type="theme"
+      name="Kiwi"
+      directory="themes/Kiwi"
+      />
+
+  <plone:static
+      type="theme"
+      name="Moderno"
+      directory="themes/Moderno"
+      />
+
+  <plone:static
+      type="theme"
+      name="Vermelho"
+      directory="themes/Vermelho"
+      />
+
+</configure>

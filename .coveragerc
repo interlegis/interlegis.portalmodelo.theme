@@ -1,0 +1,6 @@
+[run]
+include = src/interlegis/portalmodelo/theme/*
+
+[report]
+omit =
+    */test*

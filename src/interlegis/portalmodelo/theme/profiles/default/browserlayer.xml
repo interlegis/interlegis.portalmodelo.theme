@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+ <layer
+     name="interlegis.portalmodelo.theme"
+     interface="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
+     />
+</layers>

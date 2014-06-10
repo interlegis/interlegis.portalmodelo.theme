@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plone">
+ 
+  <genericsetup:registerProfile
+      name="default"
+      title="Portal Modelo: Tema Visual"
+      directory="profiles/default"
+      description='Tema visual para o Portal Modelo do Interlegis.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

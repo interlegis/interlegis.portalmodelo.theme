@@ -1,0 +1,4 @@
+<div id="portal-header"
+     tal:attributes="style view/logo_background_style;">
+    <div tal:replace="structure provider:plone.portalheader" />
+</div>

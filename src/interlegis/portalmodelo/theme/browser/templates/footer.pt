@@ -1,0 +1,37 @@
+<div metal:define-macro="portal_footer"
+     i18n:domain="plone"
+     class="row">
+
+
+        <div id="portal-footer">
+       
+<span tal:content="structure python:context.portal_url.getPortalObject()['rodape'].getText()"/>
+
+
+<a class="tile"
+     tal:condition="python:request.AUTHENTICATED_USER.has_role(['Manager', 'Administrator'], context)"
+     tal:attributes="href string:${context/portal_url}/rodape/edit">
+   <span i18n:translate=""
+         i18n:domain="plone">Edit</span>
+  </a>
+
+<p>Copyleft © Interlegis</p>
+<div id="linksfooter">
+<a href="http://www.senado.gov.br/">
+	<img
+		tal:attributes="src string:${context/portal_url}/++resource++portalmodelo.theme/images/icon_senado.gif" 
+		src="icon_senado.gif" alt="Senado Federal" />
+</a> 
+<a href="http://www.camara.gov.br/">
+	<img
+		tal:attributes="src string:${context/portal_url}/++resource++portalmodelo.theme/images/icon_camara.gif" 
+		src="icon_camara.gif" alt="Câmara dos Deputados" />
+</a>
+</div>
+</div>
+
+<p class="visualClear"></p>
+
+
+</div>
+
