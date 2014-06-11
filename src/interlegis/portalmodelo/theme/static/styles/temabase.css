@@ -253,6 +253,72 @@ div.activityAvatar img {
 #content #sorting-options a {border-bottom:0;text-transform:capitalize;line-height:1.6em;display:block;color:#000;}
 
 
+/********* DropDown Menu *********/
+
+header {
+    z-index: 1;
+}
+nav {
+    list-style-image: none;
+    position: relative;
+
+}
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+    visibility: hidden;
+}
+
+
+nav li {
+    float: left;
+    position: relative;
+}
+
+nav ul {float:right;}
+
+nav li a {
+    display: block;
+}
+ul.submenu {
+    display: none;
+    left: 0;
+    background:transparent;
+    z-index:23;
+    position: absolute;
+    top: 100%;
+}
+nav li:hover > ul.submenu {
+    display: block;
+}
+ul.submenu li {
+    float: none;
+    margin-bottom: 0;
+background:#fff;
+text-align:left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+nav ul.submenu li a {
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1.5em;
+    padding-top: 0.5em;
+    width: 9em;
+    
+}
+ul.submenu ul {
+    left: 100%;
+    top: 0;
+}
+ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-published {
+    color: #000 !important;
+
+}
+
+
 /********* RESPONSIVE **********/
 
 /* Landscape phone to portrait tablet */
