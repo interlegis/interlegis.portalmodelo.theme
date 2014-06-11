@@ -4,7 +4,7 @@ Changelog
 1.0a8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Suporte a Menu DropDown.
 
 
 1.0a7 (2014-05-01)
