@@ -1,2 +1,4 @@
 Contributors
 ============
+
+* Karyn Nassif
