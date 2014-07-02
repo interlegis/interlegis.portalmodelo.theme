@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0a8 (unreleased)
+1.0b1 (2014-07-02)
 ------------------
 
 - Suporte a Menu DropDown.
