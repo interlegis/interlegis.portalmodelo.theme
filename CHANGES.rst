@@ -4,7 +4,8 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Os breadcrumbs ficam agora ocultos na raiz do site (https://colab.interlegis.leg.br/ticket/2969).
+  [hvelarde]
 
 
 1.0b1 (2014-07-02)
