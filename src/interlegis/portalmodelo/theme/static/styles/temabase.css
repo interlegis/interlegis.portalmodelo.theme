@@ -33,6 +33,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer li {
+    display: block;
+    padding-bottom: 1.5em;
+}
+
 #linksfooter {
     display: table;
 }
