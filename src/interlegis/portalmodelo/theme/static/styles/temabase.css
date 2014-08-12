@@ -28,6 +28,28 @@
     min-width: 15em;
 }
 
+/* rodape */
+footer a:hover {
+    text-decoration: underline;
+}
+
+#linksfooter {
+    display: table;
+}
+
+#linksfooter img {
+    float: left;
+    margin-right: 1em;
+}
+
+#footerleft {
+    float: left;
+    width: 50%;
+}
+
+#footerright {
+    margin-left: 50%;
+}
 
 /*** portlets ***/
 

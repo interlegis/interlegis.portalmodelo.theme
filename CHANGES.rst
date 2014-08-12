@@ -4,7 +4,7 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Changed the site colophon with copyright and creative commons disclaimers.
 
 
 1.0b1 (2014-07-02)
