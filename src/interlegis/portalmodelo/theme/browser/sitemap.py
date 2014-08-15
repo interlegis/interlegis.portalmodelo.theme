@@ -11,8 +11,8 @@ from zope.interface import implements
 
 
 class InterlegisSitemapNavtreeStrategy(SitemapNavtreeStrategy):
-    """The navtree building strategy used by the sitemap, based on
-    navtree_properties
+    """An updated navtree strategy that lists also all folder on root level
+    even if they are hidden from naviagation. used only for sitemap construction
     """
     implements(IPortalModeloSiteMapStrategy)
 
