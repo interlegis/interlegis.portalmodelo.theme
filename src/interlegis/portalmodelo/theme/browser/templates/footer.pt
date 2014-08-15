@@ -26,7 +26,7 @@ Este site é feito com o software livre e aberto <a href="http://www.interlegis.
 </div>
 
 <div id="footerright">
-<a href="http://creativecommons.org/licenses/by-sa/3.0/br/">
+<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR">
 	<img tal:attributes="src string:${context/portal_url}/++resource++portalmodelo.theme/images/cc-by-sa.png"
 		 alt="Selo Creative Commons BY-SA" />
 </a>
