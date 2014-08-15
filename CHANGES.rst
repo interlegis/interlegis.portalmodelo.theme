@@ -4,6 +4,9 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
+- Sitemap browser view should list folders on Portal Modelo's root even if they are excluded from navigation
+  [ericof]
+
 - Changed the site colophon with copyright and creative commons disclaimers.
 
 - Os breadcrumbs ficam agora ocultos na raiz do site (https://colab.interlegis.leg.br/ticket/2969).
