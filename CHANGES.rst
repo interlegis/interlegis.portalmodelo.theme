@@ -10,6 +10,9 @@ Changelog
 - Fixing render for breadcrumbs when it is not displayed.
   [jeanferri]
 
+- Sitemap browser view should list folders on Portal Modelo's root even if they are excluded from navigation
+  [ericof]
+
 - Changed the site colophon with copyright and creative commons disclaimers.
   [jeanferri]
 

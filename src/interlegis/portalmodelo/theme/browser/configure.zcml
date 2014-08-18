@@ -57,4 +57,20 @@
         layer="..interfaces.IBrowserLayer"
     />
 
+   <!-- Change Sitemap behavior for Portal Modelo -->
+
+    <browser:page
+        name="sitemap_builder_view"
+        for="*"
+        class=".sitemap.CatalogSiteMap"
+        permission="zope.Public"
+        allowed_attributes="siteMap"
+        layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
+    />
+
+   <adapter for="*
+                Products.CMFPlone.browser.interfaces.ISiteMap"
+            factory=".sitemap.InterlegisSitemapNavtreeStrategy"
+            provides=".interfaces.IPortalModeloSiteMapStrategy" />
+
 </configure>
