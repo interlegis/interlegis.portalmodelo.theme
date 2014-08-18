@@ -4,7 +4,11 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
+- Fixing render for breadcrumbs when it is not displayed.
+  [jeanferri]
+
 - Changed the site colophon with copyright and creative commons disclaimers.
+  [jeanferri]
 
 - Os breadcrumbs ficam agora ocultos na raiz do site (https://colab.interlegis.leg.br/ticket/2969).
   [hvelarde]
