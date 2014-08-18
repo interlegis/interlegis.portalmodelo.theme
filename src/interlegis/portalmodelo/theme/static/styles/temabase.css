@@ -349,33 +349,39 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
 /********* RESPONSIVE **********/
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-	
-	ul#portal-siteactions {display:none !Important;}
-    
-     #portal-breadcrumbs,
- 	.searchSection {display:none;}
+@media (max-width: 767px) {
+
+	ul#portal-siteactions {display: none !Important;}
+
+    #portal-breadcrumbs,
+ 	.searchSection {display: none;}
+
+    #footerleft,
+    #footerright {
+        float: none;
+        width: 98%;
+        margin: 1em 0;
+        display: table;
+    }
+
 }
 
 
- 
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
-	    #portal-column-one, 
-        #portal-column-two,
-        #portal-column-content {clear: both; width: 97.75%; margin-left: -98.875%;}
+	#portal-column-one,
+    #portal-column-two,
+    #portal-column-content {clear: both; width: 97.75%; margin-left: -98.875%;}
 
-
-   
-
- 	 #portal-searchbox {
+    #portal-searchbox {
         float: none;
         clear: both;
         font-size: 80%;
-        text-align:center;
+        text-align: center;
     }
 
+    #footer-info {display: none !Important;}
 
 }
 

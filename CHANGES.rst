@@ -4,6 +4,9 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
+- Improve footer for better responsive look in low resolutions.
+  [jeanferri]
+
 - Fixing render for breadcrumbs when it is not displayed.
   [jeanferri]
 
