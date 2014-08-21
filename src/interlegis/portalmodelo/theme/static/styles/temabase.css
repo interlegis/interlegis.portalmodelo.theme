@@ -38,7 +38,12 @@ footer li {
     padding-bottom: 1.5em;
 }
 
+footer table {
+    width: 100%;
+}
+
 #linksfooter {
+    width: 100%;
     display: table;
 }
 
@@ -385,7 +390,7 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
     #footerleft,
     #footerright {
         float: none;
-        width: 98%;
+        width: 100%;
         margin: 1em 0;
         display: table;
     }
