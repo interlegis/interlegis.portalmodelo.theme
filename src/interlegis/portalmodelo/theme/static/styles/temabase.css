@@ -109,6 +109,7 @@ div.activityAvatar img {
 
 #LSResult {
     background: none;
+    margin: 0;
     right: 15px;
     z-index: 10;
     color: #333333;
@@ -120,6 +121,7 @@ div.activityAvatar img {
 
 #LSResult .livesearchContainer {
     background: white;
+    margin: 0;
 }
 
 #LSResult .LSTable .LSRow a:link, #LSResult .LSTable .LSRow a:visited  {
