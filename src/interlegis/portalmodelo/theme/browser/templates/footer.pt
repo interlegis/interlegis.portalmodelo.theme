@@ -26,11 +26,11 @@ Este site é feito com o software livre e aberto <a href="http://www.interlegis.
 </div>
 
 <div id="footerright">
-<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR">
+<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">
 	<img tal:attributes="src string:${context/portal_url}/++resource++portalmodelo.theme/images/cc-by-sa.png"
 		 alt="Selo Creative Commons BY-SA" />
 </a>
-O conteúdo deste site está publicado sob a licença <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR">Creative Commons 3.0 &mdash; Atribuir Fonte - Compartilhar Igual.</a>
+O conteúdo deste site está publicado sob a licença <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons 4.0 &mdash; Atribuir Fonte - Compartilhar Igual.</a>
 </div>
 
 </div>
