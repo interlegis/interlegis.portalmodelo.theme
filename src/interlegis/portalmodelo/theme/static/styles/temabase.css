@@ -105,7 +105,7 @@ div.activityAvatar img {
     font-weight: bold;
 }
 
-/* Busca Ativa */
+/* Live Search */
 
 #LSResult {
     background: none;
@@ -406,6 +406,11 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
     }
 
     #footer-info {display: none !Important;}
+
+    /* Make Live Search not display on phones and down */
+    #LSResult {
+        display: none !important;
+    }
 
 }
 
