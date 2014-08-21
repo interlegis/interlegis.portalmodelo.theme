@@ -105,6 +105,30 @@ div.activityAvatar img {
     font-weight: bold;
 }
 
+/* Busca Ativa */
+
+#LSResult {
+    background: none;
+    right: 15px;
+    z-index: 10;
+    color: #333333;
+}
+
+#LSResult #livesearchLegend {
+    margin-left: 10px;
+}
+
+#LSResult .livesearchContainer {
+    background: white;
+}
+
+#LSResult .LSTable .LSRow a:link, #LSResult .LSTable .LSRow a:visited  {
+    color: #333333;
+}
+
+#LSResult .LSTable .LSRow a:hover {
+    color: #818181;
+}
 
 /* Pagina de Busca */
 
