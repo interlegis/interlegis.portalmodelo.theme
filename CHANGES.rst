@@ -4,6 +4,9 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
+- Corrige estilos do Live Search
+  [caioviotti]
+
 - Improve footer for better responsive look in low resolutions.
   [jeanferri]
 
