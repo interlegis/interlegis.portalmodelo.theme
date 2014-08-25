@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b2 (unreleased)
+1.0b2 (2014-08-25)
 ------------------
 
 - Corrige estilos do Live Search
