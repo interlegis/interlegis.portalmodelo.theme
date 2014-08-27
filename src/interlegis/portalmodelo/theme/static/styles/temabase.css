@@ -376,6 +376,35 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
 
 }
 
+/*Mobile Menu*/
+
+.menu-button{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 55px;
+    text-align: right;
+}
+
+.menu-button::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.menu-button button{
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 16pt;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    transition: background 200ms ease;
+}
 
 /********* RESPONSIVE **********/
 
@@ -393,6 +422,76 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
         width: 100%;
         margin: 1em 0;
         display: table;
+    }
+
+    /*Mobile menu adjustments*/
+    .menu-button {
+        display: block;
+    }
+    #column-one {
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        border-bottom: 10px solid;
+        background: white;
+        box-shadow: 0px 2px 2px #888;
+    }
+
+    #column-one dl.portletNavigationTree {
+        margin: 0;
+        padding: 0;
+    }
+
+    #column-one dt.portletHeader {
+        padding: 0;
+        border-bottom: none;
+        border-top: #D8D8D8 0.1em solid;
+    }
+
+    #column-one dt.portletHeader.menuAtivo a{
+        background-color: #E4E4E4;
+    }
+
+    #column-one dt.portletHeader > a {
+        padding: 1.2em;
+        transition: background-color 200ms;
+    }
+
+    #column-one dd.portletItem {
+        border-bottom: 2px solid #D8D8D8;
+    }
+
+    #column-one div.managePortletsLink {
+        margin: 0.8em;
+        border-top: 0.1em #D8D8D8 solid;
+    }
+
+    dl.portlet ul.navTree.navTreeLevel0 > .navTreeItem {
+        padding: 0;
+    }
+
+    dl.portlet ul.navTree .navTreeItem {
+        margin: 0;
+    }
+
+    dl.portlet ul.navTree .navTreeCurrentItem {
+        margin: 0;
+        background-color: transparent;
+    }
+
+    dl.portlet ul.navTree li.navTreeItem {
+        border-bottom: none;
+        border-top: #D8D8D8 0.1em dotted;
+    }
+
+    dl.portlet ul.navTree li a {
+        border-left: 1em solid transparent;
+        background-color: transparent;
+        transition: border-color 200ms;
+    }
+
+    dl.portlet ul.navTree li a:hover {
+        background-color: transparent;
     }
 
 }
@@ -431,3 +530,7 @@ background-color: transparent;
 display: inline;
 }
 
+/*hide class*/
+.hide {
+    display: none !important;
+}
