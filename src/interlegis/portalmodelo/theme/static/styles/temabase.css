@@ -496,6 +496,18 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
 
 }
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  
+    footer #footer-info {
+        display: none !important;
+    }
+
+    footer table.invisible {
+        display: none !important;
+    }
+
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -510,8 +522,6 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
         font-size: 80%;
         text-align: center;
     }
-
-    #footer-info {display: none !Important;}
 
     /* Make Live Search not display on phones and down */
     #LSResult {
