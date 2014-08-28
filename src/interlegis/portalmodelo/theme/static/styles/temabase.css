@@ -311,6 +311,20 @@ div.activityAvatar img {
 #content #sorting-options a {border-bottom:0;text-transform:capitalize;line-height:1.6em;display:block;color:#000;}
 
 
+/*Cover collective/collection-tile re-style*/
+
+#content .cover-collection-tile .collection-item {
+    margin-bottom: 15px;
+}
+
+#content .cover-collection-tile .collection-item p {
+    margin-bottom: 5px;
+}
+
+#content .galleria.cover-carousel-tile .galleria-info-title {
+    font-size: 2.5em;
+}
+
 /********* DropDown Menu *********/
 
 header {
