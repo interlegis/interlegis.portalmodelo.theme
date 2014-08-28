@@ -124,6 +124,27 @@ nav li a:link,
 nav li a:visited {
   color: #ffffff;
 }
+
+/* Mobile Menu button colors */
+
+.menu-button{
+  background: #AB4F3A;
+}
+
+.menu-button button{
+  border-color: white;
+  background: none;
+  color: white;
+}
+
+.menu-button > button:hover {
+  background: #853D2D !important;
+}
+
+.menu-button > button.menuAtivo {
+  background: #853D2D; 
+}
+
 /********** Content **********/
 /* breadcrumb */
 #portal-breadcrumbs {
@@ -237,6 +258,19 @@ footer p {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   
+  /* Mobile Menu theme color adjustments */
+  #column-one {
+    border-color: #AB4F3A;
+  }
+
+  dl.portlet ul.navTree .navTreeCurrentItem {
+    border-color: #853D2D;
+  }
+
+  dl.portlet ul.navTree li a:hover {
+    border-color: #AB4F3A;
+  }
+
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
