@@ -539,8 +539,3 @@ background-color: transparent;
 .label:empty, .badge:empty {
 display: inline;
 }
-
-/*hide class*/
-.hide {
-    display: none !important;
-}
