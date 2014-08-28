@@ -426,7 +426,7 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
 
     /*Mobile menu adjustments*/
     .menu-button {
-        display: block;
+        display: inline-block;
     }
     #column-one {
         position: absolute;
