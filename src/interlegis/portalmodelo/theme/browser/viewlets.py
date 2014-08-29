@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 from plone.app.layout.viewlets.common import LogoViewlet as BaseLogoViewlet
-from plone.app.layout.viewlets.common import PathBarViewlet as BasePathBarViewlet
-from plone.memoize import view
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.component.hooks import getSite
 
@@ -39,12 +37,3 @@ class HeaderViewlet(BaseLogoViewlet):
             return 'background-image: url(' + portal.absolute_url() + '/background.png)'
         return ''
 
-
-class PathBarViewlet(BasePathBarViewlet):
-
-    """Override breadcrumbs to avoid displaying them at site root."""
-
-    @view.memoize
-    def visible(self):
-        """Return True if we are not at site root."""
-        return len(self.breadcrumbs) >= 1

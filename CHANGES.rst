@@ -4,6 +4,9 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
+- Removed breadcrumbs hide root customization because a CSS theme trick for front-page
+  [jeanferri]
+
 - Changed footer page id from 'rodape' to 'footer-page' for internationalization
   [jeanferri]
 

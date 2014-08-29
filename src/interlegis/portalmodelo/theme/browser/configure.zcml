@@ -37,15 +37,6 @@
         template="templates/footer.pt"
         layer="..interfaces.IBrowserLayer"
     />
-   
-    <browser:viewlet
-        name="plone.path_bar"
-        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
-        permission="zope2.View"
-        class=".viewlets.PathBarViewlet"
-        template="templates/path_bar.pt"
-        layer="..interfaces.IBrowserLayer"
-        />
 
     <adapter factory=".site.SiteControlPanelAdapter" />
 
