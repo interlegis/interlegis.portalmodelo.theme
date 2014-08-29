@@ -442,8 +442,12 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
     .menu-button {
         display: inline-block;
     }
-    #column-one {
+
+    #column-one.menuAtivo {
         position: absolute;
+    }
+
+    #column-one {
         left: 0;
         z-index: 10;
         border-bottom: 10px solid;

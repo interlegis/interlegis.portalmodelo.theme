@@ -3,7 +3,7 @@ $(document).ready(function() {
         $portletHeader = $(".portletNavigationTree .portletHeader");
 
     //Injects mobile menu button
-    $("#main-navigation").after("<div class='menu-button'><button><span class='hiddenStructure'>Mostrar ou Ocultar Menu</span><i class='icon-reorder'></i></button></div>");
+    $("header").append("<div class='menu-button'><button><span class='hiddenStructure'>Mostrar ou Ocultar Menu</span><i class='icon-reorder'></i></button></div>");
 
     //Show menu on mobile menu button click
     $(".menu-button button").on( "click", function() {
@@ -20,6 +20,7 @@ $(document).ready(function() {
             $(".menu-button button").removeClass("menuAtivo")
             $portletItem.hide();
             $("#column-one").hide();
+            $("#column-one").addClass("menuAtivo");
             $portletHeader.click(function(e) {
                 e.preventDefault();
                 $(this).toggleClass("menuAtivo");
@@ -28,6 +29,7 @@ $(document).ready(function() {
         } else {
             $portletHeader.unbind();
             $portletItem.show();
+            $("#column-one").removeClass("menuAtivo")
             $("#column-one").show();
             $(".menu-button button").removeClass("menuAtivo")
             $("#column-one").css("display","table-cell");  
