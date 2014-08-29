@@ -158,7 +158,7 @@ nav li a:hover {
   clear: both;
 }
 .section-front-page #portal-breadcrumbs {
-  display: none;
+  visibility: hidden;
 }
 /* text styles */
 p {
