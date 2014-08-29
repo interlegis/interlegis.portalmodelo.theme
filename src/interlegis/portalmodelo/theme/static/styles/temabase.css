@@ -323,6 +323,16 @@ div.activityAvatar img {
 
 #content .galleria.cover-carousel-tile .galleria-info-title {
     font-size: 2.5em;
+    border: none;
+}
+
+#content .galleria.cover-carousel-tile .galleria-info-title a {
+    border: none;
+}
+
+#content .galleria.cover-carousel-tile .galleria-info-description {
+    font-style: normal;
+    color: #333;
 }
 
 /********* DropDown Menu *********/
