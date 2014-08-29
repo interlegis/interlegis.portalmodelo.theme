@@ -4,7 +4,8 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Changed footer page id from 'rodape' to 'footer-page' for internationalization
+  [jeanferri]
 
 
 1.0b2 (2014-08-25)

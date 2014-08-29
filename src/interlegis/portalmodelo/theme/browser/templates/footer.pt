@@ -6,12 +6,12 @@
 
 <a class="tile"
      tal:condition="python:request.AUTHENTICATED_USER.has_role(['Manager', 'Administrator'], context)"
-     tal:attributes="href string:${context/portal_url}/rodape/edit">
+     tal:attributes="href string:${context/portal_url}/footer-page/edit">
    <span i18n:translate=""
          i18n:domain="plone">Edit</span>
 </a>
 
-<span tal:replace="structure python:context.portal_url.getPortalObject()['rodape'].getText()" />
+<span tal:replace="structure python:context.portal_url.getPortalObject()['footer-page'].getText()" />
 
 <p class="visualClear"></p>
 
