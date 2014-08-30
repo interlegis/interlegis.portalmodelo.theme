@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b3 (unreleased)
+1.0b3 (2014-08-30)
 ------------------
 
 - Removed breadcrumbs hide root customization because a CSS theme trick for front-page
