@@ -4,7 +4,8 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Licence note modification for include data licencing
+  [jeanferri]
 
 
 1.0b3 (2014-08-30)
