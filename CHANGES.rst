@@ -4,6 +4,9 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
+- Fix for hidden Flashplayer message in Radio plugin, which was breaking the main layout
+  [cfviotti]
+
 - Licence note modification for include data licencing
   [jeanferri]
 
@@ -14,15 +17,23 @@ Changelog
 - Removed breadcrumbs hide root customization because a CSS theme trick for front-page
   [jeanferri]
 
+- Adjusted some styles for the carousel on the front-page.
+  [cfviotti]
+
+- Adjusted how the breadcrumbs is made invisible on the front-page.
+  [cfviotti]
+
 - Changed footer page id from 'rodape' to 'footer-page' for internationalization
   [jeanferri]
 
+- Improved the mobile menu usability for base theme and all individual themes.
+  [cfviotti]
 
 1.0b2 (2014-08-25)
 ------------------
 
 - Corrige estilos do Live Search
-  [caioviotti]
+  [cfviotti]
 
 - Improve footer for better responsive look in low resolutions.
   [jeanferri]
