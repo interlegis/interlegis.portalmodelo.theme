@@ -4,6 +4,9 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
+- Fix portal footer style when the theme is disabled
+  [jeanferri]
+
 - Fix main news title and description
   [jeanferri]
 

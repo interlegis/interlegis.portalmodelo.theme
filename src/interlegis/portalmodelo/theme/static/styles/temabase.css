@@ -29,16 +29,16 @@
 }
 
 /* rodape */
-footer a:hover {
+#portal-footer a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-footer li {
+#portal-footer li, footer li {
     display: block;
     padding-bottom: 1.5em;
 }
 
-footer table {
+#portal-footer table, footer table {
     width: 100%;
 }
 
@@ -166,7 +166,7 @@ div.activityAvatar img {
     border-bottom: 1px solid #dddddd;
     margin-bottom: 14px;
     padding: 0 0 1em 0em!important;
-    margin: 0!important;   
+    margin: 0!important;
 }
 
 #portal-columns #search-results{
@@ -218,11 +218,11 @@ div.activityAvatar img {
 #portal-columns #search-filter {
     background:transparent !important;
 }
-  
+
 #portal-columns #search-filter .field input {
     margin-right: 8px;
 }
-    
+
 #portal-columns #search-results dd {
     color: #000000;
     font-family: "Times New Roman", sans-serif;
@@ -230,7 +230,7 @@ div.activityAvatar img {
     font-weight: normal !important;
     line-height: 23px;
 }
-    
+
 #portal-columns #search-results-bar dd.actionMenuContent {
     display:block;
 }
@@ -303,13 +303,13 @@ div.activityAvatar img {
 
 .template-search #portal-breadcrumbs {display:none;}
 
-.template-search #breadcrumbs-1 > a, 
+.template-search #breadcrumbs-1 > a,
 .template-search #breadcrumbs-1 > span {
     color: #000;
     font-size: 2.5em;
     text-transform: uppercase;
 }
-    
+
 .template-search #content h1.documentFirstHeading {
     font-size: 1.7em !important;
     font-weight: normal !important;
@@ -403,7 +403,7 @@ nav ul.submenu li a {
     padding-right: 1.5em;
     padding-top: 0.5em;
     width: 9em;
-    
+
 }
 ul.submenu ul {
     left: 100%;
@@ -540,7 +540,7 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  
+
     footer #footer-info {
         display: none !important;
     }
