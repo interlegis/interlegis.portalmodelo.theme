@@ -335,7 +335,7 @@ div.activityAvatar img {
 }
 
 #content .galleria.cover-carousel-tile .galleria-info-title {
-    font-size: 2.5em;
+    font-size: 1.7em;
     border: none;
 }
 
@@ -344,6 +344,7 @@ div.activityAvatar img {
 }
 
 #content .galleria.cover-carousel-tile .galleria-info-description {
+    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-style: normal;
     color: #333;
 }

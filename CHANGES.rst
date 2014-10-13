@@ -4,6 +4,9 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
+- Fix main news title and description
+  [jeanferri]
+
 - Fix for hidden Flashplayer message in Radio plugin, which was breaking the main layout
   [cfviotti]
 
