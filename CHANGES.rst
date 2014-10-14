@@ -4,6 +4,9 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
+- Update theme previews
+  [jeanferri]
+
 - Fix portal footer style when the theme is disabled
   [jeanferri]
 
