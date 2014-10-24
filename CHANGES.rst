@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0b4 (unreleased)
-------------------
+1.0rc1 (2014-10-24)
+-------------------
 
 - Preparing setup.py for releases
   [jeanferri]
