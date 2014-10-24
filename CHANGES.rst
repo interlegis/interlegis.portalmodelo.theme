@@ -4,6 +4,9 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
+- Preparing setup.py for releases
+  [jeanferri]
+
 - Tests for footer images
   [jeanferri]
 
