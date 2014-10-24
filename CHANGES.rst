@@ -4,6 +4,9 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
+- Tests for footer images
+  [jeanferri]
+
 - Update theme previews
   [jeanferri]
 

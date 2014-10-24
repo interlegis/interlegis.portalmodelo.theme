@@ -1,8 +1,8 @@
 Contributors
 ============
 
-* Karyn Nassif
-* Héctor Velarde
 * André Nogueira
 * Caio Viotti
+* Héctor Velarde
 * Jean Ferri
+* Karyn Nassif

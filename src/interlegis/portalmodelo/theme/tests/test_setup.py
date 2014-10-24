@@ -177,24 +177,24 @@ class StaticResourcesTestCase(unittest.TestCase):
         browser.open('%s/++resource++portalmodelo.theme' % portal_url)
         self.assertEqual(browser.headers['status'], '200 Ok')
 
-    def test_icon_camara(self):
+    def test_icon_interlegis(self):
         portal = self.layer['portal']
         app = self.layer['app']
 
         browser = Browser(app)
         portal_url = portal.absolute_url()
 
-        browser.open('%s/++resource++portalmodelo.theme/images/icon_camara.gif' % portal_url)
+        browser.open('%s/++resource++portalmodelo.theme/images/interlegis.png' % portal_url)
         self.assertEqual(browser.headers['status'], '200 Ok')
 
-    def test_icon_senado(self):
+    def test_icon_cc(self):
         portal = self.layer['portal']
         app = self.layer['app']
 
         browser = Browser(app)
         portal_url = portal.absolute_url()
 
-        browser.open('%s/++resource++portalmodelo.theme/images/icon_senado.gif' % portal_url)
+        browser.open('%s/++resource++portalmodelo.theme/images/cc-by-sa.png' % portal_url)
         self.assertEqual(browser.headers['status'], '200 Ok')
 
     def test_logo(self):
