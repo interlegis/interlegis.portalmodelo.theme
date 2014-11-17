@@ -4,7 +4,8 @@ Changelog
 1.0rc2 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Added theme `verde`_ from Identidade Digital de Governo
+  [jeanferri]
 
 
 1.0rc1 (2014-10-24)
@@ -132,3 +133,4 @@ Changelog
 .. _`#2881`: https://colab.interlegis.leg.br/ticket/2881
 .. _`#2889`: https://colab.interlegis.leg.br/ticket/2889
 .. _`Bootstrap`: http://getbootstrap.com/
+.. _`verde`: https://github.com/plonegovbr/brasil.gov.temas/tree/master/src/brasil/gov/temas/themes/verde

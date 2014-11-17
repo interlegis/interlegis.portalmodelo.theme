@@ -54,4 +54,10 @@
       directory="themes/Vermelho"
       />
 
+  <plone:static
+      type="theme"
+      name="IDG-verde"
+      directory="themes/IDG-verde"
+      />
+
 </configure>
