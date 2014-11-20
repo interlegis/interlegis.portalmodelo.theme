@@ -60,4 +60,10 @@
       directory="themes/IDG-verde"
       />
 
+  <plone:static
+      type="theme"
+      name="IDG-amarelo"
+      directory="themes/IDG-amarelo"
+      />
+
 </configure>

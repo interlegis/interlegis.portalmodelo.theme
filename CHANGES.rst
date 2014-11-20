@@ -4,6 +4,9 @@ Changelog
 1.0rc2 (unreleased)
 -------------------
 
+- Added theme `amarelo`_ from Identidade Digital de Governo
+  [jeanferri]
+
 - Fix `verde`_ theme to works on Portal Modelo
   [jeanferri]
 
@@ -137,3 +140,4 @@ Changelog
 .. _`#2889`: https://colab.interlegis.leg.br/ticket/2889
 .. _`Bootstrap`: http://getbootstrap.com/
 .. _`verde`: https://github.com/plonegovbr/brasil.gov.temas/tree/master/src/brasil/gov/temas/themes/verde
+.. _`amarelo`: https://github.com/plonegovbr/brasil.gov.temas/tree/master/src/brasil/gov/temas/themes/amarelo
