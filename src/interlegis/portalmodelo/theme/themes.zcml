@@ -56,14 +56,20 @@
 
   <plone:static
       type="theme"
-      name="IDG-verde"
-      directory="themes/IDG-verde"
+      name="IDG-amarelo"
+      directory="themes/IDG-amarelo"
       />
 
   <plone:static
       type="theme"
-      name="IDG-amarelo"
-      directory="themes/IDG-amarelo"
+      name="IDG-azul"
+      directory="themes/IDG-azul"
+      />
+
+  <plone:static
+      type="theme"
+      name="IDG-verde"
+      directory="themes/IDG-verde"
       />
 
 </configure>
