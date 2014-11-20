@@ -4,6 +4,9 @@ Changelog
 1.0rc2 (unreleased)
 -------------------
 
+- Fix IDG `azul`_ theme to works on Portal Modelo
+  [jeanferri]
+
 - Added theme `azul`_ from Identidade Digital de Governo
   [jeanferri]
 
