@@ -4,6 +4,9 @@ Changelog
 1.0rc2 (unreleased)
 -------------------
 
+- Fix `verde`_ theme to works on Portal Modelo
+  [jeanferri]
+
 - Added theme `verde`_ from Identidade Digital de Governo
   [jeanferri]
 
