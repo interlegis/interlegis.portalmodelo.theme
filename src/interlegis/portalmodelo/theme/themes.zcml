@@ -68,6 +68,12 @@
 
   <plone:static
       type="theme"
+      name="IDG-branco"
+      directory="themes/IDG-branco"
+      />
+
+  <plone:static
+      type="theme"
       name="IDG-verde"
       directory="themes/IDG-verde"
       />

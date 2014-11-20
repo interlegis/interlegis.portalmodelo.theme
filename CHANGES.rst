@@ -4,6 +4,9 @@ Changelog
 1.0rc2 (unreleased)
 -------------------
 
+- Added theme `branco`_ from Identidade Digital de Governo
+  [jeanferri]
+
 - Fix IDG `azul`_ theme to works on Portal Modelo
   [jeanferri]
 
@@ -151,3 +154,4 @@ Changelog
 .. _`verde`: https://github.com/plonegovbr/brasil.gov.temas/tree/master/src/brasil/gov/temas/themes/verde
 .. _`amarelo`: https://github.com/plonegovbr/brasil.gov.temas/tree/master/src/brasil/gov/temas/themes/amarelo
 .. _`azul`: https://github.com/plonegovbr/brasil.gov.temas/tree/master/src/brasil/gov/temas/themes/azul
+.. _`branco`: https://github.com/plonegovbr/brasil.gov.temas/tree/master/src/brasil/gov/temas/themes/branco
