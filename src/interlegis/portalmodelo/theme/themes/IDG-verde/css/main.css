@@ -950,7 +950,7 @@ dl.portlet dt a:visited { color: #464a55 !important; }
 #portal-column-two > .portletWrapper:first-child { margin-top: 1.7307em; }
 
 #portal-column-two > .portletWrapper > .portletStaticText a,
-#portal-column-two > .portletWrapper > .portletStaticText img { display: block; }
+#portal-column-two > .portletWrapper > .portletStaticText img { display: inline-block; }
 #portal-column-two > .portletWrapper > .portletStaticText p { margin: 0; }
 
 /* Portlet de login
