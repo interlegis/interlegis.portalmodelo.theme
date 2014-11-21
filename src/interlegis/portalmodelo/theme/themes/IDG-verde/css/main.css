@@ -2563,10 +2563,11 @@ dl.portlet div.listingBar a:link {
     padding: 20px 0;
     min-height: 50px;
     width: 100%;
+    padding-bottom: 0;
 }
 
 #footer > div {
-    margin: 2em auto;
+    margin: 0 auto;
     padding-top: 1em;
     max-width: 960px;
 }
@@ -2620,6 +2621,27 @@ dl.portlet div.listingBar a:link {
 
 #footer tr td p {
     padding-left: 1em;
+}
+
+#footer #linksfooter {
+    margin: 0;
+    margin-top: 3em;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+#footer #linksfooter > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+    padding: 2em 0;
+    padding-top: 3.5em;
+    float: none;
+    margin: 0;
 }
 
 #extra-footer p {
