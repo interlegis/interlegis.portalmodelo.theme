@@ -42,7 +42,7 @@ class InstallTestCase(unittest.TestCase):
     def test_temas_disponiveis(self):
         themes = getAvailableThemes()
         # Nosso tema + os dois do Plone
-        self.assertEqual(len(themes), 10)
+        self.assertEqual(len(themes), 14)
 
     def test_tema_Areia_disponivel(self):
         theme = getTheme('Areia')
@@ -130,6 +130,50 @@ class InstallTestCase(unittest.TestCase):
                          'Tema Vermelho para o Portal Modelo')
         self.assertEqual(theme.rules, '/++theme++Vermelho/rules.xml')
         self.assertEqual(theme.absolutePrefix, '/++theme++Vermelho')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_idg_amarelo_disponivel(self):
+        theme = getTheme('IDG-amarelo')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'IDG-amarelo')
+        self.assertEqual(theme.title, 'IDG - Tema Amarelo')
+        self.assertEqual(theme.description,
+                         'Tema amarelo para o Portal Modelo, baseado na Identidade Digital do Governo')
+        self.assertEqual(theme.rules, '/++theme++IDG-amarelo/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++IDG-amarelo')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_idg_azul_disponivel(self):
+        theme = getTheme('IDG-azul')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'IDG-azul')
+        self.assertEqual(theme.title, 'IDG - Tema Azul')
+        self.assertEqual(theme.description,
+                         'Tema azul para o Portal Modelo, baseado na Identidade Digital do Governo')
+        self.assertEqual(theme.rules, '/++theme++IDG-azul/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++IDG-azul')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_idg_branco_disponivel(self):
+        theme = getTheme('IDG-branco')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'IDG-branco')
+        self.assertEqual(theme.title, 'IDG - Tema Branco')
+        self.assertEqual(theme.description,
+                         'Tema branco para o Portal Modelo, baseado na Identidade Digital do Governo')
+        self.assertEqual(theme.rules, '/++theme++IDG-branco/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++IDG-branco')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_idg_verde_disponivel(self):
+        theme = getTheme('IDG-verde')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'IDG-verde')
+        self.assertEqual(theme.title, 'IDG - Tema Verde')
+        self.assertEqual(theme.description,
+                         'Tema verde para o Portal Modelo, baseado na Identidade Digital do Governo')
+        self.assertEqual(theme.rules, '/++theme++IDG-verde/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++IDG-verde')
         self.assertEqual(theme.doctype, "<!DOCTYPE html>")
 
     def test_normalize_css_registered(self):
