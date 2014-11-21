@@ -4,6 +4,9 @@ Changelog
 1.0rc2 (unreleased)
 -------------------
 
+- Fix tests for new themes and documentation
+  [jeanferri]
+
 - Fix IDG `branco`_ theme to works on Portal Modelo
   [jeanferri]
 
