@@ -2585,6 +2585,43 @@ dl.portlet div.listingBar a:link {
 
 #footer .logo-brasil img { float: right; }
 
+#footer table {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#footer td, #footer th {
+    width: 1%;
+}
+
+#footer td {
+    padding-left: 0;
+}
+
+#footer th {
+    padding-left: .7em;
+    font-size: 1.5em;
+    font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+}
+
+#footer tr {
+    padding: .5em 1.2em 0 1.2em;
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+}
+
+#footer li {
+    display: block;
+    padding-bottom: 1em;
+}
+
+#footer ul {
+    padding-left: 1em;
+}
+
+#footer tr td p {
+    padding-left: 1em;
+}
+
 #extra-footer p {
     margin: 1em auto;
     max-width: 960px;
@@ -2601,6 +2638,8 @@ dl.portlet div.listingBar a:link {
     color: #777;
     font-size: 0.9em;
 }
+
+
 
 /* Doormat
    ========================================================================== */

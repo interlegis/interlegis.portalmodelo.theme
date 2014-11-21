@@ -190,6 +190,18 @@
 
 #footer .footer-logos { background: #00420c; }
 
+#footer th {
+    color: #7DC48A;
+}
+
+#footer ul {
+    border-left: 1px dotted #7DC48A;
+}
+
+#footer tr td p {
+    border-left: 1px dotted #7DC48A;
+}
+
 /* Doormat
    ========================================================================== */
 
