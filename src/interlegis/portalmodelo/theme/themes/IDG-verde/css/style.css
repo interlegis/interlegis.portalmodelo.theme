@@ -81,7 +81,7 @@
 
 #sobre a { color: #fff; }
 
-#sobre .portalservicos-item a { border-right: 1px solid #6c9072; }
+#sobre ul li a { border-right: 1px solid #6c9072; }
 
 /* Formulário de busca
    ========================================================================== */
