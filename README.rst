@@ -115,7 +115,7 @@ Tema IDG Verde
 Estado Deste Pacote
 -------------------
 
-O **interlegis.portalmodelo.theme** conta com testes automatizados e, a cada alteração em seu código os testes são executados pelo serviço `Travis <https://travis-ci.org/>`_.
+O **interlegis.portalmodelo.theme** conta com testes automatizados e, a cada alteração em seu código, os testes são executados pelo serviço `Travis <https://travis-ci.org/>`_.
 
 O estado atual dos testes, a cobertura de código e o número de downloads deste pacote podem ser vistos nas imagens a seguir:
 
@@ -144,7 +144,7 @@ Para habilitar a instalação deste produto em um ambiente que utilize o buildou
         eggs =
             interlegis.portalmodelo.theme
 
-2. Após alterar o arquivo de configuração é necessário executar ''bin/buildout'', que atualizará a sua instalação.
+2. Após alterar o arquivo de configuração é necessário executar ``bin/buildout``, que atualizará a sua instalação.
 
 3. Reiniciar o Plone
 

@@ -4,6 +4,9 @@ Changelog
 1.0rc2 (unreleased)
 -------------------
 
+- Replaces banner in theme Moderno by a PloneConf 2013 photo
+  [jeanferri]
+
 - Fix tests for new themes and documentation
   [jeanferri]
 
