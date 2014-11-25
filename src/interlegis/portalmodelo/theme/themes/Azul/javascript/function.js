@@ -32,7 +32,7 @@ $(document).ready(function() {
             $("#column-one").removeClass("menuAtivo")
             $("#column-one").show();
             $(".menu-button button").removeClass("menuAtivo")
-            $("#column-one").css("display","table-cell");  
+            $("#column-one").css("display","table-cell");
         }
     }).resize();
 

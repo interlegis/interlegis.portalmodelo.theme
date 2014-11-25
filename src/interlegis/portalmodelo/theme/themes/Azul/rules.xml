@@ -36,19 +36,16 @@
         <replace css:content="#portal-searchbox" css:theme="#search" />
         <drop css:content=".searchSection" />
         <replace css:content="#portal-globalnav>li" css:theme-children="nav ul" />
-        
+
         <replace css:content="#portal-logo" css:theme="#logo" />
-        
-        
-        
+
         <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" method="raw" />
         <drop css:content="#portal-breadcrumbs" />
 
         <!--Content -->
         <merge attributes="class" css:content="body" css:theme="body" />
         <copy attributes="id dir" css:content="body" css:theme="body" />
-        
-      
+
         <replace css:content-children="#portal-column-content" css:theme-children="#main-content" />
 
         <!-- Columns -->
@@ -63,7 +60,7 @@
         <!-- Footer -->
         <replace css:content-children="#portal-footer" css:theme-children="#footer-info" />
         <!-- Apaga footer do board -->
-        <drop css:content=".section-foruns .poweredBy" /> 
+        <drop css:content=".section-foruns .poweredBy" />
     </rules>
 
 </rules>
