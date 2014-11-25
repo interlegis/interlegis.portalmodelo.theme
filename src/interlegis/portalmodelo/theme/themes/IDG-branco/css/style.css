@@ -128,6 +128,17 @@
     border-bottom: 2px solid #1659bf !important;
 }
 
+.portletNavigationTree .portletHeader .portletTopRight{
+    position: absolute;
+    right: 4px;
+    bottom: 3px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+
+}
 
 /* ==========================================================================
    Collective Cover
@@ -176,6 +187,26 @@
 
 #footer .footer-logos { background: #0042b1; }
 
+#footer th {
+    color: #2C66CE;
+}
+
+#footer ul {
+    border-left: 1px dotted #2C66CE;
+}
+
+#footer tr td p {
+    border-left: 1px dotted #2C66CE;
+    color: #fff;
+}
+#linksfooter{
+    background: #0042B1;
+    color: #fff;
+}
+
+#linksfooter a{
+    color: #fff;
+}
 /* Doormat
    ========================================================================== */
 
@@ -190,26 +221,34 @@
    Media Queries
    ========================================================================== */
 
-/* Smartphone
+
+/* Screen
    ========================================================================== */
 
-@media only screen and (min-width : 320px) and (max-width : 768px) {
-
-    .menuTrigger {
-        background: #dbdce1 url("../img/bg-menu-mobile.png") top right no-repeat;
-    }
+@media only screen and (min-width : 769px) {
 
     .portlet-static-contents-central .portletHeader,
     .portlet-static-centrales-del-contenido .portletHeader,
     .portlet-static-centrais-de-conteudos .portletHeader,
     .portletNavigationTree .portletHeader {
-        background: #edeff1 url("../img/portlet-header.gif") no-repeat 96% center;
+        background: #edeff1 url("../img/portlet-header.gif") no-repeat right 5px bottom 4px;
+        background-size: 15px;
     }
 
     .portletNavigationTree .portletHeader.ativo {
-        background: url("../img/portlet-header-expanded.gif") no-repeat 96% center;
+        background: #edeff1 url("../img/portlet-header-expanded.gif") no-repeat right 5px bottom 4px;
+        background-size: 15px;
     }
 
+}
+
+/* Smartphone
+   ========================================================================== */
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+    .menuTrigger {
+        background: #dbdce1 url("../img/bg-menu-mobile.png") top right no-repeat;
+    }
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
