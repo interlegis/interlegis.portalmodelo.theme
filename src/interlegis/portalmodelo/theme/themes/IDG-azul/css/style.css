@@ -26,8 +26,18 @@
 
 #header {
     padding: 14px 0 0 0;
-    background-color: #1659bf;
-    color: #fff;
+	color: #fff;
+	background-color: #1C5DC1;
+	background-color: #114889;
+	background-image: -moz-radial-gradient(center, ellipse cover, #1C5DC1 1%, #114889 100%);
+	background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#1C5DC1), color-stop(100%,#114889));
+	background-image: -webkit-radial-gradient(center, ellipse cover, #1C5DC1 1%,#114889 100%);
+	background-image: -o-radial-gradient(center, ellipse cover, #1C5DC1 1%,#114889 100%);
+	background-image: -ms-radial-gradient(center, ellipse cover, #1C5DC1 1%,#114889 100%);
+	background-image: radial-gradient(ellipse at center, #1C5DC1 1%,#114889 100%);
+	/* IE6-9 fallback on horizontal gradient */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1C5DC1', endColorstr='#114889',GradientType=1 );
+    
 }
 
 /* Menu de Acessibilidade
@@ -126,7 +136,6 @@
     border-bottom: 2px solid #1659bf !important;
 }
 
-
 /* ==========================================================================
    Collective Cover
    ========================================================================== */
@@ -174,6 +183,21 @@
 
 #footer .footer-logos { background: #0042b1; }
 
+#footer th {
+    color: #fff;
+}
+
+#footer ul {
+    border-left: 1px dotted #fff;
+}
+
+#footer tr td p {
+    border-left: 1px dotted #fff;
+    color: #fff;
+}
+#linksfooter{
+    background: #0042B1;
+}
 /* Doormat
    ========================================================================== */
 
@@ -188,26 +212,34 @@
    Media Queries
    ========================================================================== */
 
-/* Smartphone
+
+/* Screen
    ========================================================================== */
 
-@media only screen and (min-width : 320px) and (max-width : 768px) {
-
-    .menuTrigger {
-        background: #0e4097 url("../img/bg-menu-mobile.png") top right no-repeat;
-    }
+@media only screen and (min-width : 769px) {
 
     .portlet-static-contents-central .portletHeader,
     .portlet-static-centrales-del-contenido .portletHeader,
     .portlet-static-centrais-de-conteudos .portletHeader,
     .portletNavigationTree .portletHeader {
-        background: #edeff1 url("../img/portlet-header.gif") no-repeat 96% center;
+        background: #edeff1 url("../img/portlet-header.gif") no-repeat right 5px bottom 4px;
+        background-size: 15px;
     }
 
     .portletNavigationTree .portletHeader.ativo {
-        background: url("../img/portlet-header-expanded.gif") no-repeat 96% center;
+        background: #edeff1 url("../img/portlet-header-expanded.gif") no-repeat right 5px bottom 4px;
+        background-size: 15px;
     }
 
+}
+
+/* Smartphone
+   ========================================================================== */
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+	.menuTrigger {
+		background: #0e4097 url("../img/bg-menu-mobile.png") top right no-repeat;
+	}
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {

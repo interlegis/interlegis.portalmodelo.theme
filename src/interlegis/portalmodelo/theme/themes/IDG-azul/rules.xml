@@ -40,13 +40,11 @@
         <replace css:content="#portal-column-content > #viewlet-below-content" css:theme="#portal-column-content > #viewlet-below-content" />
         <replace css:content="#portal-column-two" css:theme="#portal-column-two" />
 
-        <!-- Portlets -->
-        <strip css:content=".portletNavigationTree .portletHeader a.tile" />
-
         <!--Viewlets-->
         <replace css:content="#portal-personaltools" css:theme="#user" />
         <replace css:content="#portal-siteactions" css:theme="#portal-siteactions" />
         <copy attributes="href title" css:content="#portal-logo" css:theme="#logo a" />
+        <copy attributes="style" css:content="#portal-header" css:theme="#header" />
         <drop css:content="#portal-header p.hiddenStructure" />
         <drop css:content=".searchSection" />
         <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
