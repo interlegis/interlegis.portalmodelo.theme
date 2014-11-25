@@ -395,7 +395,7 @@ div.position-10 { margin-left: -30.042%; }
 #portal-siteactions li { display: inline; }
 
 #portal-siteactions a {
-    padding: 4px 0 4px 10px;
+    padding: 4px 0 4px 0px;
     text-decoration: none;
     text-transform: uppercase;
 }
