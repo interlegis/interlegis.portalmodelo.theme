@@ -242,7 +242,7 @@ div.position-10 { margin-left: -30.042%; }
 
 #header > div {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     margin: 0 auto;
     max-width: 960px;
 }
@@ -261,7 +261,7 @@ div.position-10 { margin-left: -30.042%; }
     display: block !important;
     float: left;
     width: 50%;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -318,12 +318,34 @@ div.position-10 { margin-left: -30.042%; }
 }
 
 /*
+ * Estilos para o Portal Modelo 3 
+ */
+
+#siteDescription {
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+#siteTitle {
+    font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+    font-size: 3.35em;
+}
+
+#portal-logo {
+    float: left; 
+    margin-top: 2em; 
+    margin-bottom: 2em;
+    width: auto;
+}
+
+
+/*
  * Personal Tools - Menu de administração
  */
 
 #portal-personaltools {
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 0;
     float: left;
     font-size: 1.2em;
@@ -367,12 +389,13 @@ div.position-10 { margin-left: -30.042%; }
     float: right;
     clear: none;
     padding-bottom: 2px;
+    padding-top: 0;
 }
 
 #portal-siteactions li { display: inline; }
 
 #portal-siteactions a {
-    padding: 4px 0 4px 10px;
+    padding: 4px 0 4px 0px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -415,7 +438,7 @@ div.position-10 { margin-left: -30.042%; }
     text-align: right;
 }
 
-#sobre .portalservicos-item a { padding: 0 10px; }
+#sobre ul li a { padding: 0 10px; }
 
 #sobre .last-item a {
     padding: 0 0 0 10px;
@@ -455,10 +478,14 @@ input.searchField { -moz-appearance: none; }
     font-family: "open_sansregular", Arial, Helvetica, sans-serif;
 }
 
-#searchGadget,
+#portal-searchbox #searchGadget{
+    border: none;
+    text-indent: 0;
+}
+
 #header input.searchButton {
     padding: 0.3em;
-    padding: 4px 15px;
+    padding: 6px 12px;
     border: none;
     background: transparent;
     text-indent: -2000px;
@@ -468,11 +495,21 @@ input.searchField { -moz-appearance: none; }
     background: url("../img/search-button.gif") no-repeat 3px 2px #FFFFFF;
 }
 
+
+/* Busca Ativa
+   ========================================================================== */
 #LSResult {
-    z-index: 1;
+    z-index: 100;
     margin-top: 0.5%;
+    font-size: 1.3em;
 }
 
+.livesearchContainer {
+    text-align: left;
+    padding: 0 1em 1em;
+    border: 1px solid #CCC;
+    box-shadow: 0px 1px 15px 3px rgba(90, 90, 90, 0.5)
+}
 
 /* ==========================================================================
    Conteúdo
@@ -483,6 +520,7 @@ input.searchField { -moz-appearance: none; }
 
 .section-home #portal-breadcrumbs,
 .portaltype-plone-site #portal-breadcrumbs { display: none; }
+.section-front-page #portal-breadcrumbs { display: none; }
 
 .section-home #main,
 .portaltype-plone-site #portal-breadcrumbs { padding-top: 3.078em; }
@@ -498,6 +536,8 @@ input.searchField { -moz-appearance: none; }
 
 #portal-breadcrumbs > span > a,
 #portal-breadcrumbs > span > span { font-size: 1em; }
+
+#portal-breadcrumbs #breadcrumbs-you-are-here {color: #172938;}
 
 #portal-breadcrumbs > span > span.breadcrumbSeparator { color: #2C66CE; }
 
@@ -515,6 +555,8 @@ input.searchField { -moz-appearance: none; }
 #content .field { position: relative; }
 
 .documentDescription { margin-top: 1.5em; }
+
+
 
 
 /* ==========================================================================
@@ -875,7 +917,7 @@ fieldset#folder-listing legend {
 
 
 /* ==========================================================================
-   Portles
+   Portlets
    ========================================================================== */
 
 dl.portlet { margin-bottom: 0; }
@@ -913,8 +955,9 @@ dl.portlet dt a:visited { color: #464a55 !important; }
 #portal-column-two > .portletWrapper:first-child { margin-top: 1.7307em; }
 
 #portal-column-two > .portletWrapper > .portletStaticText a,
-#portal-column-two > .portletWrapper > .portletStaticText img { display: block; }
+#portal-column-two > .portletWrapper > .portletStaticText img { display: inline-block; }
 #portal-column-two > .portletWrapper > .portletStaticText p { margin: 0; }
+#portal-column-two .portlet .portletHeader a.tile { margin-bottom: 0; }
 
 /* Portlet de login
    ========================================================================== */
@@ -1007,6 +1050,7 @@ dl.portlet dt a:visited { color: #464a55 !important; }
 .portlet-static-centrales-del-contenido .portletHeader,
 .portlet-static-centrais-de-conteudos .portletHeader,
 .portletNavigationTree .portletHeader {
+    position: relative;
     margin: 0;
     padding: 8px 8px 24px 10px;
     border-bottom: none;
@@ -1044,6 +1088,22 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     margin-left: 0;
     border-left: none !important;
     background-color: transparent;
+}
+
+.portletNavigationTree .portletHeader > a:link {
+    color: inherit !important;
+    margin: 0;
+    padding: 2px 0px 2px 5px;
+}
+
+.portletNavigationTree .portletHeader > a:visited {
+    color: inherit !important;
+    margin: 0;
+}
+
+.portletNavigationTree .portletHeader > a:hover,
+.portletNavigationTree .portletHeader > a:focus {
+    background-color: #E0E2E3;
 }
 
 /*
@@ -1146,6 +1206,21 @@ dl.portlet ul.navTreeLevel6 li a { padding: 0.55em 4.5em !important; }
     height: auto;
 }
 
+/*
+ * Botão para colapsar
+ */
+
+.portletNavigationTree .portletHeader .portletTopRight{
+    position: absolute;
+    right: 4px;
+    bottom: 3px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
 /* Portlet de Centrais de Conteúdos
    ========================================================================== */
 
@@ -1203,10 +1278,6 @@ dl.portlet ul.navTreeLevel6 li a { padding: 0.55em 4.5em !important; }
 
 .item-central .link-aplicativos {
     background: url("../img/sprite-icons.png") no-repeat -1px -287px;
-}
-
-.item-central .link-dadosabertos {
-    background: url("../img/sprite-icons.png") no-repeat -1px -376px;
 }
 
 /* Portlet de Lista
@@ -2530,10 +2601,11 @@ dl.portlet div.listingBar a:link {
     padding: 20px 0;
     min-height: 50px;
     width: 100%;
+    padding-bottom: 0;
 }
 
 #footer > div {
-    margin: 2em auto;
+    margin: 0 auto;
     padding-top: 1em;
     max-width: 960px;
 }
@@ -2552,6 +2624,64 @@ dl.portlet div.listingBar a:link {
 
 #footer .logo-brasil img { float: right; }
 
+#footer table {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#footer td, #footer th {
+    width: 1%;
+}
+
+#footer td {
+    padding-left: 0;
+}
+
+#footer th {
+    padding-left: .7em;
+    font-size: 1.5em;
+    font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+}
+
+#footer tr {
+    padding: .5em 1.2em 0 1.2em;
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+}
+
+#footer li {
+    display: block;
+    padding-bottom: 1em;
+}
+
+#footer ul {
+    padding-left: 1em;
+}
+
+#footer tr td p {
+    padding-left: 1em;
+}
+
+#footer #linksfooter {
+    margin: 0;
+    margin-top: 3em;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+#footer #linksfooter > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+    padding: 2em 0;
+    padding-top: 3.5em;
+    float: none;
+    margin: 0;
+}
+
 #extra-footer p {
     margin: 1em auto;
     max-width: 960px;
@@ -2568,6 +2698,8 @@ dl.portlet div.listingBar a:link {
     color: #777;
     font-size: 0.9em;
 }
+
+
 
 /* Doormat
    ========================================================================== */
@@ -2816,7 +2948,7 @@ body[class*="nitf"] #content article div[property*="articleBody"] p {
 
 div.listingBar { clear: both; }
 
-ul.formTabs { padding: 0 !important; }
+ul.formTabs { padding: 0px !important; }
 
 #searchbt,
 #nav #seletor { display: none; }
@@ -2882,7 +3014,7 @@ ul.formTabs { padding: 0 !important; }
     .portletNavigationTree .portletHeader {
         position: relative;
         margin: 0;
-        padding: 30px 0;
+        padding: 10px 0;
         border-top: none;
         border-bottom: 1px solid #cdd4d0;
         text-indent: 30px;
@@ -2898,7 +3030,7 @@ ul.formTabs { padding: 0 !important; }
         display: block;
         width: 37px;
         height: 36px;
-        background: url("../img/bg-menu-mobile-panel.jpg") top center no-repeat;
+        background: url("../img/bg-menu-mobile-panel.png") top center no-repeat;
     }
 
     #portal-column-one .ativo .portletHeader a span {
@@ -2907,7 +3039,6 @@ ul.formTabs { padding: 0 !important; }
 
     #portal-column-one .portletNavigationTree .portletHeader a {
         padding: 20px 35px;
-        color: #03316f !important;
         font-size: 24px;
     }
 
@@ -2930,6 +3061,35 @@ ul.formTabs { padding: 0 !important; }
         color: #454545;
         font-size: 24px;
         line-height: 1.2em;
+    }
+
+    .portlet-static-contents-central .portletHeader,
+    .portlet-static-centrales-del-contenido .portletHeader,
+    .portlet-static-centrais-de-conteudos .portletHeader,
+    .portletNavigationTree .portletHeader {
+        background: #edeff1 url("../img/portlet-header.gif") no-repeat 96% center;
+    }
+
+    .portletNavigationTree .portletHeader.ativo {
+        background: url("../img/portlet-header-expanded.gif") no-repeat 96% center;
+    }
+
+    .portletNavigationTree .portletHeader > a {
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .portletNavigationTree .portletHeader > a:hover  {
+        background-color: initial;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .portletNavigationTree .portletHeader .portletTopRight {
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
     }
 }
 

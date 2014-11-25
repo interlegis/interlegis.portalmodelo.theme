@@ -142,7 +142,6 @@
     border-bottom: 2px solid #03316f !important;
 }
 
-
 /* ==========================================================================
    Collective Cover
    ========================================================================== */
@@ -190,6 +189,26 @@
 
 #footer .footer-logos { background: #f28f00; }
 
+#footer th {
+    color: #03316F;
+}
+
+#footer ul {
+    border-left: 1px dotted #03316F;
+}
+
+#footer tr td p {
+    border-left: 1px dotted #03316F;
+    color: #03316F;
+}
+#linksfooter {
+    background: #F28F00;
+    color: #03316F;
+}
+
+#linksfooter a {
+    color: #03316F;
+}
 /* Doormat
    ========================================================================== */
 
@@ -204,27 +223,34 @@
    Media Queries
    ========================================================================== */
 
-/* Smartphone
+
+/* Screen
    ========================================================================== */
 
-@media only screen and (min-width : 320px) and (max-width : 768px) {
-
-    .menuTrigger {
-        background: #f7c514 url("../img/bg-menu-mobile.png") top right no-repeat;
-    }
+@media only screen and (min-width : 769px) {
 
     .portlet-static-contents-central .portletHeader,
     .portlet-static-centrales-del-contenido .portletHeader,
     .portlet-static-centrais-de-conteudos .portletHeader,
-    .portlet-static-centrais-de-conteudos .portletHeader,
     .portletNavigationTree .portletHeader {
-        background: #edeff1 url("../img/portlet-header.gif") no-repeat 96% center;
+        background: #edeff1 url("../img/portlet-header.gif") no-repeat right 5px bottom 4px;
+        background-size: 15px;
     }
 
     .portletNavigationTree .portletHeader.ativo {
-        background: url("../img/portlet-header-expanded.gif") no-repeat 96% center;
+        background: #edeff1 url("../img/portlet-header-expanded.gif") no-repeat right 5px bottom 4px;
+        background-size: 15px;
     }
 
+}
+
+/* Smartphone
+   ========================================================================== */
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+.menuTrigger {
+    background: #f7c514 url("../img/bg-menu-mobile.png") top right no-repeat;
+}
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
