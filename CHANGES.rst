@@ -4,7 +4,25 @@ Changelog
 1.0rc2 (unreleased)
 -------------------
 
-- Replaces banner in theme Moderno by a PloneConf 2013 photo
+- Add preview.png for all the 4 IDG themes
+  [jeanferri]
+
+- IDG-amarelo: fixing all errors based on corrections made on IDG-verde
+  [cfviotti]
+
+- IDG-branco: fixing all errors based on corrections made on IDG-verde
+  [cfviotti]
+
+- IDG-azul: fixing all errors based on corrections made on IDG-verde
+  [cfviotti]
+
+- IDG-verde: fixing all errors on layout and general enhancements
+  [cfviotti]
+
+- Replace preview.png in each IDG theme
+  [jeanferri]
+
+- Replace banner in theme Moderno by a PloneConf 2013 photo
   [jeanferri]
 
 - Fix tests for new themes and documentation
