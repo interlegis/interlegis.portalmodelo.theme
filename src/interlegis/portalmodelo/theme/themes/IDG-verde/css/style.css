@@ -88,7 +88,6 @@
 
 #portal-searchbox { border: 1px solid #CCCCCC; }
 
-
 /* ==========================================================================
    Sprinte Icons
    ========================================================================== */
@@ -140,18 +139,6 @@
 .navTreeLevel0 > li.navTreeCurrentNode {
     border-top: 2px solid #64946e !important;
     border-bottom: 2px solid #64946e !important;
-}
-
-.portletNavigationTree .portletHeader .portletTopRight{
-    position: absolute;
-    right: 4px;
-    bottom: 3px;
-    display: inline-block;
-    background: rgba(0, 0, 0, 0);
-    width: 17px;
-    height: 17px;
-    cursor: pointer;
-    
 }
 
 /* ==========================================================================
@@ -254,42 +241,10 @@
    ========================================================================== */
 
 @media only screen and (min-width : 320px) and (max-width : 768px) {
-
-    .menuTrigger {
-        background: #065116 url("../img/bg-menu-mobile.png") top right no-repeat;
-    }
-
-    .portlet-static-contents-central .portletHeader,
-    .portlet-static-centrales-del-contenido .portletHeader,
-    .portlet-static-centrais-de-conteudos .portletHeader,
-    .portletNavigationTree .portletHeader {
-        background: #edeff1 url("../img/portlet-header.gif") no-repeat 96% center;
-    }
-
-    .portletNavigationTree .portletHeader.ativo {
-        background: url("../img/portlet-header-expanded.gif") no-repeat 96% center;
-    }
-
-    .portletNavigationTree .portletHeader > a {
-        cursor: default;
-        pointer-events: none;
-    }
-
-    .portletNavigationTree .portletHeader > a:hover  {
-        background-color: initial;
-        cursor: default;
-        pointer-events: none;
-    }
-
-    .portletNavigationTree .portletHeader .portletTopRight {
-        width: 100%;
-        height: 100%;
-        top:0;
-        left: 0;
-    }  
-
+  .menuTrigger {
+      background: #065116 url("../img/bg-menu-mobile.png") top right no-repeat;
+  }
 }
-
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
   #header #portal-searchbox .searchButton {
