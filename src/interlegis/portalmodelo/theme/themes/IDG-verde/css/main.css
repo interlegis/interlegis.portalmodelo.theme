@@ -917,7 +917,7 @@ fieldset#folder-listing legend {
 
 
 /* ==========================================================================
-   Portles
+   Portlets
    ========================================================================== */
 
 dl.portlet { margin-bottom: 0; }
@@ -957,6 +957,7 @@ dl.portlet dt a:visited { color: #464a55 !important; }
 #portal-column-two > .portletWrapper > .portletStaticText a,
 #portal-column-two > .portletWrapper > .portletStaticText img { display: inline-block; }
 #portal-column-two > .portletWrapper > .portletStaticText p { margin: 0; }
+#portal-column-two .portlet .portletHeader a.tile { margin-bottom: 0; }
 
 /* Portlet de login
    ========================================================================== */
@@ -1203,6 +1204,21 @@ dl.portlet ul.navTreeLevel6 li a { padding: 0.55em 4.5em !important; }
 #content img {
     max-width: 100%;
     height: auto;
+}
+
+/*
+ * Botão para colapsar
+ */
+
+.portletNavigationTree .portletHeader .portletTopRight{
+    position: absolute;
+    right: 4px;
+    bottom: 3px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
 }
 
 /* Portlet de Centrais de Conteúdos
