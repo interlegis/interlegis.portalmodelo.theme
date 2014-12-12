@@ -7,7 +7,7 @@ Temas para o Portal Modelo
 
 
 Introdução
-----------
+==========
 
 Este pacote provê vários temas com base no `Diazo <http://diazo.org>`_ para uso em sites `Plone <http://plone.org>`_ baseados no `Portal Modelo <http://www.interlegis.leg.br/portalmodelo>`_ do Interlegis.
 
@@ -25,87 +25,87 @@ O produto **interlegis.portlamodelo.theme** realiza as seguintes mudanças no Pl
 
 
 Temas Disponíveis
------------------
+=================
 
 Tema Areia
-^^^^^^^^^^
+----------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Areia/preview.png
         :width: 200px
         :height: 110px
 
 Tema Azul
-^^^^^^^^^
+---------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Azul/preview.png
         :width: 200px
         :height: 110px
 
 Tema Clean
-^^^^^^^^^^
+----------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Clean/preview.png
         :width: 200px
         :height: 110px
 
 Tema Concreto
-^^^^^^^^^^^^^
+-------------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Concreto/preview.png
         :width: 200px
         :height: 110px
 
 Tema Gelo
-^^^^^^^^^
+---------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Gelo/preview.png
         :width: 200px
         :height: 110px
 
 Tema Kiwi
-^^^^^^^^^
+---------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Kiwi/preview.png
         :width: 200px
         :height: 110px
 
 Tema Moderno
-^^^^^^^^^^^^
+------------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Moderno/preview.png
         :width: 200px
         :height: 110px
 
 Tema Vermelho
-^^^^^^^^^^^^^
+-------------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Vermelho/preview.png
         :width: 200px
         :height: 110px
 
 Tema IDG Amarelo
-^^^^^^^^^^^^^^^^
+----------------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/IDG-amarelo/preview.png
         :width: 200px
         :height: 110px
 
 Tema IDG Azul
-^^^^^^^^^^^^^
+-------------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/IDG-azul/preview.png
         :width: 200px
         :height: 110px
 
 Tema IDG Branco
-^^^^^^^^^^^^^^^
+---------------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/IDG-branco/preview.png
         :width: 200px
         :height: 110px
 
 Tema IDG Verde
-^^^^^^^^^^^^^^
+--------------
 
 .. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/IDG-verde/preview.png
         :width: 200px
@@ -113,7 +113,7 @@ Tema IDG Verde
 
 
 Estado Deste Pacote
--------------------
+===================
 
 O **interlegis.portalmodelo.theme** conta com testes automatizados e, a cada alteração em seu código, os testes são executados pelo serviço `Travis <https://travis-ci.org/>`_.
 
@@ -133,7 +133,7 @@ O estado atual dos testes, a cobertura de código e o número de downloads deste
 
 
 Instalação
-----------
+==========
 
 Para habilitar a instalação deste produto em um ambiente que utilize o buildout:
 
