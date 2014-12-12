@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0rc2 (unreleased)
+1.0rc2 (2014-12-12)
 -------------------
 
 - Add preview.png for all the 4 IDG themes
