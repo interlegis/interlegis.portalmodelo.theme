@@ -296,7 +296,7 @@ div.activityAvatar img {
    width: 98%;
 }
 
-.template-search #portal-column-content.cell.position-0, 
+.template-search #portal-column-content.cell.position-0,
 .template-search #portal-column-content.cell.position-1\3a 4 {
     border-right: 0 !important;
 }
@@ -570,6 +570,11 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
         display: none !important;
     }
 
+    .cell {
+        float: none !important;
+        margin-left: -100% !important;
+        width: 100% !important;
+    }
 }
 
 /********** Config bugs *****/
