@@ -240,8 +240,30 @@ var PBrasil = {
 jQuery(document).ready(function ($) {
     "use strict";
     PBrasil.init();
+    Galleria.configure({wait: true});
 });
 
 $(window).load(function() {
+
     PBrasil.albuns.fixAlbumHeight();
+
+    if (!$('body').hasClass('template-compose')) {
+        Galleria.unloadTheme();
+        Galleria.get(0).destroy();
+        Galleria.loadTheme('++theme++IDG-amarelo/galleria-theme/galleria.tema-idg-amarelo.js');
+        Galleria.run('.galleria', {theme: 'tema-idg-amarelo'});
+        Galleria.configure({
+            wait: true,
+            height: 0.564,
+            transition: 'fade',
+            touchTransition: 'fadeslide',
+            transition_speed: 500,
+            imageCrop: 'landscape',
+            showImagenav: false,
+            fullscreenDoubleTap: false,
+            idleMode: 'hover',
+        });
+        
+    }
+    
 });
