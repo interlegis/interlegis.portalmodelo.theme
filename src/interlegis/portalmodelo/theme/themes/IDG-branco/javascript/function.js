@@ -244,26 +244,35 @@ jQuery(document).ready(function ($) {
 });
 
 $(window).load(function() {
-
     PBrasil.albuns.fixAlbumHeight();
-
-    if (!$('body').hasClass('template-compose')) {
-        Galleria.unloadTheme();
-        Galleria.get(0).destroy();
-        Galleria.loadTheme('++theme++IDG-branco/galleria-theme/galleria.tema-idg-branco.js');
-        Galleria.run('.galleria', {theme: 'tema-idg-branco'});
-        Galleria.configure({
-            wait: true,
-            height: 0.564,
-            transition: 'fade',
-            touchTransition: 'fadeslide',
-            transition_speed: 500,
-            imageCrop: 'landscape',
-            showImagenav: false,
-            fullscreenDoubleTap: false,
-            idleMode: 'hover',
-        });
-        
-    }
     
+    /*
+     * Confere se existe uma Galleria do Cover na página, e então carrega um novo tema.
+     */
+    if (Galleria.get().length !== 0) {
+        if ($('.galleria-container').parent().hasClass('cover-carousel-tile')) {
+            if (!$('body').hasClass('template-compose')) {
+                //Unload e destruição da Galleria atual
+                Galleria.unloadTheme();
+                Galleria.get(0).destroy();
+                //Reinicia a Galleria com o novo tema carregado
+                Galleria.loadTheme('++theme++IDG-branco/galleria-theme/galleria.tema-idg-branco.js');
+                Galleria.run('.galleria', {
+                    theme: 'tema-idg-branco'
+                });
+                //Configurações do tema
+                Galleria.configure({
+                    wait: true,
+                    height: 0.564,
+                    transition: 'fade',
+                    touchTransition: 'fadeslide',
+                    transition_speed: 500,
+                    imageCrop: 'landscape',
+                    showImagenav: false,
+                    fullscreenDoubleTap: false,
+                    idleMode: 'hover',
+                });
+            }
+        }
+    }
 });

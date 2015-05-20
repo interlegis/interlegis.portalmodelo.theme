@@ -1,23 +1,23 @@
-.galleria-container {
+.cover-carousel-tile .galleria-container {
     display: none;
 }
 
-.galleria::before {
+.cover-carousel-tile.galleria::before {
     content: '';
     background: url(++resource++collective.galleria/classic-loader.gif) no-repeat center center;
     opacity: 0.5;
     height: 25px;
     display: block;
 }
-.template-compose .galleria-container {
+.template-compose .cover-carousel-tile .galleria-container {
     display: block;
 }
 
-.template-compose .galleria::before {
+.template-compose .cover-carousel-tile.galleria::before {
     display: none;
 }
 /*
- * Acima inicia-se a galeria com tema padrão escondida, para que ao carregar o
+ * Acima inicia-se o galleria do cover com tema padrão escondida, para que ao carregar o
  * tema customizado não ocorra flicker de um para o outro.
  */
 
