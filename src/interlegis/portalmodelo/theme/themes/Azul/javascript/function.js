@@ -36,5 +36,38 @@ $(document).ready(function() {
         }
     }).resize();
 
+    if (Galleria.get().length !== 0) {
+        Galleria.configure({wait: true});
+    }
+});
 
+$(window).load(function() {
+    /*
+     * Confere se existe uma Galleria do Cover na página, e então carrega um novo tema.
+     */
+    if (Galleria.get().length !== 0) {
+        if ($('.galleria-container').parent().hasClass('cover-carousel-tile')) {
+            if (!$('body').hasClass('template-compose')) {
+                //Unload e destruição da Galleria atual
+                Galleria.unloadTheme();
+                Galleria.get(0).destroy();
+                //Reinicia a Galleria com o novo tema carregado
+                Galleria.loadTheme('++theme++Azul/galleria-theme/galleria.tema-pm3.js');
+                Galleria.run('.galleria', {
+                    theme: 'tema-pm3'
+                });
+                //Configurações do tema
+                Galleria.configure({
+                    wait: true,
+                    height: 0.666,
+                    transition: 'fade',
+                    transition_speed: 500,
+                    imageCrop: 'landscape',
+                    showImagenav: true,
+                    fullscreenDoubleTap: false,
+                    idleMode: false,
+                });
+            }
+        }
+    }
 });
