@@ -290,7 +290,7 @@ class UninstallTestCase(unittest.TestCase):
     def setUp(self):
         self.portal = self.layer['portal']
         self.qi = self.portal['portal_quickinstaller']
-        self.qi.uninstallProducts(products=[PROJECTNAME])
 
     def test_uninstalled(self):
+        self.qi.uninstallProducts(products=[PROJECTNAME])
         self.assertFalse(self.qi.isProductInstalled(PROJECTNAME))

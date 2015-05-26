@@ -4,7 +4,11 @@ Changelog
 1.0rc3 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix test test_setup.py
+  [marciomazza]
+
+- Insert new galleria styles to IDG theme
+  [cfviotti]
 
 
 1.0rc2 (2014-12-12)
