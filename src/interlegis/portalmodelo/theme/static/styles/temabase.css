@@ -334,21 +334,6 @@ div.activityAvatar img {
     margin-bottom: 5px;
 }
 
-#content .galleria.cover-carousel-tile .galleria-info-title {
-    font-size: 1.5em;
-    border: none;
-}
-
-#content .galleria.cover-carousel-tile .galleria-info-title a {
-    border: none;
-}
-
-#content .galleria.cover-carousel-tile .galleria-info-description {
-    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
-    font-style: normal;
-    color: #333;
-}
-
 /********* DropDown Menu *********/
 
 header {
