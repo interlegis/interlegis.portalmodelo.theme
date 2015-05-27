@@ -36,7 +36,7 @@ dl.portlet a:hover {
 }
 /********** Header **********/
 header {
-  background: #25528c;
+  background-color: #25528c;
   color: #ffffff;
 }
 header a:link,
@@ -180,12 +180,18 @@ h2 {
 dl.portlet dt.portletHeader {
   border-bottom: #d8d8d8 1px solid;
   font-weight: bold;
-  background: transparent;
-  color: #1a3a64;
+  background: #25528C;
+  color: #fff;
 }
+
+.portlet .portletHeader,
+dl.portlet dt.portletHeader {
+  padding: 0;
+}
+
 .portletHeader a,
 dl.portlet dt.portletHeader a {
-  color: #1a3a64;
+  color: #fff;
 }
 .portlet {
   margin-bottom: 2em;
@@ -214,7 +220,11 @@ aside a {
 }
 .portletNavigationTree a {
   display: block;
-  padding: 0.3em 0.3em 0.3em 0.5em;
+  padding: 0.42em 1em;
+}
+.portlet .portletHeader a:hover {
+  background: #1A3A64;
+  color: #fff !important;
 }
 .portletNavigationTree a:hover {
   background: #e4e4e4;

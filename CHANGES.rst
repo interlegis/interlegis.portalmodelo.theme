@@ -4,6 +4,12 @@ Changelog
 1.0rc3 (unreleased)
 -------------------
 
+- Adjusted header background position for all PM3 themes
+  [cfviotti]
+
+- Insert new galleria styles to all PM3 themes
+  [cfviotti]
+
 - Fix test test_setup.py
   [marciomazza]
 

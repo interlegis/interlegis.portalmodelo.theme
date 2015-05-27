@@ -342,6 +342,8 @@ div.activityAvatar img {
 
 header {
     z-index: 1;
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 nav {
     list-style-image: none;
