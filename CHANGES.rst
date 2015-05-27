@@ -4,6 +4,9 @@ Changelog
 1.0rc3 (unreleased)
 -------------------
 
+- Copy original Areia, Azul, Concreto, Gelo, Kiwi and Vermelho themes
+  [jeanferri]
+
 - Fix test test_setup.py
   [marciomazza]
 
