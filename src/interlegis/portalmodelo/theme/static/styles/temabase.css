@@ -324,6 +324,10 @@ div.activityAvatar img {
 #content #sorting-options a {border-bottom:0;text-transform:capitalize;line-height:1.6em;display:block;color:#000;}
 
 
+.tile.tile-default{
+    margin-bottom: 2em;
+}
+
 /*Cover collective/collection-tile re-style*/
 
 #content .cover-collection-tile .collection-item {
@@ -332,21 +336,6 @@ div.activityAvatar img {
 
 #content .cover-collection-tile .collection-item p {
     margin-bottom: 5px;
-}
-
-#content .galleria.cover-carousel-tile .galleria-info-title {
-    font-size: 1.5em;
-    border: none;
-}
-
-#content .galleria.cover-carousel-tile .galleria-info-title a {
-    border: none;
-}
-
-#content .galleria.cover-carousel-tile .galleria-info-description {
-    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
-    font-style: normal;
-    color: #333;
 }
 
 /********* DropDown Menu *********/
