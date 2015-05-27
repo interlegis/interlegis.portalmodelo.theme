@@ -42,7 +42,7 @@ class InstallTestCase(unittest.TestCase):
     def test_temas_disponiveis(self):
         themes = getAvailableThemes()
         # Nosso tema + os dois do Plone
-        self.assertEqual(len(themes), 14)
+        self.assertEqual(len(themes), 20)
 
     def test_tema_Areia_disponivel(self):
         theme = getTheme('Areia')
