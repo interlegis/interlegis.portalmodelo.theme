@@ -10,6 +10,9 @@ Changelog
 - Insert new galleria styles to all PM3 themes
   [cfviotti]
 
+- Copy original Areia, Azul, Concreto, Gelo, Kiwi and Vermelho themes
+  [jeanferri]
+
 - Fix test test_setup.py
   [marciomazza]
 

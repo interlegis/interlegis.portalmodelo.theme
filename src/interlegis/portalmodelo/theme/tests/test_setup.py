@@ -176,6 +176,72 @@ class InstallTestCase(unittest.TestCase):
         self.assertEqual(theme.absolutePrefix, '/++theme++IDG-verde')
         self.assertEqual(theme.doctype, "<!DOCTYPE html>")
 
+    def test_tema_areia_original_disponivel(self):
+        theme = getTheme('Areia-original')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'Areia-original')
+        self.assertEqual(theme.title, 'Tema Areia Original')
+        self.assertEqual(theme.description,
+                         'Tema Areia original do Portal Modelo')
+        self.assertEqual(theme.rules, '/++theme++Areia-original/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++Areia-original')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_azul_original_disponivel(self):
+        theme = getTheme('Azul-original')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'Azul-original')
+        self.assertEqual(theme.title, 'Tema Azul Original')
+        self.assertEqual(theme.description,
+                         'Tema Azul original do Portal Modelo')
+        self.assertEqual(theme.rules, '/++theme++Azul-original/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++Azul-original')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_concreto_original_disponivel(self):
+        theme = getTheme('Concreto-original')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'Concreto-original')
+        self.assertEqual(theme.title, 'Tema Concreto Original')
+        self.assertEqual(theme.description,
+                         'Tema Concreto original do Portal Modelo')
+        self.assertEqual(theme.rules, '/++theme++Concreto-original/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++Concreto-original')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_gelo_original_disponivel(self):
+        theme = getTheme('Gelo-original')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'Gelo-original')
+        self.assertEqual(theme.title, 'Tema Gelo Original')
+        self.assertEqual(theme.description,
+                         'Tema Gelo original do Portal Modelo')
+        self.assertEqual(theme.rules, '/++theme++Gelo-original/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++Gelo-original')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_kiwi_original_disponivel(self):
+        theme = getTheme('Kiwi-original')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'Kiwi-original')
+        self.assertEqual(theme.title, 'Tema Kiwi Original')
+        self.assertEqual(theme.description,
+                         'Tema Kiwi original do Portal Modelo')
+        self.assertEqual(theme.rules, '/++theme++Kiwi-original/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++Kiwi-original')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_vermelho_original_disponivel(self):
+        theme = getTheme('Vermelho-original')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'Vermelho-original')
+        self.assertEqual(theme.title, 'Tema Vermelho Original')
+        self.assertEqual(theme.description,
+                         'Tema Vermelho original do Portal Modelo')
+        self.assertEqual(theme.rules, '/++theme++Vermelho-original/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++Vermelho-original')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
     def test_normalize_css_registered(self):
         cssreg = getattr(self.portal, 'portal_css')
         stylesheets_ids = cssreg.getResourceIds()
