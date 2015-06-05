@@ -18,5 +18,5 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-    #main-content, #column-one, #column-two {display: block; width: 100%; padding: 0;}
+    #main-content, #column-one, #column-two {display: block; width: 100%; padding: 0; clear: both;}
 }
