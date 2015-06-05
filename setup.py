@@ -44,6 +44,7 @@ setup(name='interlegis.portalmodelo.theme',
           'setuptools',
           'zope.component',
           'zope.interface',
+          'z3c.jbot',
       ],
       extras_require={
           'test': [

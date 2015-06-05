@@ -6,6 +6,7 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="plone">
 
+  <include package="z3c.jbot" file="meta.zcml" />
   <include package=".browser" />
   <include file="profiles.zcml" />
 
@@ -14,6 +15,11 @@
       directory="static"
       />
 
-  <include file="themes.zcml" />
+  <browser:jbot
+    directory="jbot"
+    layer=".interfaces.IBrowserLayer"
+  />
+
+   <include file="themes.zcml" />
 
 </configure>
