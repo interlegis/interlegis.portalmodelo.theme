@@ -179,7 +179,7 @@ h2 {
 dl.portlet dt.portletHeader {
   border-bottom: #e6e6e6 1px solid;
   font-weight: bold;
-  background: transparent;
+  background-color: transparent;
   color: #1a3a64;
 }
 .portletHeader a,
@@ -216,7 +216,7 @@ aside a {
   padding: 0.3em 0.3em 0.3em 0.5em;
 }
 .portletNavigationTree a:hover {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
 }
 .navTreeLevel2 a {
   padding-left: 1em;
@@ -232,6 +232,19 @@ aside a {
 }
 .navTreeLevel6 a {
   padding-left: 5em;
+}
+.portlet .portletHeader > a, .portlet .portletHeader > span:nth-child(2) {
+  display: block;
+  color: #1A3A64;
+  padding: 0.55em 1em;
+  font-size: 1.2em;
+}
+.portlet .portletHeader > a:hover {
+  background-color: initial;
+  color: #6180A9 !important;
+}
+.portlet .portletHeader {
+  padding: 0;
 }
 /********** Footer **********/
 footer {
