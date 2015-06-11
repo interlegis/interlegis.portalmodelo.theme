@@ -167,6 +167,10 @@ h1 {
 h2 {
   color: #626a73;
 }
+#content {
+  display: table;
+  margin: 0;
+}
 #content .documentDescription,
 #content #description {
   color: #4d4d4d;
