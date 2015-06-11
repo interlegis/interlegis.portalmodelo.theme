@@ -147,7 +147,7 @@ nav li a:visited {
 /********** Content **********/
 /* breadcrumb */
 #portal-breadcrumbs {
-  margin: 2em 2%;
+  margin: 1.2em 2%;
   font-size: 80%;
   clear: both;
 }
@@ -272,7 +272,7 @@ footer p {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  
+
   header {
     margin-bottom: 1em;
   }

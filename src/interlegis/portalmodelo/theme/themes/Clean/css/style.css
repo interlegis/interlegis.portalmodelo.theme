@@ -144,7 +144,7 @@ nav li a:visited {
 /********** Content **********/
 /* breadcrumb */
 #portal-breadcrumbs {
-  margin: 0 2% 2em 2%;
+  margin: 0 2% 1.2em 2%;
   font-size: 80%;
   clear: both;
   border-top: #e6e6e6 1px solid;
