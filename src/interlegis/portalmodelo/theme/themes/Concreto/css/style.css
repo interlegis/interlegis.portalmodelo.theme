@@ -272,6 +272,10 @@ footer p {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+
+  header {
+    margin-bottom: 1em;
+  }
   
   /* Mobile Menu theme color adjustments */
   #column-one {
