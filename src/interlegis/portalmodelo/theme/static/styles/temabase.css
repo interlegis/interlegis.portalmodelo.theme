@@ -65,6 +65,12 @@
 
 /*** portlets ***/
 
+/* links */
+
+a:link, #content a:link, dl.portlet a:link {
+    border-bottom: none;
+}
+
 /* profile */
 .portletPersonProfile img {
     max-width: 100%;
