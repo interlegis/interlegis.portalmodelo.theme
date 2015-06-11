@@ -238,7 +238,7 @@ aside a {
   display: block;
   color: #FFF;
   padding: 0.55em 1em;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .portlet .portletHeader > a:hover {
   background: #25528C;
