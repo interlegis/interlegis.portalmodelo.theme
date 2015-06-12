@@ -96,7 +96,7 @@ header a:hover {
 /* Navigation */
 nav {
   margin: 0;
-  clear: right;
+  clear: both;
   background: #ffffff;
   color: #000000;
 }
