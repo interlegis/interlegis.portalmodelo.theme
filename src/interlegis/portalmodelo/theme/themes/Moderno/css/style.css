@@ -186,7 +186,7 @@ h2 {
 /* general styles */
 .portletHeader,
 dl.portlet dt.portletHeader {
-  border-bottom: 0px;
+  border-bottom: #E6E6E6 1px solid;
   font-weight: bold;
   background-color: transparent;
   color: #283e93;
@@ -194,6 +194,7 @@ dl.portlet dt.portletHeader {
 .portletHeader a,
 dl.portlet dt.portletHeader a {
   color: #283e93;
+  transition: all ease-out 0.1s;
 }
 .portlet {
   margin-bottom: 2em;
@@ -215,17 +216,36 @@ aside a {
 .portletNavigationTree li {
   list-style-position: inside;
 }
-.portletNavigationTree .navTreeLevel0 > li {
-  border-bottom: #e6e6e6 1px solid;
+.portlet.portletNavigationTree .navTree .navTreeItem {
+  margin: 0;
+}
+.portlet.portletNavigationTree .navTreeLevel0 > .navTreeItem {
+  padding: 0;
+}
+.portlet.portletNavigationTree .navTree > .navTreeItem {
+  border-bottom: rgba(37, 82, 140, 0.05) 1px solid;
   list-style: none;
 }
-.portletNavigationTree a {
-  display: block;
-  padding: 0.3em 0.3em 0.3em 0.5em;
-  color: #000000;
+.portlet.portletNavigationTree .navTreeLevel1 .navTreeItem {
+  padding-left: 1em;
 }
-.portletNavigationTree a:hover {
-  background-color: #f2f2f2;
+.portlet.portletNavigationTree .navTreeLevel1 .navTreeItem:last-of-type {
+  border-bottom: none;
+}
+.portlet.portletNavigationTree .navTree .navTreeItem a {
+  display: block;
+  padding: 0.3em 1em;
+  transition: all ease-out 0.1s;
+}
+.portlet.portletNavigationTree .navTree .navTreeItem a:hover {
+  background-color: rgba(37, 82, 140, 0.05);
+}
+.portlet.portletNavigationTree .navTree .navTreeItem a.navTreeCurrentItem {
+  background-color: rgba(37, 82, 140, 0.2);
+}
+dl.portlet ul.navTree .navTreeCurrentItem {
+  border-left: none;
+  margin: 0;
 }
 .navTreeLevel2 a {
   padding-left: 1em;
@@ -245,7 +265,7 @@ aside a {
 .portlet .portletHeader > a, .portlet .portletHeader > span:nth-child(2) {
   display: block;
   color: #1A3A64;
-  padding: 0.55em 1em;
+  padding: 0.55em 0em;
   font-size: 1.2em;
 }
 .portlet .portletHeader > a:hover {
