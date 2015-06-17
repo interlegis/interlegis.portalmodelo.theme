@@ -952,7 +952,6 @@ dl.portlet dt a:link,
 dl.portlet dt a:visited { color: #464a55 !important; }
 
 #portal-column-two > .portletWrapper { margin-bottom: 1.9230em; }
-#portal-column-two > .portletWrapper:first-child { margin-top: 1.7307em; }
 
 #portal-column-two > .portletWrapper > .portletStaticText a,
 #portal-column-two > .portletWrapper > .portletStaticText img { display: inline-block; }
