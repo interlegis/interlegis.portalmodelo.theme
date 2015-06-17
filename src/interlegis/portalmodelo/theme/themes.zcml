@@ -80,38 +80,8 @@
 
   <plone:static
       type="theme"
-      name="Areia-original"
-      directory="themes/Areia-original"
-      />
-
-  <plone:static
-      type="theme"
-      name="Azul-original"
-      directory="themes/Azul-original"
-      />
-
-  <plone:static
-      type="theme"
-      name="Concreto-original"
-      directory="themes/Concreto-original"
-      />
-
-  <plone:static
-      type="theme"
-      name="Gelo-original"
-      directory="themes/Gelo-original"
-      />
-
-  <plone:static
-      type="theme"
-      name="Kiwi-original"
-      directory="themes/Kiwi-original"
-      />
-
-  <plone:static
-      type="theme"
-      name="Vermelho-original"
-      directory="themes/Vermelho-original"
+      name="Original"
+      directory="themes/Original"
       />
 
 </configure>

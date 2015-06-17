@@ -111,45 +111,10 @@ Tema IDG Verde
         :width: 200px
         :height: 110px
 
-Tema Areia Original
--------------------
-
-.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Areia-original/preview.png
-        :width: 200px
-        :height: 110px
-
-Tema Azul Original
+Tema Original
 ------------------
 
-.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Azul-original/preview.png
-        :width: 200px
-        :height: 110px
-
-Tema Concreto Original
-----------------------
-
-.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Concreto-original/preview.png
-        :width: 200px
-        :height: 110px
-
-Tema Gelo Original
-------------------
-
-.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Gelo-original/preview.png
-        :width: 200px
-        :height: 110px
-
-Tema Kiwi Original
-------------------
-
-.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Kiwi-original/preview.png
-        :width: 200px
-        :height: 110px
-
-Tema Vermelho Original
-----------------------
-
-.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Vermelho-original/preview.png
+.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Original/preview.png
         :width: 200px
         :height: 110px
 

@@ -4,6 +4,9 @@ Changelog
 1.0rc3 (unreleased)
 -------------------
 
+- Remove original themes: Areia, Concreto, Gelo, Kiwi, Vermelho
+  [jeanferri]
+
 - Adjusted header background position for all PM3 themes
   [cfviotti]
 
