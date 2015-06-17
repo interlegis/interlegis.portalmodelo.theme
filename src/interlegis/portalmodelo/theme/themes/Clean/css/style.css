@@ -223,15 +223,14 @@ aside a {
 .portlet.portletNavigationTree .navTreeLevel1 .navTreeItem {
   padding-left: 1em;
 }
-
 .portlet.portletNavigationTree .navTreeLevel1 .navTreeItem:last-of-type {
   border-bottom: none;
 }
-
 .portlet.portletNavigationTree .navTree .navTreeItem a {
   display: block;
-  padding: 0.3em 1em;
+  padding: 0.8em 1em;
   transition: all ease-out 0.1s;
+  line-height: initial;
 }
 .portlet.portletNavigationTree .navTree .navTreeItem a:hover {
   background-color: rgba(37, 82, 140, 0.05);
@@ -261,7 +260,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 .portlet .portletHeader > a, .portlet .portletHeader > span:nth-child(2) {
   display: block;
   color: #1A3A64;
-  padding: 0.55em 0em;
+  padding: 0.7em 0em;
   font-size: 1.2em;
 }
 .portlet .portletHeader > a:hover {
