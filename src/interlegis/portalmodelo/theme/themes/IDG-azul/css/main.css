@@ -240,6 +240,12 @@ div.position-10 { margin-left: -30.042%; }
    Cabeçalho do portal
    ========================================================================== */
 
+#header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
 #header > div {
     position: relative;
     overflow: visible;
