@@ -1438,8 +1438,22 @@ dl.portlet ol li { list-style: decimal outside; }
     line-height: 1.2em;
 }
 
+
 #content .cover-collection-tile h2 {
     font-family: "open_sanssemibold", Arial, Helvetica, sans-serif;
+}
+
+#content [class|="cover"] h2 {
+  font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+  font-size: 1.62em;
+  font-weight: normal;
+  color: #2C67CD;
+  background-color: #EEEFF1;
+  border-top: 4px solid #2C67CD;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  padding-bottom: 0;
+  min-height: 48px;
 }
 
 #content .cover-collection-tile h2 a { color: #172938; }
