@@ -1,48 +1,54 @@
 Changelog
 =========
 
-1.0rc3 (unreleased)
+1.0rc4 (unreleased)
+-------------------
+
+- Nothing changed yet.
+
+
+1.0rc3 (2015-06-17)
 -------------------
 
 - Remove original themes: Areia, Concreto, Gelo, Kiwi, Vermelho
   [jeanferri]
-  
+
 - All IDG-Themes: Adding default styles for h2 elements of collective.cover
   [cfviotti]
 
 - All IDG-Themes: Centralizing header background image.
   [cfviotti]
-  
+
 - All IDG-Themes: Removing unnecessary space above first portlet on right column.
   [cfviotti]
-  
+
 - All IDG-Themes: Fixed galleria description text color.
   [cfviotti]
-  
+
 - All PM3-Themes: styling of navigation portlets.
   [cfviotti]
-  
+
 - PM3-Moderno: Fixing float clearing of the nav element.
   [cfviotti]
-  
-- All PM3-Themes: Removed some general link styling. 
+
+- All PM3-Themes: Removed some general link styling.
   [cfviotti]
-  
+
 - All PM3-Themes: Resized breadcrumbs.
   [cfviotti]
-  
+
 - All PM3-Themes: Added margin to separate header from content on mobile
   [cfviotti]
-  
+
 - All PM3-Themes: Removed unnecessary padding from .portlet in PM3 themes
   [cfviotti]
-  
+
 - Inclusion of Open Sans font-family across any theme
   [cfviotti]
-  
+
 - All PM3-Themes: Fixed mobile column layout with float clearing.
   [cfviotti]
-  
+
 - Override of static portlet title markup text, using jbot.
   [cfviotti]
 
