@@ -240,6 +240,12 @@ div.position-10 { margin-left: -30.042%; }
    Cabeçalho do portal
    ========================================================================== */
 
+#header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
 #header > div {
     position: relative;
     overflow: visible;
@@ -952,7 +958,6 @@ dl.portlet dt a:link,
 dl.portlet dt a:visited { color: #464a55 !important; }
 
 #portal-column-two > .portletWrapper { margin-bottom: 1.9230em; }
-#portal-column-two > .portletWrapper:first-child { margin-top: 1.7307em; }
 
 #portal-column-two > .portletWrapper > .portletStaticText a,
 #portal-column-two > .portletWrapper > .portletStaticText img { display: inline-block; }
@@ -1433,8 +1438,22 @@ dl.portlet ol li { list-style: decimal outside; }
     line-height: 1.2em;
 }
 
+
 #content .cover-collection-tile h2 {
     font-family: "open_sanssemibold", Arial, Helvetica, sans-serif;
+}
+
+#content [class|="cover"] h2 {
+  font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+  font-size: 1.62em;
+  font-weight: normal;
+  color: #2C67CD;
+  background-color: #EEEFF1;
+  border-top: 4px solid #2C67CD;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  padding-bottom: 0;
+  min-height: 48px;
 }
 
 #content .cover-collection-tile h2 a { color: #172938; }
