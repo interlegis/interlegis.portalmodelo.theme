@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.0rc4 (unreleased)
+1.0rc4 (2015-08-26)
 -------------------
 
-- Nothing changed yet.
+- Fixed portletNews header HTML using jbot
+  [cfviotti]
 
 
 1.0rc3 (2015-06-17)
