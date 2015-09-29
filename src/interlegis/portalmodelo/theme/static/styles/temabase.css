@@ -346,6 +346,31 @@ div.activityAvatar img {
     margin-bottom: 5px;
 }
 
+.tile-parlamentares {
+    text-align: center;
+    font-size: 0;
+}
+
+.tile-parlamentares .list-item {
+    display: inline-block;
+    width: 16.666%;
+    vertical-align: top;
+    margin: 10px 0;
+}
+
+.tile-parlamentares a {
+    display: inline-block;
+}
+
+.tile-parlamentares img {
+    margin: 0 !important;
+}
+
+.tile-parlamentares h3 {
+    font-size: initial;
+    padding: 5px;
+}
+
 /********* DropDown Menu *********/
 
 header {
