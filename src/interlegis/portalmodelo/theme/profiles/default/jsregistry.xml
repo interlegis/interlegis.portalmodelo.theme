@@ -11,6 +11,16 @@
   cookable="True" 
   enabled="True"
   expression="" id="http://htmlshiv.googlecode.com/svn/trunk/html5.js" inline="False"/>
-    
+
+<javascript
+  insert-after="*"
+  authenticated="False"
+  bundle="jquery" 
+  cacheable="True"
+  compression="none" 
+  conditionalcomment="" 
+  cookable="True" 
+  enabled="True"
+  expression="" id="++resource++portalmodelo.theme/scripts/base.js" inline="False"/>
     
 </object>
