@@ -1,0 +1,260 @@
+/*
+ *
+ * CSS com estilos específicos do tema rosa
+ *
+ * @Autores
+ *
+ * - Simples Consultoria - www.simplesconsultoria.com.br
+ * - DESERTO Digital - www.desertodigital.com.br
+ *
+ * @Referencias
+ *
+ * Lista de padrões, convenções e boas praticas CSS que devem ser seguidas.
+ * https: //github.com/necolas/idiomatic-css/tree/master/translations/pt-BR
+ *
+ * Plugins para ordenar os atributos de CSS.
+ * http://csscomb.com/
+ *
+ * Validador de CSS do W3C.
+ * http://jigsaw.w3.org/css-validator/
+ */
+
+
+/* ==========================================================================
+   Cabeçalho do portal
+   ========================================================================== */
+
+#header {
+    padding: 14px 0 0 0;
+    background-color: #FA97CF;
+    /* Old browsers */
+    background-color: #FA97CF;
+    background-image: -moz-radial-gradient(center, ellipse cover, #FA97CF 1%, #FA97CF 100%);
+    /* FF3.6+ */
+    background-image: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(1%,#FA97CF), color-stop(100%, #FA97CF));
+    /* Chrome,Safari4+ */
+    background-image: -webkit-radial-gradient(center, ellipse cover, #FA97CF 1%, #FA97CF 100%);
+    /* Chrome10+,Safari5.1+ */
+    background-image: -o-radial-gradient(center, ellipse cover, #FA97CF 1%, #FA97CF 100%);
+    /* Opera 12+ */
+    background-image: -ms-radial-gradient(center, ellipse cover, #FA97CF 1%, #FA97CF 100%);
+    /* IE10+ */
+    background-image: radial-gradient(ellipse at center, #FA97CF 1%, #FA97CF 100%);
+    color: #fff;
+    /* IE6-9 fallback on horizontal gradient */
+    filter:progid: DXImageTransform.Microsoft.gradient( startColorstr="#FA97CF", endColorstr="#FA97CF",GradientType=1);
+}
+
+/* Menu de Acessibilidade
+   ========================================================================== */
+
+#accessibility a {
+    color: #4B1739;
+}
+
+#accessibility span {
+    padding: 0 3px;
+    background: #4B1739;
+    color: #fff;
+}
+
+/* Titulo do portal
+   ========================================================================== */
+
+#portal-logo,
+#portal-title { color: #4B1739 !important; }
+
+/* Menu site actions - Acessibilidade, Alto Contraste, Mapa do site
+   ========================================================================== */
+
+#portal-siteactions,
+#portal-language { border-bottom: 1px dotted #4B1739; }
+
+#portal-siteactions a,
+#portal-siteactions a:hover,
+#portal-language a,
+#portal-language a:hover { color: #4B1739 !important; }
+
+/* Menu sobre o portal
+   ========================================================================== */
+
+#sobre { background: #F855B1; }
+
+#sobre a { color: #4B1739; }
+
+#sobre .portalservicos-item a { border-right: 1px solid #575660; }
+
+/* Formulário de busca
+   ========================================================================== */
+
+#portal-searchbox { border: 1px solid #CCCCCC; }
+
+/* ==========================================================================
+   Sprinte Icons
+   ========================================================================== */
+
+/* icones de redes sociais */
+#social-icons a,
+/* central de conteudo */
+.item-central .link-videos,
+.item-central .link-audios,
+.item-central .link-infograficos,
+.item-central .link-publicacoes,
+.item-central .link-fotos,
+.item-central .link-aplicativos,
+.item-central .link-dadosabertos,
+/* icone do botão de busca */
+#header input.searchButton { background-image: url("../img/sprite.png"); }
+/* icone do botão de relatar erros */
+#content .relatar-erros a { background: url("../img/icon-reportar-erros.png") no-repeat; }
+
+/* Summary view */
+#content .summary-view-icon [class*="icon"] {
+    background-image: url("../img/summary-view-icons-sprite.png");
+}
+
+
+/* ==========================================================================
+   Portles
+   ========================================================================== */
+
+/* Portlet de navegação
+   ========================================================================== */
+
+#portal-column-one > .nav-menu-de-relevancia .first-item-nav a,
+#portal-column-one > .nav-menu-de-relevancia .first-item-nav a span {
+    color: #4B1739 !important;
+}
+
+.portlet-static-contents-central .portletHeader,
+.portlet-static-centrales-del-contenido .portletHeader,
+.portlet-static-centrais-de-conteudos .portletHeader,
+.portletNavigationTree .portletHeader {
+    border-top: 4px solid #4B1739;
+    color: #4B1739;
+}
+
+.portletNavigationTree .portletHeader a { color: #4B1739 !important; }
+
+.navTreeLevel0 > li.navTreeItemInPath,
+.navTreeLevel0 > li.navTreeCurrentNode {
+    border-top: 2px solid #4B1739 !important;
+    border-bottom: 2px solid #4B1739 !important;
+}
+
+/* ==========================================================================
+   Collective Cover
+   ========================================================================== */
+
+/* Tile Banner Rotativo
+   ========================================================================== */
+
+/* Cores dos botões */
+
+#tile_banner_rotativo li .button-nav,
+.orderTiles .button-nav {
+    border-right: 1px solid #00439e;
+    background-color: #4B1739;
+}
+
+#tile_banner_rotativo .activeSlide .button-nav,
+#tile_banner_rotativo li .button-nav:hover,
+#tile_banner_rotativo li .button-nav:focus {
+    background-color: #edeff1;
+}
+
+/* ícone do botão */
+
+#content  #tile_banner_rotativo li .button-nav,
+.orderTiles .button-nav {
+    background-image: url("../img/bullet-banner-rotativo.gif");
+}
+
+/* Tiles
+   ========================================================================== */
+
+.tile a { color: #162937 !important; }
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+    background: #FA97CF;
+    color: #2c66ce;
+}
+
+#footer a { color: #4B1739; }
+
+#footer .footer-logos { background: #F855B1; }
+
+#footer th {
+    color: #4B1739;
+}
+
+#footer ul {
+    border-left: 1px dotted #4B1739;
+}
+
+#footer tr td p {
+    border-left: 1px dotted #4B1739;
+    color: #4B1739;
+}
+#linksfooter {
+    background: #F855B1;
+    color: #4B1739;
+}
+
+#linksfooter a {
+    color: #4B1739;
+}
+/* Doormat
+   ========================================================================== */
+
+#doormat-container { background: #FA97CF; }
+
+#doormat-container dl { border-left: 1px dotted #4B1739; }
+
+#doormat-container dt { color: #4B1739; }
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Screen
+   ========================================================================== */
+
+@media only screen and (min-width : 769px) {
+
+    .portlet-static-contents-central .portletHeader,
+    .portlet-static-centrales-del-contenido .portletHeader,
+    .portlet-static-centrais-de-conteudos .portletHeader,
+    .portletNavigationTree .portletHeader {
+        background: #edeff1 url("../img/portlet-header.gif") no-repeat right 5px bottom 4px;
+        background-size: 15px;
+    }
+
+    .portletNavigationTree .portletHeader.ativo {
+        background: #edeff1 url("../img/portlet-header-expanded.gif") no-repeat right 5px bottom 4px;
+        background-size: 15px;
+    }
+
+}
+
+/* Smartphone
+   ========================================================================== */
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+.menuTrigger {
+    background: #f7c514 url("../img/bg-menu-mobile.png") top right no-repeat;
+}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  #header #portal-searchbox .searchButton {
+    background: url("../img/search-button-30px.png") no-repeat;
+  }
+}
