@@ -576,8 +576,8 @@ input.searchField { -moz-appearance: none; }
 }
 
 #content div.newsImageContainer {
-    float: none;
-    margin: 0;
+    float: left;
+    margin: 0 1em 1em 0;
 }
 
 #content div.newsImageContainer p.discreet {
@@ -1437,7 +1437,6 @@ dl.portlet ol li { list-style: decimal outside; }
     font-family: "open_sansregular", Arial, Helvetica, sans-serif;
     line-height: 1.2em;
 }
-
 
 #content .cover-collection-tile h2 {
     font-family: "open_sanssemibold", Arial, Helvetica, sans-serif;
