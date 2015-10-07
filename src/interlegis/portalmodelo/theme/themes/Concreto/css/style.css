@@ -37,14 +37,14 @@ dl.portlet a:hover {
 /********** Header **********/
 header {
   background-color: #7a838e;
-  color: #000000;
+  color: #FFFFFF;
 }
 header a:link,
 header a:visited {
-  color: #000000;
+  color: #FFFFFF;
 }
 header a:hover {
-  color: #000000;
+  color: #e6e6e6;
 }
 /* Logo */
 #portal-logo {
@@ -76,7 +76,7 @@ header a:hover {
   width: 17px;
 }
 #portal-siteactions li a:hover {
-  color: #000000;
+  color: #e6e6e6;
 }
 /* search */
 #portal-searchbox {
@@ -91,7 +91,7 @@ header a:hover {
   border: none;
   padding: 0.4em 0.7em;
   background: #626a73;
-  color: #000000;
+  color: #FFFFFF;
   cursor: pointer;
 }
 /* Navigation */
@@ -99,7 +99,7 @@ nav {
   margin: 0;
   clear: both;
   background: #626a73;
-  color: #000000;
+  color: #FFFFFF;
 }
 nav ul {
   padding: 0.3em 2%;
@@ -113,7 +113,7 @@ nav li a:link {
   text-decoration: none;
   display: block;
   padding: 0 1em;
-  border-right: 1px solid #000000;
+  border-right: 1px solid #FFFFFF;
 }
 nav li:last-child a {
   border: none;
@@ -121,7 +121,7 @@ nav li:last-child a {
 }
 nav li a:link,
 nav li a:visited {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 /* Mobile Menu button colors */
@@ -281,10 +281,10 @@ footer {
   padding: 2%;
   font-size: 80%;
   background: #626a73;
-  color: #000000;
+  color: #FFFFFF;
 }
 footer a {
-  color: #000000 !important;
+  color: #FFFFFF !important;
 }
 footer p {
   margin-bottom: 2em;
