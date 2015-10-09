@@ -111,6 +111,13 @@ Tema IDG Verde
         :width: 200px
         :height: 110px
 
+Tema IDG Rosa
+-------------
+
+.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/IDG-rosa/preview.png
+        :width: 200px
+        :height: 110px
+
 Tema Original
 ------------------
 

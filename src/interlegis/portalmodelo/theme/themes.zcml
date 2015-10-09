@@ -80,6 +80,12 @@
 
   <plone:static
       type="theme"
+      name="IDG-rosa"
+      directory="themes/IDG-rosa"
+      />
+
+  <plone:static
+      type="theme"
       name="Original"
       directory="themes/Original"
       />

@@ -41,8 +41,8 @@ class InstallTestCase(unittest.TestCase):
 
     def test_temas_disponiveis(self):
         themes = getAvailableThemes()
-        # Nosso tema + os dois do Plone
-        self.assertEqual(len(themes), 15)
+        # Nossos temas + os dois do Plone
+        self.assertEqual(len(themes), 16)
 
     def test_tema_Areia_disponivel(self):
         theme = getTheme('Areia')
@@ -174,6 +174,17 @@ class InstallTestCase(unittest.TestCase):
                          'Tema verde para o Portal Modelo, baseado na Identidade Digital do Governo')
         self.assertEqual(theme.rules, '/++theme++IDG-verde/rules.xml')
         self.assertEqual(theme.absolutePrefix, '/++theme++IDG-verde')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_idg_rosa_disponivel(self):
+        theme = getTheme('IDG-rosa')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'IDG-rosa')
+        self.assertEqual(theme.title, 'IDG - Tema Rosa')
+        self.assertEqual(theme.description,
+                         'Tema outubro rosa para o Portal Modelo, baseado na Identidade Digital do Governo')
+        self.assertEqual(theme.rules, '/++theme++IDG-rosa/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++IDG-rosa')
         self.assertEqual(theme.doctype, "<!DOCTYPE html>")
 
     def test_tema_original_disponivel(self):
