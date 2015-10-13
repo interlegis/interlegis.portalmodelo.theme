@@ -576,8 +576,8 @@ input.searchField { -moz-appearance: none; }
 }
 
 #content div.newsImageContainer {
-    float: none;
-    margin: 0;
+    float: left;
+    margin: 0 1em 1em 0;
 }
 
 #content div.newsImageContainer p.discreet {
