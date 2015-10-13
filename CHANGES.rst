@@ -4,6 +4,9 @@ Changelog
 1.0rc5 (unreleased)
 -------------------
 
+- Update preview images
+  [jeanferri]
+
 - Enable IDG-rosa theme and fix it tests
   [jeanferri]
 
