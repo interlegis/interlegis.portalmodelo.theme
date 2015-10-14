@@ -84,6 +84,10 @@ header a:hover {
   position: relative;
 }
 
+#portal-searchbox input {
+  border-radius: 0;
+}
+
 #portal-searchbox input.searchField {
   min-width: 20em;
   width: 100%;
