@@ -33,8 +33,13 @@
         <replace css:content="#portal-siteactions" css:theme="#siteactions" />
         <copy attributes="href title" css:content="#portal-logo" css:theme="#portal-logo" />
         <copy attributes="style" css:content="#portal-header" css:theme="header" />
-        <replace css:content="#portal-header p.hiddenStructure" css:theme="#accessibility" />
+        <replace css:content="#portal-header p.hiddenStructure" css:theme="#accessibility" />       
         <replace css:content="#portal-searchbox" css:theme="#search" />
+
+        <replace css:content=".searchButton">
+            <input class="searchButton" type="submit" value="&#xf002;" alt="Buscar"/>
+        </replace>
+
         <drop css:content=".searchSection" />
         <replace css:content="#portal-globalnav>li" css:theme-children="nav ul" />
         <rules css:if-not-content="#titleHeader">
