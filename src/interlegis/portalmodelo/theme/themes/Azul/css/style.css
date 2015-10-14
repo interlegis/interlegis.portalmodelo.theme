@@ -108,17 +108,31 @@ nav ul {
 nav li {
   display: inline-block;
 }
+
+nav li::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  right: -2px;
+  top: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+
+nav li:last-child::after {
+  display: none;
+}
+
 nav li a:link {
   font-size: 80%;
   text-decoration: none;
   display: block;
   padding: 0 1em;
-  border-right: 1px solid #ffffff;
 }
-nav li:last-child a {
-  border: none;
-  padding-right: 0;
-}
+
 nav li a:link,
 nav li a:visited {
   color: #ffffff;
@@ -325,10 +339,51 @@ footer p {
     display: none;
   }
 
+  nav ul {
+    padding: 0;
     text-align: center;
-    clear: both;
-    margin-bottom: 1em;
+    float: none;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
+
+  nav ul::after, nav ul::before {
+    font-family: FontAwesome;
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    line-height: 43px;
+    background-color: rgb(22, 49, 85);;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  nav ul.has-right-arrow::after, nav ul.has-left-arrow::before {
+    opacity: 1;
+  }
+
+  nav ul::before {
+    content: "\f104";
+    left: 0;
+  }
+
+  nav ul::after {
+    content: "\f105";
+    right: 0;
+  }
+
+  nav li {
+    float: none;
+  }
+
+  nav li a:link {
+    padding: 1.2em 2em;
+    line-height: 1;
+  }
+
   #portal-searchbox {
     float: none;
     text-align: center;

@@ -34,11 +34,30 @@ $(document).ready(function() {
             $(".menu-button button").removeClass("menuAtivo")
             $("#column-one").css("display","table-cell");
         }
+        navScrollWidth = $('nav ul')[0].scrollWidth - $('nav ul')[0].clientWidth;
+
+
     }).resize();
 
     if (Galleria.get().length !== 0) {
         Galleria.configure({wait: true});
     }
+
+    function navScrollClass() { 
+        if ($('nav ul').scrollLeft() == 0) {
+            $('nav ul').addClass('has-right-arrow').removeClass('has-left-arrow');
+        } else if ($('nav ul').scrollLeft() == navScrollWidth) {
+            $('nav ul').addClass('has-left-arrow').removeClass('has-right-arrow');
+        } else {
+            $('nav ul').addClass('has-left-arrow has-right-arrow');
+        }
+    }
+
+    navScrollClass();
+
+    $('nav ul').scroll(navScrollClass);
+
+
 });
 
 $(window).load(function() {
