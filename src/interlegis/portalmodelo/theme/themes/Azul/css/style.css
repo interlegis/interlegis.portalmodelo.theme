@@ -48,7 +48,7 @@ header a:hover {
 }
 /* Logo */
 #portal-logo {
-  margin-left: 2%;
+  margin: 1em 0em 1em 1em;
 }
 #portal-siteactions {
   text-align: right;
@@ -348,6 +348,7 @@ footer p {
 @media (max-width: 480px) {
   #portal-logo {
     display: inline-block;
+    font-size: 90%;
   }
 
   #portal-logo.has-title img {
