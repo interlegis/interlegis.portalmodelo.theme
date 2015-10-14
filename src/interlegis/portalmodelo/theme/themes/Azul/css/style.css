@@ -52,7 +52,7 @@ header a:hover {
 }
 #portal-siteactions {
   text-align: right;
-  margin-right: 2%;
+  margin-right: 0.5em;
   font-size: 80%;
 }
 #portal-siteactions a:before {
@@ -80,7 +80,7 @@ header a:hover {
 }
 /* search */
 #portal-searchbox {
-  margin: 0em 1em 1em 1em;
+  margin: 1em;
   position: relative;
 }
 
@@ -406,6 +406,7 @@ footer p {
   }
 
   #portal-searchbox {
+    margin-top: 0;
     float: none;
     text-align: center;
     clear: both;
