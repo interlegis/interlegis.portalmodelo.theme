@@ -317,9 +317,14 @@ footer p {
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  #logo {
-    width: 100%;
-    float: left;
+  #portal-logo {
+    display: inline-block;
+  }
+
+  #portal-logo.has-title img {
+    display: none;
+  }
+
     text-align: center;
     clear: both;
     margin-bottom: 1em;
