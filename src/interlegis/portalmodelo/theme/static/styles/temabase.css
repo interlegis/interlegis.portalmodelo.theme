@@ -494,6 +494,15 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
         display: table;
     }
 
+    /*Center portlets content on landscape and down*/
+    .portletWrapper {
+        text-align: center;
+    }
+
+    .portletHeader {
+        text-align: left;
+    }
+
     /*Mobile menu adjustments*/
     .menu-button {
         display: inline-block;
@@ -546,6 +555,7 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
 
     dl.portlet ul.navTree .navTreeItem {
         margin: 0;
+        text-align: left;
     }
 
     dl.portlet ul.navTree .navTreeCurrentItem {
