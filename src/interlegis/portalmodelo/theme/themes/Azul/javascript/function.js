@@ -43,21 +43,6 @@ $(document).ready(function() {
         Galleria.configure({wait: true});
     }
 
-    function navScrollClass() { 
-        if ($('nav ul').scrollLeft() == 0) {
-            $('nav ul').addClass('has-right-arrow').removeClass('has-left-arrow');
-        } else if ($('nav ul').scrollLeft() == navScrollWidth) {
-            $('nav ul').addClass('has-left-arrow').removeClass('has-right-arrow');
-        } else {
-            $('nav ul').addClass('has-left-arrow has-right-arrow');
-        }
-    }
-
-    navScrollClass();
-
-    $('nav ul').scroll(navScrollClass);
-
-
 });
 
 $(window).load(function() {
