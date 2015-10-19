@@ -34,7 +34,7 @@
         <copy attributes="style" css:content="#portal-header" css:theme="header" />
         <replace css:content="#portal-header p.hiddenStructure" css:theme="#accessibility" />
         <replace css:content="#portal-searchbox" css:theme="#search" />
-        <replace css:content=".searchButton">
+        <replace css:content="#portal-searchbox .searchButton">
             <input class="searchButton" type="submit" value="&#xf002;" alt="Buscar"/>
         </replace>
         <drop css:content=".searchSection" />
