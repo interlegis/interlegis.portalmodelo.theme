@@ -370,6 +370,15 @@ div.activityAvatar img {
     padding: 5px;
 }
 
+.cover-embed-tile {
+    text-align: center;
+}
+
+/*Fix overflowing videos for embed cover tiles*/
+.cover-embed-tile iframe {
+    max-width: 100%;
+}
+
 /********* DropDown Menu *********/
 
 header {
