@@ -22,7 +22,7 @@
     padding-top: 1em;
 }
 #portal-searchbox {
-    z-index:99;
+    z-index: 2;
 }
 #portal-searchbox input.searchField {
     line-height: 1.5em;
