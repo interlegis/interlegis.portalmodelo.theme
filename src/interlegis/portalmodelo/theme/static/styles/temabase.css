@@ -41,6 +41,78 @@
     min-width: 15em;
 }
 
+/* edit-bar re-stylings */
+
+#edit-bar {
+    border: 0;
+    border-radius: 0.5em 0.5em 0;
+    min-height: 2.5em;
+    z-index: 10;
+    position: relative;
+}
+
+#edit-bar #content-views {
+    border-radius: 0.5em 0.5em 0;
+    padding: 0 0.25em;
+}
+
+#edit-bar #content-views li.selected a, #edit-bar #content-views li a:hover {
+    border-radius: 0.5em;
+    background: #436976;
+    color: white;
+    padding: 0px 0.75em;
+}
+
+#edit-bar #contentActionMenus {
+    clear: left;
+    right: 0;
+    top: 0;
+    background-color: #5C9400;
+    border-radius: 0 0 0.5em 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0;
+    max-width: 98%;
+}
+
+#edit-bar #contentActionMenus dl.actionMenu a {
+    background-color: inherit;
+}
+
+#edit-bar #contentActionMenus dl.actionMenu.activated dd {
+    background-color: #427A00;
+    right: 0;
+    border-top: 0.5em solid;
+    border-color: transparent;
+    border-radius: 0.5em 0 0.5em 0.5em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 5px 6px rgba(0, 0, 0, 0.23);
+}
+
+#edit-bar #contentActionMenus .actionMenu.activated {
+    background: #427A00;
+}
+
+#edit-bar #contentActionMenus dl.actionMenu.activated dd a:hover, #edit-bar #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
+    background-color: #75AD0A !important;
+    color: inherit;
+}
+
+#edit-bar #contentActionMenus .actionMenu {
+    margin: 0;
+}
+
+#edit-bar #contentActionMenus dl.actionMenu .actionMenuHeader a {
+    margin: 0;
+    padding: 0.25em 0.75em;
+}
+
+#edit-bar #contentActionMenus dl.actionMenu .actionMenuHeader {
+    margin: 0;
+}
+
+#edit-bar #content-views a {
+    padding: 0.25em 0.75em;
+}
+
 /* rodape */
 #portal-footer a:hover, footer a:hover {
     text-decoration: underline;
@@ -616,6 +688,23 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
         clear: both;
         font-size: 80%;
         text-align: center;
+    }
+
+    #edit-bar {
+        min-height: 2.7em;
+    }
+
+    #edit-bar #contentActionMenus .actionMenu {
+        position: static;
+    }
+
+    #contentActionMenus a {
+        width: auto;
+        font-size: 110%;
+    }
+
+    #content-views a {
+        font-size: 110%;
     }
 
     /* Make Live Search not display on phones and down */
