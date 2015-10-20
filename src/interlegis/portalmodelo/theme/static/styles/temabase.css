@@ -15,6 +15,17 @@
 }
 
 /* topo */
+
+#portal-personaltools .actionMenuContent {
+    background: inherit;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.19), -5px 5px 5px rgba(0, 0, 0, 0.23);
+    border-radius: 0.5em 0 0.5em 0.5em;
+}
+
+#portal-personaltools.activated{
+    border-radius: 0;
+}
+
 #portal-siteactions {
     clear: right;
     float: right;

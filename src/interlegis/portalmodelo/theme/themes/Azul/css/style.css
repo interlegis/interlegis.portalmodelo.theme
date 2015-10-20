@@ -38,6 +38,7 @@ dl.portlet a:hover {
 header {
   background-color: #25528c;
   color: #ffffff;
+  overflow: hidden;
 }
 header a:link,
 header a:visited {
@@ -52,6 +53,15 @@ header a:hover {
   float: left;
   margin: 1.5em;
 }
+
+#portal-personaltools {
+  background: #1a3a64;
+}
+
+#portal-personaltools dd a:hover {
+    background: #25528c;
+}
+
 #portal-siteactions {
   text-align: right;
   margin-right: 1em;
