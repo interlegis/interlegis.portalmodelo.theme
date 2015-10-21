@@ -91,6 +91,20 @@ header a:hover {
   color: #e6e6e6;
 }
 /* search */
+
+.searchButton {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  padding: 0.4em 0.7em;
+  background: #1a3a64;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 #portal-searchbox {
   margin: 1.5em;
   position: relative;
@@ -115,15 +129,11 @@ header a:hover {
   font-family: FontAwesome;
   position: absolute;
   right: 0;
-  border: none;
-  padding: 0.4em 0.7em;
-  background: #1a3a64;
+  border-radius: 0;
   color: #ffffff;
   height: 30px;
   width: 30px;
 }
-
-
 
 /* Navigation */
 nav {
