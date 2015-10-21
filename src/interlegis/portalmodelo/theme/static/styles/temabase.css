@@ -57,10 +57,10 @@
 }
 
 #edit-bar #content-views li.selected a, #edit-bar #content-views li a:hover {
-    border-radius: 0.5em;
+    border-radius: 0em;
     background: #436976;
     color: white;
-    padding: 0px 0.75em;
+    padding: 0.25em 0.75em;
 }
 
 #edit-bar #contentActionMenus {
