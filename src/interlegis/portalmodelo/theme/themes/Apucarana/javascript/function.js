@@ -56,7 +56,7 @@ $(window).load(function() {
                 Galleria.unloadTheme();
                 Galleria.get(0).destroy();
                 //Reinicia a Galleria com o novo tema carregado
-                Galleria.loadTheme('++theme++Azul/galleria-theme/galleria.tema-pm3.js');
+                Galleria.loadTheme('++theme++Apucarana/galleria-theme/galleria.tema-pm3.js');
                 Galleria.run('.galleria', {
                     theme: 'tema-pm3'
                 });
@@ -64,7 +64,7 @@ $(window).load(function() {
                 Galleria.configure({
                     wait: true,
                     height: 0.666,
-                    transition: 'fade',
+                    transition: 'slide',
                     transition_speed: 500,
                     imageCrop: 'landscape',
                     showImagenav: true,

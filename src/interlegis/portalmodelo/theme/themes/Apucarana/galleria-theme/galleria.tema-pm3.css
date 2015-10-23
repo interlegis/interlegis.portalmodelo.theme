@@ -83,29 +83,18 @@
 }
 
 .tema-pm3 .galleria-info {
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000',GradientType=0 ); /* IE6-9 */
-    background-size: auto 100%;
     position: absolute;
-    padding: 10% 0px 1.8em 0px;
+    padding: 1.5em 0;
     width: 100%;
     bottom: 0;
     left: 0;
     z-index: 2;
     transition: all 0.3s ease;
+    background-color: rgba(29, 45, 107, 0.8);
 }
 
 .tema-pm3 .touch .galleria-info {
     padding: 10% 0px 1.5em 0px;
-}
-
-.tema-pm3 .notouch .galleria-stage:hover .galleria-info {
-    padding-bottom: 3.5em;
 }
 
 .tema-pm3 .galleria-info-text {
@@ -115,7 +104,7 @@
 
 .tema-pm3 .galleria-info-title {
     display: inline-block;
-    font: bold 2.5em/1.1 open_sanssemibold, arial, sans-serif;
+    font: bold 2em/1.1 open_sanssemibold, arial, sans-serif;
     margin: 0;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -193,14 +182,6 @@
 .tema-pm3 .touch .galleria-info-link:active {
     opacity: 1;
     filter: alpha(opacity=100);  /* IE 5-7 */
-}
-
-.tema-pm3 .galleria-image::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s ease-in-out;
 }
 
 .tema-pm3 .notouch .galleria-stage:hover .galleria-image::after{
@@ -311,9 +292,9 @@
 }
 
 .tema-pm3 .notouch .galleria-image-nav-left:hover span, .notouch .galleria-image-nav-right:hover span {
-    background-color: white;
-    color: #404040;
-    box-shadow: 
+    background-color: #1D2D6B;
+    border-color: #1D2D6B;
+    color: #FFFFFF;
 }
 
 .tema-pm3 .galleria-thumb-nav-left,.galleria-thumb-nav-right {
@@ -355,23 +336,19 @@
 }
 
 .tema-pm3 .galleria-thumbnails-container {
-    height: 4px;
+    height: 15px;
     width: 100%;
-    bottom: 0;
+    top: 1.5em;
     position: absolute;
-    left: 0;
+    right: 0;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease;
-}
-
-.tema-pm3 .notouch .galleria-stage:hover .galleria-thumbnails-container{
-    height: 1.5em;
 }
 
 .tema-pm3 .galleria-thumbnails-list {
     text-align: right;
     height: 100%;
+    margin-right: 1.5em;
 }
 
 .tema-pm3 .galleria-thumbnails{
@@ -382,37 +359,23 @@
 
 .tema-pm3 .galleria-thumbnails .galleria-image {
     position: relative;
-    display: table-cell;
-    zoom: 1;
-    width: initial;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.25); 
-    margin-right: 0px;
-    opacity: 1;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: rgba(29, 45, 107, 0.5);
+    margin: 0;
+    margin-left: 5px;
     cursor: pointer;
+    opacity: 1;
     transition: all 0.3s ease-in-out;
 }
 
-.tema-pm3 .notouch .galleria-thumbnails .galleria-image:hover:not(.active) {
-    background: rgba(255, 255, 255, 0.35)
-}
-
-
-.tema-pm3 .galleria-thumbnails .galleria-image:last-of-type {
-    border-right: none;
-
+.tema-pm3 .galleria-thumbnails .galleria-image:hover {
+    background-color: #1d2d6b;
 }
 
 .tema-pm3 .galleria-layer {
     transition: all 0.3s ease-in-out;
-}
-
-.tema-pm3 .galleria-thumbnails .galleria-image .img {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 1px;
-    background-color: rgba(0, 0, 0, 0.35);
 }
 
 .tema-pm3 .notouch .galleria-stage:hover .galleria-images img {
@@ -424,7 +387,7 @@
 }
 
 .tema-pm3 .galleria-thumbnails .active {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #1d2d6b;
     cursor: default;
 }
 
