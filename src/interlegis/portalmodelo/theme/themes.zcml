@@ -90,4 +90,10 @@
       directory="themes/Original"
       />
 
+  <plone:static
+      type="theme"
+      name="Apucarana"
+      directory="themes/Apucarana"
+      />
+
 </configure>
