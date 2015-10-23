@@ -201,22 +201,27 @@ nav li a:hover {
 
 /* Mobile Menu button colors */
 
-.menu-button{
-  background: #25528c;
+.menu-button {
+  background: #ffffff;
 }
 
-.menu-button button{
-  border-color: white;
+.menu-button button {
+  border-color: #1d2d6b;
   background: none;
-  color: white;
+  color: #1d2d6b;
+  margin-right: 0.85em;
 }
 
 .menu-button > button:hover {
   background: #1d2d6b !important;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .menu-button > button.menuAtivo {
-  background: #1d2d6b; 
+  background: #1d2d6b;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 /********** Content **********/
@@ -407,11 +412,13 @@ footer p {
 
   header {
     margin-bottom: 1em;
+    max-width: 100%;
   }
 
   /* Mobile Menu theme color adjustments */
   #column-one {
     border-color: #25528C;
+    z-index: 11;
   }
 
   dl.portlet ul.navTree .navTreeCurrentItem {
@@ -428,6 +435,7 @@ footer p {
     #portal-logo {
       display: inline-block;
       font-size: 90%;
+      margin: 1.5em;
     }
 
     #portal-logo.has-title img {
@@ -449,7 +457,7 @@ footer p {
 
     nav ul::after {
       content: '';
-      background-image: linear-gradient(to right, transparent, rgba(26,58,100,0.9) 80%);
+      background-image: linear-gradient(to right, transparent, rgba(29, 45, 107, 0.9) 80%);
       height: 43px;
       position: absolute;
       pointer-events: none;
@@ -474,6 +482,7 @@ footer p {
       text-align: center;
       clear: both;
       font-size: 80%;
+      margin: 1.5em;
     }
 
   }
