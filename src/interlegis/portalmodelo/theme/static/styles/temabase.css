@@ -421,14 +421,6 @@ div.activityAvatar img {
 
 /*Cover collective/collection-tile re-style*/
 
-#content .cover-collection-tile .collection-item {
-    margin-bottom: 15px;
-}
-
-#content .cover-collection-tile .collection-item p {
-    margin-bottom: 5px;
-}
-
 .tile-parlamentares {
     text-align: center;
     font-size: 0;
