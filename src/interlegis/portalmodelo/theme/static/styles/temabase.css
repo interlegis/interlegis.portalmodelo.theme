@@ -415,8 +415,8 @@ div.activityAvatar img {
 #content #sorting-options a {border-bottom:0;text-transform:capitalize;line-height:1.6em;display:block;color:#000;}
 
 
-.tile.tile-default{
-    margin-bottom: 2em;
+#main-content .tile {
+    margin-bottom: 2.5em;
 }
 
 /*Cover collective/collection-tile re-style*/
