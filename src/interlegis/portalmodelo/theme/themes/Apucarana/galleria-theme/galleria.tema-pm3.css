@@ -93,9 +93,17 @@
     background-color: rgba(29, 45, 107, 0.8);
 }
 
+.tema-pm3 .touch .galleria-info {
+    padding: 1.1em 0;
+}
+
 .tema-pm3 .galleria-info-text {
     zoom: 1;  /* IE7 */
     padding: 0px 30px 0px 30px;
+}
+
+.tema-pm3 .touch .galleria-info-text {
+    padding: 0 1.5em;
 }
 
 .tema-pm3 .galleria-info-title {
@@ -108,7 +116,7 @@
 }
 
 .tema-pm3 .touch .galleria-info-title {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 0px;
 }
 
@@ -269,6 +277,7 @@
 .tema-pm3 .touch .galleria-image-nav-left span, .tema-pm3 .touch .galleria-image-nav-right span {
     background-color: #1D2D6B;
     border-color: #ffffff;
+    border-width: 2px;
     color: #ffffff;
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.7);
     width: 25px;
