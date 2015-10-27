@@ -29,6 +29,20 @@ dl.portlet a:hover {
 .clear {
   clear: both;
 }
+
+input[type="submit"] {
+    color: #fff !important;
+    background: #1d2d6b;
+    padding: 0.6em 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: #131d45;
+}
+
 /********** Main container **********/
 #wrapper {
   padding: 0;
@@ -141,9 +155,11 @@ header a:hover {
 
 #portal-searchbox .searchButton {
   font-family: FontAwesome;
+  font-weight: initial;
   position: absolute;
   right: 0;
   border-radius: 0;
+  padding: 0;
   color: #ffffff;
   height: 30px;
   width: 30px;
