@@ -209,6 +209,17 @@ class InstallTestCase(unittest.TestCase):
         self.assertEqual(theme.absolutePrefix, '/++theme++Original')
         self.assertEqual(theme.doctype, "<!DOCTYPE html>")
 
+    def test_tema_apucarana_disponivel(self):
+        theme = getTheme('Apucarana')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'Apucarana')
+        self.assertEqual(theme.title, 'Tema Apucarana')
+        self.assertEqual(theme.description,
+                         'Tema Apucarana para o Portal Modelo, inspirado pela Câmara Municipal de Apucarana')
+        self.assertEqual(theme.rules, '/++theme++Apucarana/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++Apucarana')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
     def test_normalize_css_registered(self):
         cssreg = getattr(self.portal, 'portal_css')
         stylesheets_ids = cssreg.getResourceIds()

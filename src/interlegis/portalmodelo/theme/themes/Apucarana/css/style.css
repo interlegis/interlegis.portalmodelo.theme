@@ -3,13 +3,16 @@
 body {
   background: #cfd0d3;
   color: #333333;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', "Helvetica Neue", Arial, FreeSans, sans-serif;
 }
 a:link,
 a:visited,
 #content a:link,
-dl.portlet a:link {
+dl.portlet a:link, 
+#content a:visited,
+dl.portlet a:visited {
   color: #1d2d6b;
+  transition: color 0.2s ease;
 }
 .state-published {
   color: #000000 !important;
@@ -26,6 +29,20 @@ dl.portlet a:hover {
 .clear {
   clear: both;
 }
+
+input[type="submit"] {
+    color: #fff !important;
+    background: #1d2d6b;
+    padding: 0.6em 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: #131d45;
+}
+
 /********** Main container **********/
 #wrapper {
   padding: 0;
@@ -138,9 +155,11 @@ header a:hover {
 
 #portal-searchbox .searchButton {
   font-family: FontAwesome;
+  font-weight: initial;
   position: absolute;
   right: 0;
   border-radius: 0;
+  padding: 0;
   color: #ffffff;
   height: 30px;
   width: 30px;
@@ -254,6 +273,10 @@ nav li a:hover {
 p {
   line-height: 1.4em;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', "Helvetica Neue", Arial, FreeSans, sans-serif;}
+
 h1 {
   color: #1d2d6b;
   border: none;
@@ -273,6 +296,64 @@ h2 {
   margin-bottom: 1em;
 }
 /********** Tiles **********/
+.tile-header h2, .tile-content h2, .documentFirstHeading {
+    font-size: 2.5em;
+    border-bottom: 2px solid;
+    font-weight: 400;
+    color: #1d2d6b;
+    margin-bottom: 0.5em;
+}
+
+.tile-noticias .collection-item {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.4em;
+    border-bottom: 1px dotted #ccc;
+}
+
+.tile-noticias .collection-item:nth-child(odd) {
+    margin-right: 0;
+}
+
+.tile-noticias .collection-item a img {
+    margin: 0;
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+.tile-noticias .collection-item > a {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#content .tile-noticias .collection-item p {
+    margin-bottom: 0.25em;
+}
+
+.tile-noticias .collection-item p.description {
+    font-size: 1.1em;
+}
+
+#content .tile-noticias .tile-footer a {
+  float: right;
+  padding: 1.075em 1.2em;
+  background-color: #1D2D6B;
+  color: #ffffff !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all ease-out 0.1s;
+}
+
+#content .tile-noticias .tile-footer a:hover {
+  background: #131d45;
+  color: #fff !important;
+}
+
+
 /*********** Portlets ***********/
 /* general styles */
 .portletHeader,
@@ -432,65 +513,75 @@ footer p {
 }
 /* Landscape phones and down */
 @media (max-width: 767px) {
-    #portal-logo {
-      display: inline-block;
-      font-size: 90%;
-      margin: 1.5em;
-    }
-
-    #portal-logo.has-title img {
-      display: none;
-    }
-
-    nav ul {
-      box-sizing: border-box;
-      padding: 0;
-      padding-right: 0.5em;
-      text-align: center;
-      float: none;
-      width: 100%;
-      white-space: nowrap;
-      overflow-x: scroll;
-      overflow-y: hidden; 
-      -webkit-overflow-scrolling: touch;
-    }
-
-    nav ul::after {
-      content: '';
-      background-image: linear-gradient(to right, transparent, rgba(29, 45, 107, 0.9) 80%);
-      height: 43px;
-      position: absolute;
-      pointer-events: none;
-      right: 0;
-      top: 0;
-      width: 2.2em;
-      z-index: 10;
-    }
-
-    nav li {
-      float: none;
-    }
-
-    nav li a:link {
-      padding: 1.2em 1.5em;
-      line-height: 1;
-    }
-
-    #portal-searchbox {
-      margin-top: 0;
-      float: none;
-      text-align: center;
-      clear: both;
-      font-size: 80%;
-      margin: 1.5em;
-    }
-
+  #portal-logo {
+    display: inline-block;
+    font-size: 90%;
+    margin: 1.5em;
   }
+
+  #portal-logo.has-title img {
+    display: none;
+  }
+
+  nav ul {
+    box-sizing: border-box;
+    padding: 0;
+    padding-right: 0.5em;
+    text-align: center;
+    float: none;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden; 
+    -webkit-overflow-scrolling: touch;
+  }
+
+  nav ul::after {
+    content: '';
+    background-image: linear-gradient(to right, transparent, rgba(29, 45, 107, 0.9) 80%);
+    height: 43px;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0;
+    width: 2.2em;
+    z-index: 10;
+  }
+
+  nav li {
+    float: none;
+  }
+
+  nav li::after {
+    visibility: visible;
+  }
+
+  nav li a:link {
+    padding: 1.2em 1.5em;
+    line-height: 1;
+  }
+
+  #portal-searchbox {
+    margin-top: 0;
+    float: none;
+    text-align: center;
+    clear: both;
+    font-size: 80%;
+    margin: 1.5em;
+  }
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .tile-noticias .collection-item {
+      width: 100%;
+      margin-right: 0;
+  }
+}
   /*PERSONALIZADO sete*
 
-  .tile-header h2,
-  .tile-content h2,
-  .documentFirstHeading {
+  .tile-header h2, .tile-content h2, .documentFirstHeading {
       font-size: 37px;
       border-bottom: 2px solid;
       font-weight: 400 !important;

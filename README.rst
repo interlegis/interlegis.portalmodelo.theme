@@ -125,6 +125,13 @@ Tema Original
         :width: 200px
         :height: 110px
 
+Tema Apucarana
+------------------
+
+.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/Apucarana/preview.png
+        :width: 200px
+        :height: 110px
+
 
 Estado Deste Pacote
 ===================
