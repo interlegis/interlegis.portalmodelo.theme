@@ -97,6 +97,13 @@ Tema IDG Azul
         :width: 200px
         :height: 110px
 
+Tema IDG Novembro Azul
+----------------------
+
+.. image:: https://raw.githubusercontent.com/interlegis/interlegis.portalmodelo.theme/master/src/interlegis/portalmodelo/theme/themes/IDG-azul-11/preview.png
+        :width: 200px
+        :height: 110px
+
 Tema IDG Branco
 ---------------
 
