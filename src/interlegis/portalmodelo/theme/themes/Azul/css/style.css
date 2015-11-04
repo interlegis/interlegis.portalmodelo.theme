@@ -84,6 +84,9 @@ header a:hover {
 #siteaction-search a:before {
   content: "\f002";
 }
+#siteaction-login a:before {
+  content: "\f090";
+}
 #portal-siteactions li#siteaction-accessibility {
   width: 17px;
 }
