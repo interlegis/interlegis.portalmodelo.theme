@@ -86,6 +86,12 @@
 
   <plone:static
       type="theme"
+      name="IDG-azul-11"
+      directory="themes/IDG-azul-11"
+      />
+
+  <plone:static
+      type="theme"
       name="Original"
       directory="themes/Original"
       />
