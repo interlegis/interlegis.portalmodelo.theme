@@ -232,6 +232,60 @@ h2 {
   margin-bottom: 1em;
 }
 /********** Tiles **********/
+.tile-header h2, .tile-content h2, .documentFirstHeading {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.tile-noticias .collection-item {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.4em;
+    border-bottom: 1px dotted #ccc;
+}
+
+.tile-noticias .collection-item:nth-child(odd) {
+    margin-right: 0;
+}
+
+.tile-noticias .collection-item a img {
+    margin: 0;
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+.tile-noticias .collection-item > a {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#content .tile-noticias .collection-item p {
+    margin-bottom: 0.25em;
+}
+
+.tile-noticias .collection-item p.description {
+    font-size: 1.1em;
+}
+
+#content .tile-noticias .tile-footer a {
+  float: right;
+  padding: 1.075em 1.2em;
+  background-color: #1a3a64;
+  color: #ffffff !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all ease-out 0.1s;
+}
+
+#content .tile-noticias .tile-footer a:hover {
+  background: #25528c;
+  color: #fff !important;
+}
+
 /*********** Portlets ***********/
 /* general styles */
 .portletHeader,
