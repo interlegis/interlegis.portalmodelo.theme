@@ -8,7 +8,7 @@ body {
 a:link,
 a:visited,
 #content a:link,
-dl.portlet a:link {
+#content a:visited {
   color: #1d390f;
 }
 .state-published {
@@ -50,9 +50,18 @@ header a:hover {
 #portal-logo {
   margin-left: 2%;
 }
+
+#portal-personaltools {
+  background: #31611a;
+}
+
+#portal-personaltools dd a:hover {
+    background: #458925;
+}
+
 #portal-siteactions {
   text-align: right;
-  margin-right: 2%;
+  margin-right: 1em;
   font-size: 80%;
 }
 #portal-siteactions a:before {
@@ -72,16 +81,17 @@ header a:hover {
 #siteaction-search a:before {
   content: "\f002";
 }
+#siteaction-login a:before {
+  content: "\f090";
+}
 #portal-siteactions li#siteaction-accessibility {
   width: 17px;
 }
 #portal-siteactions li a:hover {
-  color: #000000;
+  color: #afe397;
 }
 /* search */
-#portal-searchbox {
-  margin-right: 2%;
-}
+
 .searchButton {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -94,34 +104,79 @@ header a:hover {
   color: #ceeebf;
   cursor: pointer;
 }
+
+#portal-searchbox {
+  margin: 1.5em;
+  position: relative;
+}
+
+#portal-searchbox input {
+  border-radius: 0;
+}
+
+#portal-searchbox input.searchField {
+  min-width: 20em;
+  width: 100%;
+  height: 30px;
+  border: none;
+  text-indent: 1em;
+  line-height: 30px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+#portal-searchbox .searchButton {
+  font-family: FontAwesome;
+  position: absolute;
+  right: 0;
+  border-radius: 0;
+  color: #ceeebf;
+  height: 30px;
+  width: 30px;
+}
+
 /* Navigation */
-nav {
+#main-navigation {
   margin: 0;
   clear: both;
   background: #31611a;
   color: #000000;
 }
-nav ul {
+#main-navigation ul {
   padding: 0.3em 2%;
   text-align: right;
 }
-nav li {
+#main-navigation li {
   display: inline-block;
 }
-nav li a:link {
+
+#main-navigation li::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  right: -2px;
+  top: 0;
+  bottom: 0;
+  background-color: #ceeebf;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+
+#main-navigation li:last-child::after {
+  display: none;
+}
+
+#main-navigation li a:link {
   font-size: 80%;
   text-decoration: none;
   display: block;
   padding: 0 1em;
-  border-right: 1px solid #274d15;
 }
-nav li:last-child a {
-  border: none;
-  padding-right: 0;
-}
-nav li a:link,
-nav li a:visited {
-  color: #edf9e7;
+
+#main-navigation li a:link,
+#main-navigation li a:visited {
+  color: ##1d390f;
 }
 
 /* Mobile Menu button colors */
@@ -177,6 +232,60 @@ h2 {
   margin-bottom: 1em;
 }
 /********** Tiles **********/
+.tile-header h2, .tile-content h2, .documentFirstHeading {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.tile-noticias .collection-item {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.4em;
+    border-bottom: 1px dotted #ccc;
+}
+
+.tile-noticias .collection-item:nth-child(odd) {
+    margin-right: 0;
+}
+
+.tile-noticias .collection-item a img {
+    margin: 0;
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+.tile-noticias .collection-item > a {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#content .tile-noticias .collection-item p {
+    margin-bottom: 0.25em;
+}
+
+.tile-noticias .collection-item p.description {
+    font-size: 1.1em;
+}
+
+#content .tile-noticias .tile-footer a {
+  float: right;
+  padding: 1.075em 1.2em;
+  background-color: #31611a;
+  color: #ceeebf !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all ease-out 0.1s;
+}
+
+#content .tile-noticias .tile-footer a:hover {
+  background: #458925;
+  color: #fff !important;
+}
+
 /*********** Portlets ***********/
 /* general styles */
 .portletHeader,
@@ -316,15 +425,52 @@ footer p {
 
 }
 /* Landscape phones and down */
-@media (max-width: 480px) {
-  #logo {
+@media (max-width: 767px) {
+    #portal-logo {
+      display: inline-block;
+      font-size: 90%;
+    }
+
+    #portal-logo.has-title img {
+      display: none;
+    }
+
+    #main-navigation ul {
+      box-sizing: border-box;
+      padding: 0;
+      padding-right: 0.5em;
+      text-align: center;
+      float: none;
     width: 100%;
-    float: left;
-    text-align: center;
-    clear: both;
-    margin-bottom: 1em;
+      white-space: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden; 
+      -webkit-overflow-scrolling: touch;
   }
+
+    #main-navigation ul::after {
+      content: '';
+      background-image: linear-gradient(to right, transparent, rgba(49, 97, 26,0.9) 80%);
+      height: 43px;
+      position: absolute;
+      pointer-events: none;
+      right: 0;
+      top: 0;
+      width: 2.2em;
+      z-index: 10;
+    }
+
+    #main-navigation li {
+      float: none;
+    }
+
+    #main-navigation li a:link {
+      padding: 1.2em 1.5em;
+      line-height: 1;
+    }
+
   #portal-searchbox {
+      margin-top: 0;
     float: none;
     text-align: center;
     clear: both;
