@@ -8,7 +8,7 @@ body {
 a:link,
 a:visited,
 #content a:link,
-dl.portlet a:link {
+#content a:visited {
   color: #10233b;
 }
 .state-published {
