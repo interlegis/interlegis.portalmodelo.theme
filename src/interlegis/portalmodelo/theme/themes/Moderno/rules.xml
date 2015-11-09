@@ -30,28 +30,25 @@
         <!-- Header -->
         <replace css:content="#portal-personaltools" css:theme="#user" />
         <replace css:content="#portal-siteactions" css:theme="#siteactions" />
-        <copy attributes="href title" css:content="#portal-logo" css:theme="#logo a" />
+        <copy attributes="href title" css:content="#portal-logo" css:theme="#portal-logo" />
         <copy attributes="style" css:content="#portal-header" css:theme="header" />
         <replace css:content="#portal-header p.hiddenStructure" css:theme="#accessibility" />
         <replace css:content="#portal-searchbox" css:theme="#search" />
+        <replace css:content="#portal-searchbox .searchButton">
+            <input class="searchButton" type="submit" value="&#xf002;" alt="Buscar"/>
+        </replace>
         <drop css:content=".searchSection" />
         <replace css:content="#portal-globalnav>li" css:theme-children="nav ul" />
-        
-        <replace css:content="#portal-logo" css:theme="#logo" />
-        
-        
-        <!-- remove banner outside home
-        <drop css:theme=".banner-home" css:if-not-content=".section-front-page" />
-         -->
-
+        <rules css:if-not-content="#titleHeader">
+            <drop attributes="class" css:theme="#portal-logo" />
+        </rules>
+        <replace css:theme-children="#portal-logo" css:content-children="#portal-logo" />
         <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" method="raw" />
         <drop css:content="#portal-breadcrumbs" />
 
         <!--Content -->
         <merge attributes="class" css:content="body" css:theme="body" />
         <copy attributes="id dir" css:content="body" css:theme="body" />
-        
-      
         <replace css:content-children="#portal-column-content" css:theme-children="#main-content" />
 
         <!-- Columns -->
