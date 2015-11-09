@@ -481,3 +481,12 @@ footer p {
     }
 
   }
+
+/* Phones and down */
+@media (max-width: 480px) {
+  .tile-noticias .collection-item {
+    width: 100%;
+    margin-right: 0;
+  }       
+}
+
