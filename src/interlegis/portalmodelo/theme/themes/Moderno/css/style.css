@@ -95,6 +95,12 @@ header a:hover {
 #portal-siteactions li a:hover {
   color: #283e93;
 }
+.banner-home {
+  height: 250px;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center center;
+}
 /* search */
 
 .searchButton {
@@ -442,7 +448,7 @@ footer p {
       padding-right: 0.5em;
       text-align: center;
       float: none;
-    width: 100%;
+      width: 100%;
       white-space: nowrap;
       overflow-x: scroll;
       overflow-y: hidden; 
@@ -470,11 +476,11 @@ footer p {
       line-height: 1;
     }
 
-  #portal-searchbox {
+    #portal-searchbox {
       margin-top: 0;
-    float: none;
-    text-align: center;
-    clear: both;
-    font-size: 80%;
-  }
+      float: none;
+      text-align: center;
+      clear: both;
+      font-size: 80%;
+    }
 }
