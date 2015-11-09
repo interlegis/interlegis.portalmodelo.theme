@@ -145,7 +145,7 @@ header a:hover {
   color: #ffffff;
 }
 #main-navigation ul {
-  padding: 0.3em 2%;
+  padding: 0.3em;
   text-align: right;
 }
 #main-navigation li {
@@ -478,4 +478,12 @@ footer p {
     clear: both;
     font-size: 80%;
   }
+}
+
+/* Phones and down */
+@media (max-width: 480px) {
+  .tile-noticias .collection-item {
+    width: 100%;
+    margin-right: 0;
+  }       
 }
