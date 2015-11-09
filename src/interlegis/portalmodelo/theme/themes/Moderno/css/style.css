@@ -153,7 +153,7 @@ header a:hover {
   color: #000000;
 }
 #main-navigation ul {
-  padding: 0.3em 2%;
+  padding: 0.3em;
   text-align: right;
 }
 #main-navigation li {
