@@ -62,6 +62,13 @@
         </rules>
         <!-- Footer -->
         <replace css:content-children="#portal-footer" css:theme-children="#footer-info" />
+        <replace css:content-children="#portal-colophon" css:theme-children="#footer-colophon" />
+        <replace css:content-children=".colophon-logo.interlegis">
+            <img src="++theme++Moderno/img/interlegis-footer.png" alt="Logotipo do Interlegis"/>
+        </replace>
+        <replace css:content-children=".colophon-logo.creative-commons">
+            <img src="++theme++Moderno/img/cc-by-sa-footer.png" alt="Selo Creative Commons BY-SA"/>
+        </replace>
         <!-- Apaga footer do board -->
         <drop css:content=".section-foruns .poweredBy" /> 
     </rules>

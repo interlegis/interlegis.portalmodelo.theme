@@ -394,7 +394,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 footer {
   border-top: #e6e6e6 1px solid;
   margin-top: 2em;
-  padding: 2%;
   font-size: 80%;
   background: #ffffff;
   color: #000000;
@@ -404,6 +403,43 @@ footer a {
 }
 footer p {
   margin-bottom: 2em;
+}
+
+.footer-item {
+  padding: 0 2%;
+}
+
+#footer-info {
+  padding-top: 3em; 
+}
+
+#footer-colophon {
+  padding: 2rem 0;
+  font-size: 0;
+  text-align: center;
+  background-color: #283e93;
+  color: #ffffff;
+}
+
+.colophon-item {
+    display: inline-block;
+    max-width: 46%;
+    margin: 0 2%;
+    vertical-align: top;
+}
+
+.colophon-item a {
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.colophon-info {
+    font-size: 12px;
+    margin-top: 1em;
+}
+
+.colophon-logo {
+  height: 40px
 }
 /********* RESPONSIVE **********/
 /* Portrait tablet to landscape and desktop */
@@ -483,6 +519,12 @@ footer p {
       clear: both;
       font-size: 80%;
     }
+
+    .colophon-item {
+      max-width: 96%;
+      margin: 1.5rem 2%;
+    }
+
 }
 
 /* Phones and down */
