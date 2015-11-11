@@ -1,0 +1,30 @@
+<div metal:define-macro="portal_colophon"
+i18n:domain="plone"
+class="row">
+
+    <div id="portal-colophon">
+    
+      <div class="colophon-item">
+        <a class="colophon-logo interlegis" href="http://www.interlegis.leg.br/">
+          <img  tal:attributes="src string:${context/portal_url}/++resource++portalmodelo.theme/images/interlegis-white.png"
+                alt="Logotipo do Interlegis" />
+        </a>
+        <div class="colophon-info">
+          Este site é feito com o software livre e aberto <a href="http://www.interlegis.leg.br/portalmodelo">Portal Modelo</a> desenvolvido pelo <a href="http://www.interlegis.leg.br">Interlegis</a> e roda sobre o CMS <a href="http://plone.org">Plone</a>.
+        </div>
+      </div>
+    
+      <div class="colophon-item">
+        <a class="colophon-logo creative-commons" href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">
+          <img  tal:attributes="src string:${context/portal_url}/++resource++portalmodelo.theme/images/cc-by-sa-white.png"
+                alt="Selo Creative Commons BY-SA" />
+        </a>
+        <div class="colophon-info">
+          Os conteúdos e dados deste site estão publicados sob a licença <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons 4.0 &mdash; Atribuir Fonte - Compartilhar Igual.</a>
+        </div>
+      </div>
+    
+    </div>
+
+</div>
+

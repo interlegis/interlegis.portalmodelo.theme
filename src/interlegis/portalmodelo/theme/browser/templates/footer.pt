@@ -1,42 +1,23 @@
 <div metal:define-macro="portal_footer"
-     i18n:domain="plone"
-     class="row">
+i18n:domain="plone"
+class="row">
 
-<div id="portal-footer">
+  <div id="portal-footer">
 
-<a class="tile"
-     tal:condition="python:request.AUTHENTICATED_USER.has_role(['Manager', 'Administrator'], context)"
-     tal:attributes="href string:${context/portal_url}/footer-page/edit">
-   <span i18n:translate=""
-         i18n:domain="plone">Edit</span>
-</a>
+    <a  class="tile"
+        tal:condition="python:request.AUTHENTICATED_USER.has_role(['Manager', 'Administrator'], context)"
+        tal:attributes="href string:${context/portal_url}/footer-page/edit">
+      <span i18n:translate=""
+            i18n:domain="plone">Edit</span>
+    </a>
 
-<span tal:replace="structure python:context.portal_url.getPortalObject()['footer-page'].getText()" />
+    <span tal:replace="structure python:context.portal_url.getPortalObject()['footer-page'].getText()" />
 
-<p class="visualClear"></p>
+    <p class="visualClear"></p>
 
-<div id="linksfooter">
+  </div>
 
-<div id="footerleft">
-<a href="http://www.interlegis.leg.br/">
-	<img tal:attributes="src string:${context/portal_url}/++resource++portalmodelo.theme/images/interlegis.png"
-		 alt="Logotipo do Interlegis" />
-</a>
-Este site é feito com o software livre e aberto <a href="http://www.interlegis.leg.br/portalmodelo">Portal Modelo</a> desenvolvido pelo <a href="http://www.interlegis.leg.br">Interlegis</a> e roda sobre o CMS <a href="http://plone.org">Plone</a>.
-</div>
-
-<div id="footerright">
-<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">
-	<img tal:attributes="src string:${context/portal_url}/++resource++portalmodelo.theme/images/cc-by-sa.png"
-		 alt="Selo Creative Commons BY-SA" />
-</a>
-Os conteúdos e dados deste site estão publicados sob a licença <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">Creative Commons 4.0 &mdash; Atribuir Fonte - Compartilhar Igual.</a>
-</div>
-
-</div>
-</div>
-
-<p class="visualClear"></p>
+  <p class="visualClear"></p>
 
 </div>
 
