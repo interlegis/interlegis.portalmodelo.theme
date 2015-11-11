@@ -127,23 +127,10 @@
     width: 100%;
 }
 
-#linksfooter {
-    width: 100%;
-    display: table;
-}
-
-#linksfooter img {
-    float: left;
-    margin-right: 1em;
-}
-
-#footerleft {
-    float: left;
-    width: 50%;
-}
-
-#footerright {
-    margin-left: 50%;
+.edit-button {
+    background-color: #75AD0A;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
 }
 
 /*** portlets ***/

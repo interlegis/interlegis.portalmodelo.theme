@@ -7,7 +7,7 @@ class="row">
     <a  class="tile"
         tal:condition="python:request.AUTHENTICATED_USER.has_role(['Manager', 'Administrator'], context)"
         tal:attributes="href string:${context/portal_url}/footer-page/edit">
-      <span i18n:translate=""
+      <span class="edit-button" i18n:translate=""
             i18n:domain="plone">Edit</span>
     </a>
 
