@@ -59,7 +59,6 @@ input[type="submit"]:hover {
 header {
   background-color: #ffffff;
   color: #000000;
-  overflow: hidden;
   margin: 0px auto;
   max-width: 96%;
 }
