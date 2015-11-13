@@ -499,7 +499,6 @@ footer p {
   /* Mobile Menu theme color adjustments */
   #column-one {
     border-color: #25528C;
-    z-index: 11;
   }
 
   dl.portlet ul.navTree .navTreeCurrentItem {
