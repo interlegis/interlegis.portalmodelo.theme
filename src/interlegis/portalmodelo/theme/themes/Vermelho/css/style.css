@@ -38,6 +38,8 @@ dl.portlet a:hover {
 header {
   background-color: #ab4f3a;
   color: #ffffff;
+  float: left;
+  width: 100%;
 }
 header a:link,
 header a:visited {
