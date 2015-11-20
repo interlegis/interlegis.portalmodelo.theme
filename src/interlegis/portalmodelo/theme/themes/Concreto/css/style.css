@@ -410,25 +410,40 @@ footer p {
 }
 
 #footer-colophon {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   font-size: 0;
   text-align: center;
   background-color: #626a73;
 }
 
 .colophon-item {
-    display: inline-block;
-    max-width: 46%;
-    margin: 0 2%;
-    vertical-align: top;
+  display: inline-block;
+  max-width: 46%;
+  padding: 0 2%;
+  vertical-align: top;
+  position: relative;
+}
+
+.colophon-item:first-child::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #fff;
+  right: 0;
+  top: 0;
 }
 
 .colophon-item a {
   font-weight: 700;
 }
 
+.colophon-item img {
+  height: 32px;
+}
+
 .colophon-info {
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 1em;
 }
 

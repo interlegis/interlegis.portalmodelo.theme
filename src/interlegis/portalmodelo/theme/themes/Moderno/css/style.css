@@ -414,7 +414,7 @@ footer p {
 }
 
 #footer-colophon {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   font-size: 0;
   text-align: center;
   background-color: #283e93;
@@ -422,19 +422,33 @@ footer p {
 }
 
 .colophon-item {
-    display: inline-block;
-    max-width: 46%;
-    margin: 0 2%;
-    vertical-align: top;
+  display: inline-block;
+  max-width: 46%;
+  padding: 0 2%;
+  vertical-align: top;
+  position: relative;
+}
+
+.colophon-item:first-child::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #000;
+  right: 0;
+  top: 0;
 }
 
 .colophon-item a {
   font-weight: 700;
-  color: #ffffff !important;
+}
+
+.colophon-item img {
+  height: 32px;
 }
 
 .colophon-info {
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 1em;
 }
 
