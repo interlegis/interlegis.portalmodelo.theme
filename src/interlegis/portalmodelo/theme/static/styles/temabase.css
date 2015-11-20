@@ -130,9 +130,11 @@
 }
 
 .edit-button {
+    display: inline-block;
     background-color: #75AD0A;
     padding: 0.3rem 0.7rem;
     border-radius: 5px;
+    margin-bottom: 0.7rem;
 }
 
 /*** portlets ***/
