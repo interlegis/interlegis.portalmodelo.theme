@@ -412,6 +412,12 @@ div.activityAvatar img {
 
 /*Cover collective/collection-tile re-style*/
 
+.cover-banner-tile a img {
+    width: 100%;
+    height: auto;
+    margin: 0 !important;
+}
+
 .tile-parlamentares {
     text-align: center;
 }
