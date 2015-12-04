@@ -705,6 +705,10 @@ ul.submenu a, ul.submenu a.state-published:hover, .selected ul.submenu .state-pu
         font-size: 110%;
     }
 
+    .cover-banner-tile {
+        display: none;
+    }
+
     /* Make Live Search not display on phones and down */
     #LSResult {
         display: none !important;
