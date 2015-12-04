@@ -208,6 +208,7 @@ header a:hover {
   margin: 1.2em 2%;
   font-size: 80%;
   clear: both;
+  display: inline-block;
 }
 .section-front-page #portal-breadcrumbs {
   visibility: hidden;
