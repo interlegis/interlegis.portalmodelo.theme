@@ -42,7 +42,7 @@ class InstallTestCase(unittest.TestCase):
     def test_temas_disponiveis(self):
         themes = getAvailableThemes()
         # Nossos temas + os dois do Plone
-        self.assertEqual(len(themes), 18)
+        self.assertEqual(len(themes), 19)
 
     def test_tema_Areia_disponivel(self):
         theme = getTheme('Areia')
@@ -218,6 +218,17 @@ class InstallTestCase(unittest.TestCase):
                          'Tema Apucarana para o Portal Modelo, inspirado pela Câmara Municipal de Apucarana')
         self.assertEqual(theme.rules, '/++theme++Apucarana/rules.xml')
         self.assertEqual(theme.absolutePrefix, '/++theme++Apucarana')
+        self.assertEqual(theme.doctype, "<!DOCTYPE html>")
+
+    def test_tema_interlegis_disponivel(self):
+        theme = getTheme('Interlegis')
+        self.assertTrue(theme is not None)
+        self.assertEqual(theme.__name__, 'Interlegis')
+        self.assertEqual(theme.title, 'Tema Interlegis')
+        self.assertEqual(theme.description,
+                         'Tema Interlegis para o Portal Modelo')
+        self.assertEqual(theme.rules, '/++theme++Interlegis/rules.xml')
+        self.assertEqual(theme.absolutePrefix, '/++theme++Interlegis')
         self.assertEqual(theme.doctype, "<!DOCTYPE html>")
 
     def test_normalize_css_registered(self):

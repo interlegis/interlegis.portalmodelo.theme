@@ -102,4 +102,10 @@
       directory="themes/Apucarana"
       />
 
+  <plone:static
+      type="theme"
+      name="Interlegis"
+      directory="themes/Interlegis"
+      />
+
 </configure>
