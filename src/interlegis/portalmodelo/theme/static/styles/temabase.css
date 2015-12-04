@@ -417,10 +417,12 @@ div.activityAvatar img {
     font-size: 0;
 }
 
-.tile-parlamentares .list-item {
+.tile-parlamentares .list-item, #content .tile-parlamentares ul li  {
     display: inline-block;
     vertical-align: top;
-    margin: 10px 0;
+    margin: 15px;
+    max-width: 170px;
+    line-height: normal;
 }
 
 .tile-parlamentares a {
@@ -433,6 +435,14 @@ div.activityAvatar img {
 
 .tile-parlamentares h3 {
     font-size: initial;
+    padding: 5px;
+}
+
+.tile-parlamentares a:nth-child(2) {
+    font-size: 15px;
+    display: block;
+    font-weight: 600;
+    max-width: 170px;
     padding: 5px;
 }
 
