@@ -20,7 +20,7 @@
                            data-month prev_month;"
            i18n:attributes="title title_previous_month;">&laquo;</a>
 
-        <span i18n:translate="">
+        <span i18n:translate="" tal:omit-tag="">
             <span i18n:name="monthname" i18n:translate=""
                   tal:content="view/month_name"
                   tal:omit-tag="">monthname</span>
@@ -67,8 +67,7 @@
                               (events and ' cal_has_events' or ''))">
                     <a href=""
                       tal:omit-tag="not:events"
-                      tal:attributes="href python:view.date_events_url(day['date_string']);
-                                      title day/events_string;"
+                      tal:attributes="href python:view.date_events_url(day['date_string']);"
                       tal:content="day/day">31</a>
 
                 </td>
