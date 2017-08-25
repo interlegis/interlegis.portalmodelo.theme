@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0rc5 (unreleased)
+1.0rc5 (2017-08-25)
 -------------------
 - Fix calendar event link
   [rafahela]
