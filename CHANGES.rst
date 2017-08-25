@@ -3,6 +3,8 @@ Changelog
 
 1.0rc5 (unreleased)
 -------------------
+- Fix calendar event link
+  [rafahela]
 
 - Update preview images
   [jeanferri]
