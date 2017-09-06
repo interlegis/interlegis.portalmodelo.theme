@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plone">
+
+  <!-- Scripts para contraste -->
+  <browser:resource
+      file="jquery.cookie.js"
+      name="jquery.cookie.js"
+      layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
+      />
+
+  <browser:resource
+      file="contraste.js"
+      name="contraste.js"
+      layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
+      />
+
+</configure>
