@@ -1,4 +1,5 @@
 @import url("grid.css");
+@import url("../../../contraste.css");
 /********** Basic styles **********/
 body {
   background: #ffffff;
