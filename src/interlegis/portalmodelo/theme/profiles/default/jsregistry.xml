@@ -23,4 +23,14 @@
   enabled="True"
   expression="" id="++resource++portalmodelo.theme/scripts/base.js" inline="False"/>
 
+ <javascript id="++resource++contraste.js"
+              cacheable="True" compression="safe" cookable="True" enabled="True"
+              inline="False" authenticated="False"
+              insert-after="*" />
+
+ <javascript id="++resource++jquery.cookie.js"
+              cacheable="True" compression="safe" cookable="True" enabled="True"
+              inline="False" authenticated="False"
+              insert-after="*" />
+
 </object>

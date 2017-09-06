@@ -50,7 +50,16 @@
     rel="stylesheet"
     rendering="link"/>
 
-
-
+  <stylesheet
+    insert-before="*"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="on"
+    expression=""
+    id="++resource++portalmodelo.theme/styles/contraste.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="import"/>
 
 </object>
