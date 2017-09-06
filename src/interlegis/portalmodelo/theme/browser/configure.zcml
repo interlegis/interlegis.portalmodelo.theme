@@ -12,6 +12,8 @@
       layer="..interfaces.IBrowserLayer"
       />
 
+    <include package='.contraste' />
+
     <!-- The portal header -->
     <browser:viewlet
         name="plone.header"
