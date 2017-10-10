@@ -730,3 +730,12 @@ background-color: transparent;
 .label:empty, .badge:empty {
 display: inline;
 }
+
+/********* Ombudsman ********/
+#claim-button {
+    margin: 2em 0 2em 0;
+}
+
+#claim-button input {
+    padding: 7px
+}
