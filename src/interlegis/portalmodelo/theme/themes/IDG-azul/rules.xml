@@ -57,8 +57,6 @@
         <drop css:content="#viewlet-below-content-body" />
         <after theme-children="/html/body" css:content-children="#plone-analytics" />
 
-        <!-- Apaga footer do board -->
-        <drop css:content=".section-foruns .poweredBy" />
     </rules>
 
 </rules>

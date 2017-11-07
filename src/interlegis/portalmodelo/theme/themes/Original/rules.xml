@@ -59,8 +59,6 @@
         </rules>
         <!-- Footer -->
         <replace css:content-children="#portal-footer" css:theme-children="#footer-info" />
-        <!-- Apaga footer do board -->
-        <drop css:content=".section-foruns .poweredBy" />
     </rules>
 
 </rules>

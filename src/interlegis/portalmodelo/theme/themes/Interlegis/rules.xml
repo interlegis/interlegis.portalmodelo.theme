@@ -69,9 +69,6 @@
         <replace css:content-children=".colophon-logo.creative-commons">
             <img src="++theme++Interlegis/img/cc-by-sa-footer.png" alt="Selo Creative Commons BY-SA"/>
         </replace>
-        <!-- Apaga footer do board -->
-
-        <drop css:content=".section-foruns .poweredBy" />
     </rules>
 
 </rules>
