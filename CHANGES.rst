@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0rc6 (2017-12-8)
+1.0rc6 (2017-12-08)
 -------------------
 
 - Add plone-analytics rule in Themes to solve problems with Google Analytics
