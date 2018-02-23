@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.0rc7 (unreleased)
+1.0rc7 (2018-02-23)
 -------------------
 
-- Nothing changed yet.
+- Add high contrast image
+  [rafahela]
 
 
 1.0rc6 (2017-12-08)
