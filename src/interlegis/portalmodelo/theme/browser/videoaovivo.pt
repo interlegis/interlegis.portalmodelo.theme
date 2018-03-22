@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="pt-br"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="interlegis.portalmodelo.theme">
+
+<body>
+  <div metal:fill-slot="main"
+       tal:define="link python:here.link.getRemoteUrl()">
+
+    <h1 class="documentFirstHeading">Ao Vivo</h1>
+
+    <div style="width=640px;height:360px;" width="640" height="360">
+      <video style="width=640px;height:360px;margin: 0 auto; display: table;" id="video" controls></video>
+      <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+      <script>
+          if(Hls.isSupported()) {
+              console.log("Entrou")
+              var video = document.getElementById('video');
+              var hls = new Hls();
+              hls.loadSource('http://vsi.interlegis.leg.br:8080/hls/interlegis/index.m3u8');
+              hls.attachMedia(video);
+              hls.on(Hls.Events.MANIFEST_PARSED,function() {
+               video.play();
+              });
+          }else{
+              console.log("Erro");
+              var video = document.getElementById("video");
+              video.setAttribute('src','http://vsi.interlegis.leg.br:8080/hls/interlegis/index.m3u8');
+              var apple_script = document.createElement('script');
+              apple_script.setAttribute('src','https://www.apple.com/metrics/scripts/s_code_h.js');
+              document.head.appendChild(apple_script);
+          }
+      </script>
+    </div>
+
+<!--﻿<style type="text/css">
+body {
+	margin: 0px;
+}
+</style>
+<table width="722" height="405" border="0" align="left" cellpadding="0" cellspacing="0">
+  <tr>
+    <th width="100%" height="100%" align="left" valign="top" scope="col"><div id="player_tvrcn_gerador_wrapper" style="position: relative; display: block; width: 100%; height: 100%;"><object type="application/x-shockwave-flash" data="http://p.jwpcdn.com/6/12/jwplayer.flash.swf" width="100%" height="100%" bgcolor="#000000" id="player_tvrcn_gerador" name="player_tvrcn_gerador" class="jwswf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="seamlesstabbing" value="true"><param name="wmode" value="opaque"></object><div id="player_tvrcn_gerador_aspect" style="display: none;"></div></div>
+<script src="http://jwpsrv.com/library/zJkgsJZJEeK6GCIACpYGxA.js"></script>
+<script src="http://jwpsrv.com/library/5V3tOP97EeK2SxIxOUCPzg.js"></script>
+<script type="text/javascript">
+   if (navigator.userAgent.match(/android/i) != null){
+      jwplayer("player_tvrcn_gerador").setup({
+         file: "https://5aa7a31caf15d.streamlock.net:1939/live/cma/playlist.m3u8",
+         type: "mp4",
+         primary: "html5"
+      });
+   } else {
+      jwplayer("player_tvrcn_gerador").setup({
+         sources: [{
+            file: "https://5aa7a31caf15d.streamlock.net:1939/live/cma/playlist.m3u8"
+         },{
+            file: "https://5aa7a31caf15d.streamlock.net:1939/live/cma/playlist.m3u8"
+         }],
+         rtmp: {
+            bufferlength: 3,
+         },
+         image: ' https://aracaju.se.leg.br/tvcamara1.jpg',
+         title: '',
+         width: '100%',
+         height: '100%',
+         autostart: 'false',
+         repeat: 'true',
+         fallback: false,
+         logo: {
+                     file: '',
+                     link: 'https://aracaju.se.leg.br/tvcamara1.jpg',
+                     position: "",
+         },
+         abouttext: "TV CÂMARA",
+      });
+   }
+</script></th>
+  </tr>
+</table>-->
+  </div>
+</html>

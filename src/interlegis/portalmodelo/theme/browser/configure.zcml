@@ -69,6 +69,22 @@
         layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
     />
 
+  <browser:page
+      for="*"
+      class=".videoaovivo.VideoAoVivoView"
+      layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
+      permission="zope2.View"
+      name="videoaovivo"
+      template="videoaovivo.pt"/>
+
+  <browser:page
+      for="*"
+      class=".audioaovivo.AudioAoVivoView"
+      layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
+      permission="zope2.View"
+      name="audioaovivo"
+      template="audioaovivo.pt"/>
+
    <adapter for="*
                 Products.CMFPlone.browser.interfaces.ISiteMap"
             factory=".sitemap.InterlegisSitemapNavtreeStrategy"
