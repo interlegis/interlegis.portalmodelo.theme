@@ -739,3 +739,7 @@ display: inline;
 #claim-button input {
     padding: 7px
 }
+
+input#clearSavedFormInput.standalone {
+    display: none !important;
+}
