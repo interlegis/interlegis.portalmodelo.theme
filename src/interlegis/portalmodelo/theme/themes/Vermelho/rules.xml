@@ -14,6 +14,8 @@
     <notheme if-path="ploneimage.htm" />
     <notheme if="$ajax_load" />
 
+    <xsl:output method="html"/>
+
     <rules css:if-content="#visual-portal-wrapper">
         <!--Plone.app.toolbar-->
         <append theme="/html/body" content="//div[@data-iframe='toolbar']" />
