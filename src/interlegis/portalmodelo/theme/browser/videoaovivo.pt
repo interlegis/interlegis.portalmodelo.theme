@@ -15,25 +15,39 @@
     <div style="width=640px;height:360px;" width="640" height="360">
       <video style="width=640px;height:360px;margin: 0 auto; display: table;" id="video" controls></video>
       <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-      <script>
-          if(Hls.isSupported()) {
-              console.log("Entrou")
-              var video = document.getElementById('video');
-              var hls = new Hls();
-              hls.loadSource('link');
-              hls.attachMedia(video);
-              hls.on(Hls.Events.MANIFEST_PARSED,function() {
-               video.play();
-              });
-          }else{
-              console.log("Erro");
-              var video = document.getElementById("video");
-              video.setAttribute('src','link');
-              var apple_script = document.createElement('script');
-              apple_script.setAttribute('src','https://www.apple.com/metrics/scripts/s_code_h.js');
-              document.head.appendChild(apple_script);
-          }
-      </script>
+
+         <script>
+            var invocation = new XMLHttpRequest();
+            var url = 'link';
+
+            function callOtherDomain() {
+              if(invocation) {
+                invocation.open('GET', url, true);
+                invocation.onreadystatechange = handler;
+                invocation.send();
+              }
+            }
+          </script>
+
+          <script>
+              if(Hls.isSupported()) {
+                  console.log("Entrou")
+                  var video = document.getElementById('video');
+                  var hls = new Hls();
+                  hls.loadSource('ao-vivo/link');
+                  hls.attachMedia(video);
+                  hls.on(Hls.Events.MANIFEST_PARSED,function() {
+                   video.play();
+                  });
+              }else{
+                  console.log("Erro");
+                  var video = document.getElementById("video");
+                  video.setAttribute('src','ao-vivo/link');
+                  var apple_script = document.createElement('script');
+                  apple_script.setAttribute('src','https://www.apple.com/metrics/scripts/s_code_h.js');
+                  document.head.appendChild(apple_script);
+              }
+          </script>
     </div>
   </div>
 </html>
