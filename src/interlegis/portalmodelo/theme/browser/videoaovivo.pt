@@ -8,27 +8,13 @@
 
 <body>
   <div metal:fill-slot="main"
-       tal:define="link python:here.link.getRemoteUrl()">
+       tal:define="link python:here.link.getRemoteUrl();">
 
     <h1 class="documentFirstHeading">Ao Vivo</h1>
 
     <div style="width=640px;height:360px;" width="640" height="360">
       <video style="width=640px;height:360px;margin: 0 auto; display: table;" id="video" controls></video>
       <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-
-         <script>
-            var invocation = new XMLHttpRequest();
-            var url = 'link';
-
-            function callOtherDomain() {
-              if(invocation) {
-                invocation.open('GET', url, true);
-                invocation.onreadystatechange = handler;
-                invocation.send();
-              }
-            }
-          </script>
-
           <script>
               if(Hls.isSupported()) {
                   console.log("Entrou")
@@ -50,4 +36,5 @@
           </script>
     </div>
   </div>
+</body>
 </html>
