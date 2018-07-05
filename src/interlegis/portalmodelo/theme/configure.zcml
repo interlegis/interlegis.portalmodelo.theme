@@ -8,6 +8,7 @@
 
   <include package="z3c.jbot" file="meta.zcml" />
   <include package=".browser" />
+  <!--<include package=".upgrades" />-->
   <include file="profiles.zcml" />
 
   <browser:resourceDirectory
@@ -16,10 +17,10 @@
       />
 
   <browser:jbot
-    directory="jbot"
-    layer=".interfaces.IBrowserLayer"
-  />
+      directory="jbot"
+      layer=".interfaces.IBrowserLayer"
+      />
 
-   <include file="themes.zcml" />
+  <include file="themes.zcml" />
 
 </configure>
