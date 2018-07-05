@@ -8,11 +8,15 @@
 
 <body>
   <div metal:fill-slot="main"
-       tal:define="link python:here.link.getRemoteUrl();">
+       tal:define="link exists: python:here.link.getRemoteUrl();">
 
     <h1 class="documentFirstHeading">Ao Vivo</h1>
+    <p tal:condition="not:link">
+      Não há sessão ao vivo.
+    </p>
 
-    <div style="width=640px;height:360px;" width="640" height="360">
+    <div style="width=640px;height:360px;" width="640" height="360"
+         tal:condition="link">
       <video style="width=640px;height:360px;margin: 0 auto; display: table;" id="video" controls></video>
       <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
           <script>

@@ -1,10 +1,13 @@
 Changelog
 =========
 
-1.0rc8 (2018-07-05)
+1.0rc8 (2018-07-06)
 -------------------
 
-- Add upgrade steps for audio e video views
+- Add upgrade steps for audio and video views
+  [rafahela]
+
+- Add audio and video views
   [rafahela]
 
 

@@ -8,11 +8,15 @@
 
 <body>
   <div metal:fill-slot="main"
-       tal:define="link python:here.link.getRemoteUrl()">
+       tal:define="link exists: python:here.link.getRemoteUrl()">
 
     <h1 class="documentFirstHeading">Ao Vivo</h1>
+    <p tal:condition="not:link">
+      Não há sessão ao vivo.
+    </p>
 
-    <div style="width=640px;height:100px;" width="640" height="100">
+    <div style="width=640px;height:100px;" width="640" height="100"
+         tal:condition="link">
       <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
       <script type="text/javascript">
         MRP.insert({
