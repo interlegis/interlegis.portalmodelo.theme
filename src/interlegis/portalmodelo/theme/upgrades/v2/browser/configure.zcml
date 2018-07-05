@@ -1,0 +1,34 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plone">
+
+  <browser:page
+      for="*"
+      class=".videoaovivo.VideoAoVivoView"
+      layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
+      permission="zope2.View"
+      name="videoaovivo"
+      template="videoaovivo.pt"/>
+
+  <browser:page
+      for="*"
+      class=".audioaovivo.AudioAoVivoView"
+      layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
+      permission="zope2.View"
+      name="audioaovivo"
+      template="audioaovivo.pt"/>
+
+   <!--<plone:CORSPolicy
+     for="*"
+     layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
+     allow_origin="*"
+     allow_methods="GET, POST"
+     allow_credentials="true"
+     allow_headers="Accept,Authorization,Origin,X-Requested-With,Content-Type,Upload-Length,Upload-Offset,Tus-Resumable,Upload-Metadata"
+     expose_headers="Upload-Offset,Location,Upload-Length,Tus-Version,Tus-Resumable,Tus-Max-Size,Tus-Extension,Upload-Metadata"
+     max_age="3600"
+     />-->
+
+</configure>

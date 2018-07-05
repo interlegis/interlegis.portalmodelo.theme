@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="pt-br"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="interlegis.portalmodelo.theme">
+
+<body>
+  <div metal:fill-slot="main"
+       tal:define="link python:here.link.getRemoteUrl()">
+
+    <h1 class="documentFirstHeading">Ao Vivo</h1>
+
+    <div style="width=640px;height:100px;" width="640" height="100">
+      <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+      <script type="text/javascript">
+        MRP.insert({
+        'url':'link',
+        'codec':'mp3',
+        'volume':100,
+        'autoplay':true,
+        'jsevents':true,
+        'buffering':0,
+        'title':' ',
+        'welcome':' ',
+        'wmode':'transparent',
+        'skin':'mcclean',
+        'width':180,
+        'height':60
+        });
+      </script>
+     </div>
+  </div>
+</body>
+</html>
