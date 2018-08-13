@@ -4,7 +4,8 @@ Changelog
 1.0rc9 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Change accessibility infos.
+  [rafahela]
 
 
 1.0rc8 (2018-07-09)
