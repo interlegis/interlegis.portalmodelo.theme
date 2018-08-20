@@ -96,6 +96,9 @@ header a:hover {
 #siteaction-contraste a:before {
   content: "\f042";
 }
+#siteaction-vlibras a:before {
+  content: "\f087";
+}
 #portal-siteactions li#siteaction-accessibility {
   width: 17px;
 }
