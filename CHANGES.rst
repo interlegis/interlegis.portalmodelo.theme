@@ -7,6 +7,8 @@ Changelog
 - Change accessibility infos.
   [rafahela]
 
+- Add audio and video online portlet.
+  [rafahela]
 
 1.0rc8 (2018-07-09)
 -------------------
