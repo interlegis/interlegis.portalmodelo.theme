@@ -253,7 +253,7 @@ $(window).load(function() {
             if (!$('body').hasClass('template-compose')) {
                 Galleria.unloadTheme();
                 Galleria.get(0).destroy();
-                Galleria.loadTheme('++theme++IDG-azul/galleria-theme/galleria.tema-idg-azul-11.js');
+                Galleria.loadTheme('++theme++IDG-azul-11/galleria-theme/galleria.tema-idg-azul-11.js');
                 Galleria.run('.galleria', {
                     theme: 'tema-idg-azul-11'
                 });
