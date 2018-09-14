@@ -69,21 +69,13 @@
         layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
     />
 
-  <browser:page
-      for="*"
-      class=".videoaovivo.VideoAoVivoView"
-      layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
-      permission="zope2.View"
-      name="videoaovivo"
-      template="videoaovivo.pt"/>
-
-  <browser:page
-      for="*"
-      class=".audioaovivo.AudioAoVivoView"
-      layer="interlegis.portalmodelo.theme.interfaces.IBrowserLayer"
-      permission="zope2.View"
-      name="audioaovivo"
-      template="audioaovivo.pt"/>
+    <browser:page
+        name="view"
+        for="interlegis.portalmodelo.theme.interfaces.IStream"
+        class=".stream.StreamView"
+        template="templates/stream_view.pt"
+        permission="zope2.View"
+        />
 
    <adapter for="*
                 Products.CMFPlone.browser.interfaces.ISiteMap"

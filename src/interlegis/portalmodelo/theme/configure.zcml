@@ -12,6 +12,12 @@
   <!--<include package=".upgrades" />-->
   <include file="profiles.zcml" />
 
+  <permission
+      id="interlegis.portalmodelo.theme.AddStream"
+      title="interlegis.portalmodelo.theme: Add Stream"
+      />
+
+
   <browser:resourceDirectory
       name="portalmodelo.theme"
       directory="static"

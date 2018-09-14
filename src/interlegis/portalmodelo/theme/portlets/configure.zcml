@@ -3,12 +3,12 @@
     xmlns:plone="http://namespaces.plone.org/plone">
 
   <plone:portlet
-      name="interlegis.portalmodelo.theme.portlets.audiovideoonline"
-      interface=".audiovideoonline.IAudioVideoPortlet"
-      assignment=".audiovideoonline.Assignment"
-      renderer=".audiovideoonline.Renderer"
-      addview=".audiovideoonline.AddForm"
-      editview=".audiovideoonline.EditForm"
+      name="interlegis.portalmodelo.theme.portlets.stream"
+      interface=".stream.IStreamPortlet"
+      assignment=".stream.Assignment"
+      renderer=".stream.Renderer"
+      addview=".stream.AddForm"
+      editview=".stream.EditForm"
       />
 
 </configure>
