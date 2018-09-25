@@ -10,6 +10,9 @@ Changelog
 - Add audio and video online portlet.
   [rafahela]
 
+- Add stream type
+  [rafahela]
+
 1.0rc8 (2018-07-09)
 -------------------
 
