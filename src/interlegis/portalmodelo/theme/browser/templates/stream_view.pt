@@ -16,9 +16,10 @@
     <div style="width=640px;height:100px;" width="640" height="100"
          tal:condition="python: option == 'audio'">
       <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
-      <script type="text/javascript">
+      <script type="text/javascript" id="url" tal:attributes="link string:${context/link}">
+        var url = $("#url").attr("link");
         MRP.insert({
-        'url':'link',
+        'url':url,
         'codec':'mp3',
         'volume':100,
         'autoplay':true,
@@ -38,12 +39,13 @@
          tal:condition="python: option == 'video'">
       <video style="width=640px;height:360px;margin: 0 auto; display: table;" id="video" controls></video>
       <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-          <script>
+          <script type="text/javascript" id="url" tal:attributes="link string:${context/link}">
+              var url = $("#url").attr("link");
               if(Hls.isSupported()) {
                   console.log("Entrou")
                   var video = document.getElementById('video');
                   var hls = new Hls();
-                  hls.loadSource('link');
+                  hls.loadSource(url);
                   hls.attachMedia(video);
                   hls.on(Hls.Events.MANIFEST_PARSED,function() {
                    video.play();
@@ -51,7 +53,7 @@
               }else{
                   console.log("Erro");
                   var video = document.getElementById("video");
-                  video.setAttribute('src','link');
+                  video.setAttribute('src',url);
                   var apple_script = document.createElement('script');
                   apple_script.setAttribute('src','https://www.apple.com/metrics/scripts/s_code_h.js');
                   document.head.appendChild(apple_script);

@@ -28,7 +28,7 @@ def PossibleStreams(context):
     results = ct.searchResults(portal_type='Stream', sort_on='created', sort_order='reverse', sort_limit=15)
     streams = []
     for i in results:
-        streams.append(SimpleTerm(value=i.UID, title=i.Title.decode('utf-8')))
+        streams.append(SimpleTerm(value=i.getId, title=i.Title.decode('utf-8')))
 
     return SimpleVocabulary(streams)
 
@@ -81,7 +81,9 @@ class Renderer(base.Renderer):
 
     def stream(self):
         stream = self.data.stream
-        return stream
+        ct = api.portal.get_tool(name='portal_catalog')
+        result = ct.searchResults(portal_type='Stream', id=stream)
+        return [i.link for i in result]
 
     def option(self):
         opt = self.data.option
