@@ -9,7 +9,7 @@
   <include package="z3c.jbot" file="meta.zcml" />
   <include package=".browser" />
   <include package=".portlets" />
-  <!--<include package=".upgrades" />-->
+  <include package=".upgrades" />
   <include file="profiles.zcml" />
 
   <permission

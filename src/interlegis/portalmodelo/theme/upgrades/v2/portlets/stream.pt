@@ -1,0 +1,67 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="pt_BR"
+      tal:omit-tag=""
+      i18n:domain="plone">
+
+<dl class="portlet portletAudioVideo"
+    tal:define="navigation_root_url context/@@plone_portal_state/navigation_root_url;
+                opt view/option;
+                stream view/stream;
+                url python: stream[0]">
+    <dt class="portletHeader" tal:condition="view/data/header">
+        <span class="portletTopLeft" />
+        <span tal:content="view/data/header" />
+        <span class="portletTopRight" />
+    </dt>
+    <dd class="portletItem odd"
+        style="width=150px;height:150px;" width="150" height="150"
+        tal:condition="python: opt == 'video'">
+      <video style="width=150px;height:150px;margin: 0 auto; display: table;" id="video" controls></video>
+      <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+          <script type="text/javascript" id="url" tal:attributes="link string:${url}">
+              var url = $("#url").attr("link");
+              if(Hls.isSupported()) {
+                  console.log("Entrou")
+                  var video = document.getElementById('video');
+                  var hls = new Hls();
+                  hls.loadSource(url);
+                  hls.attachMedia(video);
+                  hls.on(Hls.Events.MANIFEST_PARSED,function() {
+                   video.play();
+                  });
+              }else{
+                  console.log("Erro");
+                  var video = document.getElementById("video");
+                  video.setAttribute('src',url);
+                  var apple_script = document.createElement('script');
+                  apple_script.setAttribute('src','https://www.apple.com/metrics/scripts/s_code_h.js');
+                  document.head.appendChild(apple_script);
+              }
+          </script>
+    </dd>
+
+    <dd class="portletItem odd"
+        style="width=640px;height:100px;" width="640" height="100"
+        tal:condition="python: opt == 'audio'">
+      <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+      <script type="text/javascript" id="url" tal:attributes="link string:${url}">
+        var url = $("#url").attr("link");
+        MRP.insert({
+        'url':url,
+        'codec':'mp3',
+        'volume':100,
+        'autoplay':true,
+        'jsevents':true,
+        'buffering':0,
+        'title':' ',
+        'welcome':' ',
+        'wmode':'transparent',
+        'skin':'mcclean',
+        'width':180,
+        'height':60
+        });
+      </script>
+     </dd>
+</dl>
+</html>

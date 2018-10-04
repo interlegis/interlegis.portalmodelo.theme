@@ -3,9 +3,21 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:gs="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
-    xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="interlegis.portalmodelo.theme">
+
+    <include package=".browser" />
+    <include package=".portlets" />
+
+    <browser:jbot
+        directory="jbot"
+        layer=".interfaces.IBrowserLayer"
+        />
+     
+    <permission
+           id="interlegis.portalmodelo.theme.AddStream"
+           title="interlegis.portalmodelo.theme: Add Stream"
+           />
 
     <!-- Profile -->
     <gs:registerProfile

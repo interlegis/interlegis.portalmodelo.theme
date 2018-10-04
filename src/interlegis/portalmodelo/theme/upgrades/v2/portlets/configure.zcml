@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <plone:portlet
+      name="interlegis.portalmodelo.theme.upgrades.v2.portlets.stream"
+      interface=".stream.IStreamPortlet"
+      assignment=".stream.Assignment"
+      renderer=".stream.Renderer"
+      addview=".stream.AddForm"
+      editview=".stream.EditForm"
+      />
+
+</configure>

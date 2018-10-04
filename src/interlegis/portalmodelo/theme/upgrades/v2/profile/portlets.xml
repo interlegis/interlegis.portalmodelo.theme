@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<portlets xmlns:i18n="http://xml.zope.org/namespaces/i18n" i18n:domain="plone">
+  <portlet
+      addview="interlegis.portalmodelo.theme.portlets.stream"
+      title="Streaming"
+      description="Audio e Video ao Vivo"
+      i18n:attributes="title; description">
+    <for interface="plone.app.portlets.interfaces.IColumn" />
+    <for interface="plone.app.portlets.interfaces.IDashboard" />
+  </portlet>
+</portlets>
