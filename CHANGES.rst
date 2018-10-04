@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0rc9 (unreleased)
+1.0rc9 (2018-10-04)
 -------------------
 
 - Change accessibility infos.

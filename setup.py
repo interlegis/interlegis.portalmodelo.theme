@@ -3,7 +3,7 @@
 from setuptools import find_packages
 from setuptools import setup
 
-version = '1.0rc9.dev0'
+version = '1.0rc9'
 description = 'Pacote de temas do Portal Modelo'
 long_description = (
     open('README.rst').read() + '\n' +
