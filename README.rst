@@ -184,3 +184,10 @@ Para habilitar a instalação deste produto em um ambiente que utilize o buildou
 3. Reiniciar o Plone
 
 4. Acesse o painel de controle e na opção **Temas** você verá os temas providos por este pacote listados.
+
+
+
+Contribuindo
+========================
+
+Para contribuir com o projeto, por favor, leia o `CONTRIBUTING <https://github.com/interlegis/interlegis.portalmodelo.theme/blob/master/.github/CONTRIBUTING.md>`_.
