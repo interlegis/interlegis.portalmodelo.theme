@@ -106,6 +106,9 @@ body {
     font-family: "open_sansregular", Arial, Helvetica, sans-serif;
 }
 
+body.largeText { font-size: 90%; }
+body.smallText { font-size: 50%; }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "open_sanssemibold", Arial, Helvetica, sans-serif;
 }

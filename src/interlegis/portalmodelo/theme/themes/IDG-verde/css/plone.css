@@ -1693,12 +1693,6 @@ margin-left: 0;
 clear: both;
 }
 /* */
-/* */
-body.largeText { font-size: 125%; }
-body.smallText { font-size: 85%; }
-/* */
-/* */
-/* */
 div.overlay {
 width: auto;
 height: auto;
