@@ -4,7 +4,8 @@ Changelog
 1.0rc10 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fixed up the accessibility font size in IDG themes 
+  [Iolane Andrade]
 
 
 1.0rc9 (2018-10-04)
