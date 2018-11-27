@@ -5,6 +5,7 @@ Changelog
 --------------------
 
 - Fixed up the accessibility font size in IDG themes 
+- Updated the index header html5 script
   [Iolane Andrade]
 
 
