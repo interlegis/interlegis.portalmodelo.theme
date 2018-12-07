@@ -14,7 +14,7 @@
     <h1 class="documentFirstHeading">Ao Vivo</h1>
 
     <div style="width=640px;height:100px;" width="640" height="100"
-         tal:condition="python: option == 'audio'">
+         tal:condition="python: option == 'audio1'">
       <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
       <script type="text/javascript" id="url" tal:attributes="link string:${context/link}">
         var url = $("#url").attr("link");
@@ -35,6 +35,32 @@
       </script>
      </div>
 
+    <div style="width=640px;height:100px;" width="640" height="100"
+        tal:condition="python: option == 'audio2'">
+      <audio style="width=640px;height:100px;margin: 0 auto; display: table;" id="audio2" controls></audio>
+      <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+      <script type="text/javascript" id="url" tal:attributes="link string:${context/link}">
+          var url = $("#url").attr("link");
+          if(Hls.isSupported()) {
+              console.log("Entrou")
+              var audio = document.getElementById('audio2');
+              var hls = new Hls();
+              hls.loadSource(url);
+              hls.attachMedia(audio2);
+              hls.on(Hls.Events.MANIFEST_PARSED,function() {
+               audio.play();
+              });
+          }else{
+              console.log("Erro");
+              var audio = document.getElementById("audio2");
+              audio.setAttribute('src',url);
+              var apple_script = document.createElement('script');
+              apple_script.setAttribute('src','https://www.apple.com/metrics/scripts/s_code_h.js');
+              document.head.appendChild(apple_script);
+          }
+      </script>
+     </div>
+	
     <div style="width=640px;height:360px;" width="640" height="360"
          tal:condition="python: option == 'video'">
       <video style="width=640px;height:360px;margin: 0 auto; display: table;" id="video" controls></video>
