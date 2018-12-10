@@ -14,7 +14,7 @@ class IBrowserLayer(Interface):
     """
 
 def PossibleOptions(context):
-    values = [(SimpleTerm(value='audio', title=_(u'Áudio'))), (SimpleTerm(value='video', title=_(u'Vídeo')))]
+    values = [(SimpleTerm(value='audio1', title=_(u'Áudio'))), (SimpleTerm(value='audio2', title=_(u'Áudio HLS'))), (SimpleTerm(value='video', title=_(u'Vídeo')))]
 
     return SimpleVocabulary(values)
 

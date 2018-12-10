@@ -6,6 +6,7 @@ Changelog
 
 - Fixed up the accessibility font size in IDG themes 
 - Updated the index header html5 script
+- Adding audio player hls in audio stream
   [Iolane Andrade]
 
 
