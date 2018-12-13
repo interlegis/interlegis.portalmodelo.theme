@@ -42,7 +42,7 @@ class IStream(model.Schema):
 
     option = schema.Choice(
         title=_(u'Opções'),
-        description=_(u'Escolha se será um portlet de transmissão de áudio ou vídeo.'),
+        description=_(u'Escolha se será uma transmissão de áudio ou de vídeo.\n A opção Áudio representa um player de transmissão do tipo .mp3, .aac ou .ogg. A opção Áudio HLS representa um player de transmissão do tipo .m3u8. A opção Vídeo representa um player de transmissão do tipo .m3u8'),
         required=True,
         source=PossibleOptions,
     )
