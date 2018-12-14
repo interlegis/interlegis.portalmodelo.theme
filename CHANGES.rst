@@ -1,13 +1,20 @@
 Changelog
 =========
 
-1.0rc10 (unreleased)
+1.0rc10 (2018-12-14)
 --------------------
 
-- Fixed up the accessibility font size in IDG themes 
-- Updated the index header html5 script
-- Adding audio player hls in audio stream
-  [Iolane Andrade]
+- Fix accessibility font size in IDG themes
+  [IolaneAndrade]
+
+- Update html5 script in index header
+  [IolaneAndrade]
+
+- Add hls audio player in audio stream
+  [IolaneAndrade]
+
+- Add description in stream option
+  [IolaneAndrade]
 
 
 1.0rc9 (2018-10-04)
@@ -21,6 +28,7 @@ Changelog
 
 - Add stream type
   [rafahela]
+
 
 1.0rc8 (2018-07-09)
 -------------------
@@ -43,7 +51,7 @@ Changelog
 -------------------
 
 - Add plone-analytics rule in Themes to solve problems with Google Analytics
-  [iolane]
+  [IolaneAndrade]
 
 
 1.0rc5 (2017-08-25)
