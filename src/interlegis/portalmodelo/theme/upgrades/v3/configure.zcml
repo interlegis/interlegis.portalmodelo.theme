@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="interlegis.portalmodelo.theme">
+
+    <!-- Profile -->
+    <gs:registerProfile
+        name="default"
+        title="interlegis.portalmodelo.theme: Versao 3"
+        directory="profile"
+        description="Atualiza o pacote interlegis.portalmodelo.theme para versao 3"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        i18n:attributes="title; description"
+        />
+
+    <!-- Upgrade -->
+    <gs:upgradeSteps
+        source="2"
+        destination="3"
+        profile="interlegis.portalmodelo.theme:default">
+
+        <gs:upgradeStep
+            title="Atualiza portal para versao 3"
+            description="Aplica profile v3."
+            handler=".handler.apply_profile"
+            />
+
+    </gs:upgradeSteps>
+
+</configure>

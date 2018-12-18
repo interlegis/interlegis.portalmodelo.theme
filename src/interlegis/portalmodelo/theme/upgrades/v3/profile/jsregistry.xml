@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts" meta_type="JavaScripts Registry">
+
+ <javascript
+  insert-before="*"
+  authenticated="False"
+  bundle="jquery" 
+  cacheable="True"
+  compression="none" 
+  conditionalcomment="" 
+  cookable="True" 
+  enabled="True"
+  expression="" id="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js" inline="False"/>
+
+</object>
