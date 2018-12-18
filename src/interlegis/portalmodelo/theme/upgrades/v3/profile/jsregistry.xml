@@ -12,4 +12,8 @@
   enabled="True"
   expression="" id="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js" inline="False"/>
 
+ <javascript
+  remove="True"
+  expression="" id="http://htmlshiv.googlecode.com/svn/trunk/html5.js"/>
+
 </object>
