@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.0rc11 (unreleased)
+1.0rc11 (2018-12-18)
 --------------------
 
-- Nothing changed yet.
+- Add upgrade step 3 to fix html5 url.
+  [rafahela]
 
 
 1.0rc10 (2018-12-14)
