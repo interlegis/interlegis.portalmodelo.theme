@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.0rc12 (unreleased)
+1.0rc12 (2018-12-19)
 --------------------
 
-- Nothing changed yet.
+- Remove older js registry in upgrade steps.
+  [rafahela]
 
 
 1.0rc11 (2018-12-18)
