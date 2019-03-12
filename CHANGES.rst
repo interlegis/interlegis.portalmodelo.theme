@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.0rc13 (unreleased)
+1.0rc13 (2019-03-12)
 --------------------
 
-- Nothing changed yet.
+- Add metatags portal-modelo.
+  [IolaneAndrade]
 
 
 1.0rc12 (2018-12-19)
