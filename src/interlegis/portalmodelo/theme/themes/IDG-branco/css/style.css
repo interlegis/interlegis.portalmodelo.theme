@@ -128,18 +128,6 @@
     border-bottom: 2px solid #1659bf !important;
 }
 
-.portletNavigationTree .portletHeader .portletTopRight{
-    position: absolute;
-    right: 4px;
-    bottom: 3px;
-    display: inline-block;
-    background: rgba(0, 0, 0, 0);
-    width: 17px;
-    height: 17px;
-    cursor: pointer;
-
-}
-
 /* ==========================================================================
    Collective Cover
    ========================================================================== */
