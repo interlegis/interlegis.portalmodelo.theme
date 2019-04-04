@@ -28,6 +28,23 @@
             handler=".handler.apply_profile"
             />
 
+        <gs:upgradeStep
+	    title="Deprecate resource registries"
+            description="Remove static resources from registries;"
+            handler=".deprecate_resource_registries"
+            />
+
+        <gs:upgradeStep
+	    title="New resource registries"
+            description="Add static resources from registries;"
+            handler=".new_resource_registries"
+            />
+
+        <gs:upgradeStep
+            title="Cook JS resources"
+            handler="..cook_javascript_resources"
+            />
+      
     </gs:upgradeSteps>
 
 </configure>

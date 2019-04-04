@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 from plone.app.upgrade.utils import loadMigrationProfile
+from plone import api
 
 import logging
 
@@ -12,3 +13,6 @@ def apply_profile(context):
     profile = 'profile-interlegis.portalmodelo.theme.upgrades.v3:default'
     loadMigrationProfile(context, profile)
     logger.info('Atualizado para versao 3')
+
+
+
