@@ -1,11 +1,14 @@
 Changelog
 =========
 
-1.0rc14 (unreleased)
+1.0rc14 (2019-04-08)
 --------------------
 
 - Remove navigation css in IDG-branco to fix mobile version.
   [rafahela]
+
+- Change the way to remove and add js resources in upgrade version 3.
+  [IolaneAndrade]
 
 
 1.0rc13 (2019-03-12)
